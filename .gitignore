@@ -1,0 +1,3 @@
+# vídeos de referência e configurações locais não vão para o GitHub
+*.mp4
+.claude/

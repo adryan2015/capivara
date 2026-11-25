@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A capivara curiosa</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<header class="topo">
+  <div>
+    <h1 id="nome">…</h1>
+    <p id="status" class="status">acordando…</p>
+  </div>
+  <div class="topo-dir">
+    <p id="clima" class="clima"></p>
+    <p id="idade" class="idade"></p>
+  </div>
+</header>
+
+<main>
+  <section id="mundo" class="mundo" aria-label="O mundo dela. Arraste para girar a câmera.">
+    <div id="balao" class="balao" hidden></div>
+    <div id="relogio" class="relogio" title="As acordadas rodam na nuvem e podem atrasar alguns minutos"></div>
+    <p class="dica-mundo">arraste para girar · toque no computador, na mesinha ou no mural</p>
+  </section>
+
+  <nav class="abas" role="tablist">
+    <button role="tab" data-aba="ideias" aria-selected="true">Ideias</button>
+    <button role="tab" data-aba="pesquisas">Pesquisas</button>
+    <button role="tab" data-aba="desenhos">Desenhos</button>
+    <button role="tab" data-aba="diario">Diário</button>
+  </nav>
+  <section id="conteudo" class="conteudo" aria-live="polite"></section>
+</main>
+
+<dialog id="visor">
+  <form method="dialog"><button class="fechar" aria-label="Fechar">×</button></form>
+  <div id="visor-corpo"></div>
+</dialog>
+
+<script src="app.js" type="module"></script>
+</body>
+</html>
