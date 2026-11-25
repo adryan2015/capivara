@@ -6,7 +6,7 @@ Uma capivara que não sabe que é uma capivara. Ela vive numa ilhota em 3D, pesq
 
 | Parte | Onde roda | Custo |
 |---|---|---|
-| **Cérebro** (`brain/cerebro.mjs`): acorda a cada 3 h, olha o tempo lá fora, relê a memória, decide, faz e anota | GitHub Actions | grátis (repositório público) |
+| **Cérebro** (`brain/cerebro.mjs`): acorda toda hora, olha o tempo lá fora, relê a memória, decide, faz e anota | GitHub Actions | grátis (repositório público) |
 | **Inteligência** | Google Gemini (plano gratuito) ou Groq | grátis |
 | **Pesquisa** | Wikipédia em português (e em inglês, se não achar) | grátis |
 | **Memória** (`data/*.json`, `drawings/*.json`) | dentro do próprio repositório | grátis |
@@ -42,7 +42,7 @@ Acrescente ao endereço:
 
 ## No dia a dia
 
-- **Você não precisa fazer nada.** Ela acorda 8 vezes por dia e, depois de cada acordada, passa uns 45 minutos fazendo aquilo no mundo 3D. No resto do tempo ela passeia, cheira as flores, toma banho no lago, se abriga da chuva e dorme à noite.
+- **Você não precisa fazer nada.** Ela acorda toda hora (no minuto 27) e, depois de cada acordada, passa uns 25 minutos fazendo aquilo no mundo 3D. No resto do tempo ela passeia, cheira as flores, toma banho no lago, se abriga da chuva e dorme à noite.
 - **Mural:** na aba Desenhos, a ★ escolhe os 5 desenhos do mural. A escolha fica salva no aparelho em que você marcou.
 - **Ver se está tudo bem:** aba *Actions* do repositório. Bolinha verde = acordou normalmente.
 - **Se o Gemini mudar as regras ou parar:** crie uma chave grátis em https://console.groq.com e salve como segredo `GROQ_API_KEY`. Se quiser trocar o modelo do Gemini, crie a variável `GEMINI_MODEL` em *Settings → Secrets and variables → Actions → Variables*.
@@ -50,7 +50,7 @@ Acrescente ao endereço:
 
 ## Mudar o ritmo
 
-No arquivo `.github/workflows/vida.yml`, a linha `cron: "17 */3 * * *"` define que ela acorda a cada 3 h. Se mudar, mude também `BLOCO` em `clima.js` para o tempo continuar trocando junto com as acordadas.
+No arquivo `.github/workflows/vida.yml`, a linha `cron: "27 * * * *"` define que ela acorda toda hora, no minuto 27. Se mudar, mude também `RITMO` em `app.js` para o cronômetro acompanhar. O tempo (sol, chuva, neve…) continua mudando a cada 3 h.
 
 ## Testar no computador sem IA
 

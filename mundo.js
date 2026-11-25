@@ -398,11 +398,18 @@ export function criarMundo(host, ctx) {
     for (;;) {
       const a = Math.random() * Math.PI * 2, d = 1 + Math.random() * 9.5;
       const x = Math.cos(a) * d, z = Math.sin(a) * d;
-      if (z > -2 || Math.abs(x) > 7) return { x, z };
+      const longeDoLago = Math.hypot(x - LAGO.x, z - LAGO.z) > LAGO.r + 0.8;
+      if ((z > -2 || Math.abs(x) > 7) && longeDoLago) return { x, z };
     }
   };
+  const pontoLivreLongeDoLago = () => {
+    for (;;) { const p = pontoLivre(); if (Math.hypot(p.x - LAGO.x, p.z - LAGO.z) > LAGO.r + 4) return p; }
+  };
 
+  let ultimoBanho = -999;
   function planejar() {
+    // antes da primeira acordada ela ainda não "existe": fica dormindo na caminha
+    if (!ctx.acordou()) return [vaiPara(LUGAR.cama), { tipo: 'dormir', dur: 30, antesDeNascer: true }];
     const oc = ctx.atividade();
     if (oc && Math.random() < 0.85) {
       if (oc.acao === 'desenhar') return [vaiPara(LUGAR.mesinha), { tipo: 'desenhar', dur: rand(40, 80), olhar: LUGAR.mesinha.olhar }];
@@ -416,13 +423,19 @@ export function criarMundo(host, ctx) {
       [14, () => [{ tipo: 'parado', dur: rand(3, 8) }]],
       [novidade ? 40 : caindo ? 14 : 4, () => [vaiPara(pontoLivre()), { tipo: 'olharCeu', dur: rand(6, 14) }]],
       [clima?.estacao === 'primavera' ? 12 : 5, () => { const f = flores.children[Math.floor(Math.random() * flores.children.length)].position; return [vaiPara({ x: f.x + 1.1, z: f.z + 0.2 }), { tipo: 'farejar', dur: rand(2.5, 5), olhar: { x: f.x, z: f.z } }]; }],
-      [7, () => [vaiPara(LUGAR.mural), { tipo: 'olharMural', dur: rand(5, 10), olhar: LUGAR.mural.olhar }]],
+      [ctx.temDesenhos() ? 7 : 2, () => [vaiPara(LUGAR.mural), { tipo: 'olharMural', dur: rand(5, 10), olhar: LUGAR.mural.olhar }]],
       [6, () => [{ tipo: 'cocar', dur: rand(1.5, 3) }]],
       [5, () => [{ tipo: 'espreguicar', dur: 2.6 }]],
-      [5, () => [vaiPara(LUGAR.computador), { tipo: 'pesquisar', dur: rand(6, 15), olhar: LUGAR.computador.olhar }]],
-      [4, () => [vaiPara(LUGAR.mesinha), { tipo: 'desenhar', dur: rand(5, 12), olhar: LUGAR.mesinha.olhar }]],
-      [!inverno && !noite ? (clima?.tempo === 'calor' ? 30 : 8) : 0, () => [vaiPara(LUGAR.lago), { tipo: 'banho', dur: rand(15, 40) }, vaiPara(LUGAR.margem), { tipo: 'sacudir', dur: 1.6 }]],
-      [inverno ? 4 : 0, () => [vaiPara(LUGAR.margem), { tipo: 'olharMural', dur: rand(3, 6), olhar: LUGAR.lago }]],
+      // visitas rápidas: só relê o que já existe de verdade
+      [ctx.temPesquisas() ? 5 : 0, () => [vaiPara(LUGAR.computador), { tipo: 'pesquisar', rapido: true, dur: rand(6, 15), olhar: LUGAR.computador.olhar }]],
+      [ctx.temDesenhos() ? 4 : 0, () => [vaiPara(LUGAR.mesinha), { tipo: 'desenhar', rapido: true, dur: rand(5, 12), olhar: LUGAR.mesinha.olhar }]],
+      // banho: no máximo um a cada ~4 minutos, e depois ela vai fazer outra coisa
+      [!inverno && !noite && relogio - ultimoBanho > 240 ? (clima?.tempo === 'calor' ? 30 : 8) : 0, () => {
+        ultimoBanho = relogio;
+        const saida = { x: LAGO.x + 3.6 + rand(0, 2), z: LAGO.z + rand(-2, 2) };
+        return [vaiPara(LUGAR.lago), { tipo: 'banho', dur: rand(15, 40) }, vaiPara(saida), { tipo: 'sacudir', dur: 1.6 }, vaiPara(pontoLivreLongeDoLago()), { tipo: 'parado', dur: rand(3, 6) }];
+      }],
+      [inverno ? 4 : 0, () => [vaiPara(LUGAR.margem), { tipo: 'olharMural', lago: true, dur: rand(3, 6), olhar: LUGAR.lago }]],
       [caindo ? 18 : 0, () => [vaiPara(LUGAR.abrigo), { tipo: 'parado', dur: rand(15, 35), olhar: LUGAR.abrigo.olhar }]],
       [noite ? 45 : 4, () => [vaiPara(LUGAR.cama), { tipo: 'dormir', dur: rand(30, 90) }, { tipo: 'espreguicar', dur: 2.6 }]],
     ];
@@ -438,16 +451,18 @@ export function criarMundo(host, ctx) {
   function aoComecar(a) {
     const oc = ctx.atividade();
     let s = NOMES[a.tipo];
-    if (a.tipo === 'pesquisar') s = oc && oc.acao !== 'desenhar' && oc.acao !== 'descansar' ? `pesquisando: ${oc.tema}` : 'relendo as anotações no computador';
-    if (a.tipo === 'desenhar') s = oc?.acao === 'desenhar' ? `desenhando: ${oc.tema}` : 'rabiscando na mesinha';
+    if (a.tipo === 'pesquisar') s = !a.rapido && oc && oc.acao !== 'desenhar' && oc.acao !== 'descansar' ? `pesquisando: ${oc.tema}` : 'relendo as pesquisas antigas';
+    if (a.tipo === 'desenhar') s = !a.rapido && oc?.acao === 'desenhar' ? `desenhando: ${oc.tema}` : 'olhando os desenhos antigos';
     if (a.tipo === 'andar') {
       const prox = fila[0]?.tipo;
       s = { pesquisar: 'indo até o computador', desenhar: 'indo até a mesinha', dormir: 'indo para a caminha', banho: 'indo para o lago', olharMural: 'indo ver o mural' }[prox] ?? 'passeando';
     }
     if (a.tipo === 'parado' && Math.hypot(est.x - LUGAR.abrigo.x, est.z - LUGAR.abrigo.z) < 1) s = 'se abrigando debaixo da árvore';
+    if (a.lago) { ctx.status('olhando o lago congelado'); if (Math.random() < 0.6) ctx.falar(ctx.frase('lagoCongelado')); return; }
+    if (a.antesDeNascer || (!ctx.acordou() && a.tipo === 'andar')) s = 'dormindo · ainda não acordou pela primeira vez';
     ctx.status(s);
     if (['pesquisar', 'desenhar', 'olharCeu', 'olharMural', 'banho', 'farejar'].includes(a.tipo) && Math.random() < 0.55) ctx.falar(ctx.frase(a.tipo));
-    if (a.tipo === 'dormir') ctx.falar('z z z');
+    if (a.tipo === 'dormir' && Math.random() < 0.5) ctx.falar('z z z');
   }
 
   function angulo(dx, dz) { return Math.atan2(-dz, dx); }

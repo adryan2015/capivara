@@ -7,7 +7,8 @@ import { renderizarDesenho } from './desenho.js';
 const URLP = new URLSearchParams(location.search);
 const DEMO = URLP.has('demo');
 const $ = (s) => document.querySelector(s);
-const OCUPADO_MIN = 45;   // depois de uma acordada, ela passa ~45 min fazendo aquilo
+const OCUPADO_MIN = 25;   // depois de uma acordada, ela passa ~25 min fazendo aquilo
+const RITMO = { minuto: 27, horas: 1 }; // igual ao cron de .github/workflows/vida.yml
 const FUSO = 'America/Sao_Paulo';
 
 let dados = { estado: {}, pesquisas: [], perguntas: [], desenhos: [], diario: [] };
@@ -112,24 +113,44 @@ function novidade() {
   return ult.novidades.find((n) => agora.includes(n.chave)) ?? null;
 }
 
+// O que ela fala sai só do que existe de verdade na memória dela (nada inventado),
+// e ela evita repetir as últimas frases.
+const jaDisse = [];
 function frase(tipo) {
+  if (!acordou()) return null; // antes da primeira acordada ela só dorme
   const e = dados.estado ?? {}, oc = atividade(), nov = novidade();
   const abertas = dados.perguntas.filter((p) => p.status === 'aguardando' || p.status === 'investigando');
+  const pesq = recentes(dados.pesquisas), des = recentes(dados.desenhos);
   const c = climaAgora();
   const nomeDela = (k) => e.vistos?.[k]?.nome;
+  const fato = pesq.flatMap((p) => p.aprendi ?? []).slice(0, 12);
   const por = {
-    pesquisar: [oc?.tema && `hmm… ${oc.tema}`, 'deixa eu ver uma coisa…', abertas[0]?.texto, e.foco && `ainda pensando em ${e.foco.tema}`],
-    desenhar: [oc?.tema && `vou tentar desenhar ${oc.tema}`, 'acho que consigo melhor dessa vez', 'só um rabisco…'],
-    olharCeu: [nov && 'o que é isso caindo do céu??', nov && (nomeDela(nov.chave) ? `${nomeDela(nov.chave)}…` : 'nunca vi isso antes…'),
-      c.noite ? 'tantos pontinhos de luz…' : 'o céu muda o tempo todo', c.tempo === 'neve' && 'é gelado e macio', c.tempo === 'chuva' && 'tô ficando molhada…'],
-    olharMural: ['gosto desse ali', 'esse primeiro ficou estranho…', 'eu fiz tudo isso?'],
-    farejar: [c.estacao === 'primavera' ? 'que cheiro doce' : 'hmm, cheiro de terra', 'o que será isso?'],
-    banho: ['ahhh… água', 'aqui é bom', 'a água tá fresquinha'],
+    pesquisar: oc && oc.acao !== 'desenhar' && oc.acao !== 'descansar'
+      ? [`hmm… ${oc.tema}`, 'deixa eu ler isso de novo…', 'que interessante', e.foco && `isso tem a ver com ${e.foco.tema}?`]
+      : [pesq[0] && `lembrei de "${pesq[0].tema}"`, fato.length && sorteia(fato), abertas.length && `ainda não sei: ${sorteia(abertas).texto}`],
+    desenhar: oc?.acao === 'desenhar'
+      ? [`vou tentar desenhar ${oc.tema}`, des.length > 1 && 'quero fazer melhor que o último', 'com calma…']
+      : [des[0] && `"${des[0].titulo}"… ${des[0].autocritica ?? ''}`.trim(), des.length > 1 && `o "${sorteia(des).titulo}" ficou bom?`],
+    olharMural: des.length
+      ? [`gosto de "${sorteia(des.slice(0, 5)).titulo}"`, des.length > 1 && des[des.length - 1].autocritica && `o primeiro… ${des[des.length - 1].autocritica}`, des.length >= 5 && 'eu fiz tudo isso?']
+      : ['esse quadro ainda tá vazio', 'o que será que eu coloco aqui?'],
+    olharCeu: [nov && 'o que é isso??', nov && (nomeDela(nov.chave) ? `${nomeDela(nov.chave)}…` : 'nunca vi isso antes…'),
+      c.noite ? 'tantos pontinhos de luz…' : 'o céu muda o tempo todo', c.noite ? 'por que fica escuro?' : 'de onde vem essa luz?',
+      c.tempo === 'neve' && 'é gelado e macio', c.tempo === 'chuva' && 'tô ficando molhada…', c.tempo === 'nublado' && 'o céu tá cinza hoje',
+      c.tempo === 'vento' && 'algo invisível tá me empurrando'],
+    farejar: [c.estacao === 'primavera' ? 'que cheiro doce' : 'hmm, cheiro de terra', 'o que será isso?', 'tem bichinhos aqui?', null],
+    banho: ['ahhh…', 'a água tá fresquinha', 'consigo boiar!', 'meu corpo fica leve aqui', 'blub blub', c.tempo === 'calor' && 'que alívio desse calor', 'quietinha aqui…', null, null],
+    lagoCongelado: ['a água ficou dura…', 'cadê meu banho?', 'tá escorregadio', nomeDela('frio') && `é o ${nomeDela('frio')}`],
     trovao: ['!!!', 'que barulho foi esse??', 'o céu rasgou?'],
-    parado: [e.pensamento, abertas.length && sorteia(abertas).texto, 'hmm…', e.interesses?.length && `ando pensando em ${sorteia(e.interesses)}`, e.foco && `${e.foco.tema}…`],
+    parado: [e.pensamento, abertas.length && sorteia(abertas).texto, e.interesses?.length && `ando pensando em ${sorteia(e.interesses)}`, e.foco && `${e.foco.tema}…`, 'hmm…', null],
   };
-  return sorteia((por[tipo] ?? por.parado).filter(Boolean)) || 'hmm…';
+  const opcoes = (por[tipo] ?? por.parado).filter((x) => x !== false && x !== undefined && x !== '');
+  const novas = opcoes.filter((x) => !jaDisse.includes(x));
+  const escolha = sorteia(novas.length ? novas : opcoes) ?? null;
+  if (escolha) { jaDisse.push(escolha); if (jaDisse.length > 8) jaDisse.shift(); }
+  return escolha;
 }
+const acordou = () => DEMO || !!dados.estado?.nasceu;
 
 let balaoTimer;
 function falar(texto) {
@@ -162,18 +183,17 @@ function atualizarTopo() {
 }
 
 // ---------------------------------------------------------------- cronômetro da próxima acordada
-// O cérebro roda no minuto 17 das horas múltiplas de 3 (UTC), igual ao cron em .github/workflows/vida.yml.
 function proximaAcordada(agora = new Date()) {
   const d = new Date(agora);
-  d.setUTCMinutes(17, 0, 0);
-  while (d <= agora || d.getUTCHours() % 3) d.setUTCHours(d.getUTCHours() + 1);
+  d.setUTCMinutes(RITMO.minuto, 0, 0);
+  while (d <= agora || d.getUTCHours() % RITMO.horas) d.setUTCHours(d.getUTCHours() + 1);
   return d;
 }
 function atualizarRelogio() {
   const agora = new Date(), prox = proximaAcordada(agora);
-  const anterior = new Date(prox.getTime() - 3 * 3600000);
+  const anterior = new Date(prox.getTime() - RITMO.horas * 3600000);
   const ultima = Date.parse(dados.estado?.ultimaAcao?.quando ?? 0) || 0;
-  const atrasada = !DEMO && dados.estado?.nasceu && ultima < anterior.getTime() - 60000 && agora - anterior < 75 * 60000;
+  const atrasada = !DEMO && dados.estado?.nasceu && ultima < anterior.getTime() - 60000 && agora - anterior < 45 * 60000;
   const s = Math.max(0, Math.floor((prox - agora) / 1000));
   const hhmmss = `${Math.floor(s / 3600)}:${String(Math.floor(s / 60) % 60).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
   $('#relogio').replaceChildren(...(atrasada
@@ -350,7 +370,9 @@ async function iniciar() {
   try {
     const { criarMundo } = await import('./mundo.js');
     mundo = criarMundo($('#mundo'), {
-      atividade, desenhoNaMesa, novidade, frase, falar, posicaoBalao,
+      atividade, desenhoNaMesa, novidade, frase, falar, posicaoBalao, acordou,
+      temPesquisas: () => dados.pesquisas.length > 0,
+      temDesenhos: () => dados.desenhos.length > 0,
       status: (t) => { $('#status').textContent = t; },
       abrir: (aba) => irPara(aba),
     });
