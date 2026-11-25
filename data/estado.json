@@ -1,0 +1,43 @@
+{
+  "nome": "Pora",
+  "nasceu": "2026-11-25T20:42:08.390Z",
+  "acordadas": 1,
+  "humor": "espantada",
+  "pensamento": "Acabei de abrir os olhos e tudo é novo, especialmente essa luz redonda no céu que me aquece.",
+  "interesses": [
+    "Fótons",
+    "Futebol português"
+  ],
+  "conhecimentos": [
+    "A luz visível e o calor que sinto vêm de radiações que viajam pelo espaço.",
+    "Existem coisas chamadas fótons que compõem a luz."
+  ],
+  "ultimaAcao": {
+    "acao": "pesquisar",
+    "tema": "bola de luz quente",
+    "quando": "2026-11-25T20:42:08.390Z"
+  },
+  "vistos": {
+    "sol": {
+      "primeiraVez": "2026-11-25T20:42:08.390Z",
+      "vezes": 1,
+      "nome": "luz quente"
+    },
+    "flores": {
+      "primeiraVez": "2026-11-25T20:42:08.390Z",
+      "vezes": 1
+    }
+  },
+  "focosAnteriores": [],
+  "foco": {
+    "tema": "a bola de luz no céu",
+    "motivo": "Quero entender o que é essa coisa brilhante que esquenta o ar.",
+    "desde": "2026-11-25T20:42:08.390Z",
+    "pesquisas": 0,
+    "desenhos": 0
+  },
+  "ultimosFenomenos": [
+    "sol",
+    "flores"
+  ]
+}

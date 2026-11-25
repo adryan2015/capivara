@@ -1,0 +1,34 @@
+[
+  {
+    "id": "p202611252042082",
+    "data": "2026-11-25T20:42:08.390Z",
+    "tipo": "pesquisa",
+    "tema": "bola de luz quente",
+    "porque": "Quero entender o que é essa coisa brilhante que esquenta o ar.",
+    "busca": "bola de luz quente",
+    "resumo": "Fui procurar sobre a bola de luz quente e achei textos muito confusos sobre futebol em Portugal e coisas invisíveis chamadas fótons. Descobri que essa luz que aquece o ar se chama radiação eletromagnética ou luz, e que ela viaja muito rápido. Fiquei um pouco tonta com tantas palavras difíceis sobre comprimentos de onda, mas gostei de saber que o Sol é a grande fonte disso.",
+    "aprendi": [
+      "A luz que esquenta o ar se chama luz ou radiação eletromagnética.",
+      "A velocidade da luz no vácuo é de quase trezentos milhões de metros por segundo.",
+      "O Sol é a principal fonte de luz natural da Terra.",
+      "Fótons são as partículas sem massa que formam a luz."
+    ],
+    "sentimento": "Achei engraçado que a busca sobre uma bola de luz quente me levou a histórias de briga por jogadores de futebol, mas fiquei calma ao entender um pouco sobre os raios de luz.",
+    "fontes": [
+      {
+        "titulo": "Verão Quente de 1993",
+        "url": "https://pt.wikipedia.org/wiki/Ver%C3%A3o_Quente_de_1993",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Luz",
+        "url": "https://pt.wikipedia.org/wiki/Luz",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611252042083",
+      "q202611252042084"
+    ]
+  }
+]

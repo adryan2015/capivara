@@ -1,0 +1,48 @@
+[
+  {
+    "id": "q202611252042080",
+    "data": "2026-11-25T20:42:08.390Z",
+    "texto": "O que é a bola de luz quente no céu?",
+    "origem": {
+      "tipo": "pensamento"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": []
+  },
+  {
+    "id": "q202611252042081",
+    "data": "2026-11-25T20:42:08.390Z",
+    "texto": "O que são essas coisinhas coloridas e cheirosas no chão?",
+    "origem": {
+      "tipo": "pensamento"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": []
+  },
+  {
+    "id": "q202611252042083",
+    "data": "2026-11-25T20:42:08.390Z",
+    "texto": "O que é um 'Sporting' e por que ele roubava jogadores?",
+    "origem": {
+      "tipo": "pesquisa",
+      "texto": "bola de luz quente"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": []
+  },
+  {
+    "id": "q202611252042084",
+    "data": "2026-11-25T20:42:08.390Z",
+    "texto": "Como os fótons conseguem viajar tão rápido sem ter massa?",
+    "origem": {
+      "tipo": "pesquisa",
+      "texto": "bola de luz quente"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": []
+  }
+]
