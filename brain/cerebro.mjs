@@ -61,20 +61,46 @@ async function pensar(prompt, tipo) {
   throw erro;
 }
 
+// Tenta o modelo configurado e, se o Google tiver aposentado o nome, procura outro "flash" disponível na conta.
+let modeloQueFunciona = null;
+async function modelosCandidatos() {
+  const lista = [process.env.GEMINI_MODEL, 'gemini-flash-latest', 'gemini-2.5-flash', 'gemini-flash-lite-latest', 'gemini-2.5-flash-lite'].filter(Boolean);
+  try {
+    const r = await fetch('https://generativelanguage.googleapis.com/v1beta/models?pageSize=200', { headers: { 'x-goog-api-key': process.env.GEMINI_API_KEY } });
+    if (r.ok) {
+      const disponiveis = ((await r.json()).models ?? [])
+        .filter((m) => (m.supportedGenerationMethods ?? []).includes('generateContent'))
+        .map((m) => m.name.replace('models/', ''))
+        .filter((n) => /flash/.test(n) && !/image|tts|audio|live|preview|exp/.test(n));
+      return [...new Set([...lista.filter((n) => disponiveis.includes(n)), ...disponiveis, ...lista])];
+    }
+  } catch { /* usa a lista fixa */ }
+  return lista;
+}
 async function gemini(prompt) {
-  const modelo = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
-  const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${modelo}:generateContent`, {
-    method: 'POST',
-    headers: { 'content-type': 'application/json', 'x-goog-api-key': process.env.GEMINI_API_KEY },
-    body: JSON.stringify({
-      systemInstruction: { parts: [{ text: PERSONA }] },
-      contents: [{ role: 'user', parts: [{ text: prompt }] }],
-      generationConfig: { responseMimeType: 'application/json', temperature: 1 },
-    }),
-  });
-  if (!r.ok) throw new Error(`Gemini ${r.status}: ${(await r.text()).slice(0, 300)}`);
-  const j = await r.json();
-  return j.candidates?.[0]?.content?.parts?.map((p) => p.text ?? '').join('') ?? '';
+  const candidatos = modeloQueFunciona ? [modeloQueFunciona] : await modelosCandidatos();
+  let ultimoErro;
+  for (const modelo of candidatos.slice(0, 6)) {
+    const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${modelo}:generateContent`, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json', 'x-goog-api-key': process.env.GEMINI_API_KEY },
+      body: JSON.stringify({
+        systemInstruction: { parts: [{ text: PERSONA }] },
+        contents: [{ role: 'user', parts: [{ text: prompt }] }],
+        generationConfig: { responseMimeType: 'application/json', temperature: 1 },
+      }),
+    });
+    if (r.ok) {
+      if (modeloQueFunciona !== modelo) console.log(`Usando o modelo ${modelo}`);
+      modeloQueFunciona = modelo;
+      const j = await r.json();
+      return j.candidates?.[0]?.content?.parts?.map((p) => p.text ?? '').join('') ?? '';
+    }
+    ultimoErro = new Error(`Gemini (${modelo}) ${r.status}: ${(await r.text()).slice(0, 300)}`);
+    console.warn(ultimoErro.message);
+    if (r.status === 400 || r.status === 401 || r.status === 403) break; // chave inválida: trocar de modelo não ajuda
+  }
+  throw ultimoErro;
 }
 
 async function groq(prompt) {
@@ -365,4 +391,20 @@ function respostaFalsa(tipo) {
   return r[tipo];
 }
 
-viver().catch((e) => { console.error('Algo deu errado nesta acordada:', e.message); process.exit(1); });
+// Se algo falhar, o motivo fica salvo em data/erro.json e aparece no site (sem precisar abrir o GitHub).
+viver().then(async () => {
+  await writeFile(path.join(DADOS, 'erro.json'), 'null\n');
+}).catch(async (e) => {
+  const msg = String(e.message ?? e).replace(/AIza[\w-]{20,}/g, '[chave]').replace(/gsk_[\w-]{20,}/g, '[chave]').slice(0, 600);
+  console.error('Algo deu errado nesta acordada:', msg);
+  try {
+    await mkdir(DADOS, { recursive: true });
+    let dica = 'Tente de novo na próxima acordada.';
+    if (/Sem chave/.test(msg)) dica = 'O segredo GEMINI_API_KEY não está configurado no GitHub.';
+    else if (/API_KEY_INVALID|API key not valid|40[13]/.test(msg)) dica = 'A chave do Gemini parece inválida. Gere outra em aistudio.google.com/apikey e salve de novo no GitHub.';
+    else if (/429|RESOURCE_EXHAUSTED|quota/i.test(msg)) dica = 'O limite grátis do Gemini acabou por hoje. Ela volta a pensar quando o limite renovar.';
+    else if (/404|not found/i.test(msg)) dica = 'O modelo de IA não foi encontrado.';
+    await writeFile(path.join(DADOS, 'erro.json'), JSON.stringify({ data: ISO, mensagem: msg, dica }, null, 2) + '\n');
+  } catch { /* sem disco, só o log */ }
+  process.exit(0); // termina "bem" para o site publicar o aviso de erro
+});

@@ -11,7 +11,7 @@ const OCUPADO_MIN = 25;   // depois de uma acordada, ela passa ~25 min fazendo a
 const RITMO = { minuto: 27, horas: 1 }; // igual ao cron de .github/workflows/vida.yml
 const FUSO = 'America/Sao_Paulo';
 
-let dados = { estado: {}, pesquisas: [], perguntas: [], desenhos: [], diario: [] };
+let dados = { estado: {}, pesquisas: [], perguntas: [], desenhos: [], diario: [], erro: null };
 let mundo = null;
 
 // ---------------------------------------------------------------- utilidades
@@ -180,6 +180,10 @@ function atualizarTopo() {
     const dias = Math.max(0, Math.floor((Date.now() - Date.parse(e.nasceu)) / 86400000));
     $('#idade').textContent = `${dias} dia${dias === 1 ? '' : 's'} de vida · ${e.acordadas ?? 0} acordadas` + (e.ultimaAcao?.quando ? ` · última ${quando(e.ultimaAcao.quando)}` : '');
   } else $('#idade').textContent = 'ainda não acordou';
+  const er = dados.erro;
+  const erroRecente = er?.data && (!e.ultimaAcao?.quando || er.data > e.ultimaAcao.quando);
+  $('#erro').hidden = !erroRecente;
+  if (erroRecente) $('#erro').textContent = `⚠ A acordada de ${dataCurta(er.data)} falhou. ${er.dica ?? ''} (${er.mensagem})`;
 }
 
 // ---------------------------------------------------------------- cronômetro da próxima acordada
