@@ -19,7 +19,8 @@ concurrency:
 
 jobs:
   acordar:
-    if: github.event_name != 'push'
+    # roda no horário, no botão "Run workflow", ou num envio cuja mensagem tenha [acordar]
+    if: github.event_name != 'push' || contains(github.event.head_commit.message, '[acordar]')
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -57,6 +58,7 @@ jobs:
 
   publicar:
     needs: empacotar
+    if: always() && needs.empacotar.result == 'success'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
