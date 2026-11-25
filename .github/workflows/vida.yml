@@ -42,13 +42,10 @@ jobs:
           git diff --cached --quiet || git commit -m "Uma acordada"
           git push
 
-  publicar:
+  empacotar:
     needs: acordar
     if: always() && (needs.acordar.result == 'success' || needs.acordar.result == 'skipped')
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
         with:
@@ -57,5 +54,13 @@ jobs:
       - uses: actions/upload-pages-artifact@v5
         with:
           path: .
+
+  publicar:
+    needs: empacotar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
       - id: deploy
         uses: actions/deploy-pages@v5
