@@ -173,9 +173,31 @@
     "origem": {
       "tipo": "pensamento"
     },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": []
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-26T22:06:21.515Z",
+        "busca": "como os fotons viajam pelo espaco",
+        "resposta": "Eu li sobre como essas partículas viajam por um lugar chamado espaço de twistor, usando números complexos e equações cheias de letras. Descobri também que o espaço e o tempo formam uma coisa só chamada continuum espaço-tempo. Entendi os nomes e as ideias principais, mas os cálculos com matrizes continuam um mistério profundo para mim.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Espaço Twistor",
+            "url": "https://pt.wikipedia.org/wiki/Espa%C3%A7o_Twistor",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Espaço-tempo",
+            "url": "https://pt.wikipedia.org/wiki/Espa%C3%A7o-tempo",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611262206210"
+      }
+    ],
+    "filhas": [
+      "q202611262206211"
+    ]
   },
   {
     "id": "q202611261637332",
@@ -185,9 +207,31 @@
       "tipo": "resposta",
       "texto": "O que é a bola de luz quente no céu?"
     },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": [],
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-26T22:06:21.515Z",
+        "busca": "O que significa fundir núcleos?",
+        "resposta": "Li sobre o que é fundir núcleos e descobri que é quando pedacinhos bem pequenininhos lá dentro das coisas se juntam para formar algo maior. Esse encontro precisa de muito calor e aperta tudo com força, liberando uma energia gigante. Acontece muito lá longe, nas estrelas, transformando elementos leves em outros mais pesados.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Fusão nuclear do hélio",
+            "url": "https://pt.wikipedia.org/wiki/Fus%C3%A3o_nuclear_do_h%C3%A9lio",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Fusão nuclear",
+            "url": "https://pt.wikipedia.org/wiki/Fus%C3%A3o_nuclear",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611262206212"
+      }
+    ],
+    "filhas": [
+      "q202611262206213"
+    ],
     "pai": "q202611252042080"
   },
   {
@@ -198,8 +242,28 @@
       "tipo": "resposta",
       "texto": "O que são essas coisinhas coloridas e cheirosas no chão?"
     },
-    "status": "aguardando",
-    "tentativas": [],
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-26T22:06:21.515Z",
+        "busca": "O que são angiospermas?",
+        "resposta": "Fui pesquisar o que são angiospermas e descobri que são plantas com flores e frutos. A enciclopédia diz que as sementes ficam guardadas dentro desses frutos.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Angiosperma",
+            "url": "https://pt.wikipedia.org/wiki/Angiosperma",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Flor",
+            "url": "https://pt.wikipedia.org/wiki/Flor",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611262206214"
+      }
+    ],
     "filhas": [],
     "pai": "q202611252042081"
   },
@@ -215,5 +279,31 @@
     "tentativas": [],
     "filhas": [],
     "pai": "q202611260258290"
+  },
+  {
+    "id": "q202611262206211",
+    "data": "2026-11-26T22:06:21.515Z",
+    "texto": "O que são números complexos e matrizes de Pauli?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Como os fótons viajam pelo espaço"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": [],
+    "pai": "q202611261637330"
+  },
+  {
+    "id": "q202611262206213",
+    "data": "2026-11-26T22:06:21.515Z",
+    "texto": "Como um pedacinho tão pequeno consegue guardar tanta energia?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que significa fundir núcleos?"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": [],
+    "pai": "q202611261637332"
   }
 ]

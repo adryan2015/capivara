@@ -74,5 +74,39 @@
       "tempo": "sol"
     },
     "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-26T22:06:21.515Z",
+    "acao": "responder",
+    "tema": "Como os fótons viajam pelo espaço",
+    "porque": "Vou usar o computador para tentar entender como essas partinhas de luz chegam até aqui.",
+    "pensamento": "Já tenho muitas perguntas anotadas e preciso tentar resolver pelo menos uma delas antes de seguir em frente.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-26T22:06:21.515Z",
+    "acao": "responder",
+    "tema": "O que significa fundir núcleos?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-26T22:06:21.515Z",
+    "acao": "responder",
+    "tema": "O que são angiospermas?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta"
   }
 ]

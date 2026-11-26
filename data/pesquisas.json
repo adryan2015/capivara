@@ -125,5 +125,103 @@
       "q202611261637336"
     ],
     "foco": "a bola de luz no céu"
+  },
+  {
+    "id": "p202611262206210",
+    "data": "2026-11-26T22:06:21.515Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611261637330",
+    "tema": "Como os fótons viajam pelo espaço",
+    "porque": "Vou usar o computador para tentar entender como essas partinhas de luz chegam até aqui.",
+    "busca": "como os fotons viajam pelo espaco",
+    "buscas": [
+      "como os fotons viajam pelo espaco"
+    ],
+    "resumo": "Os textos explicam o espaço de twistor, que ajuda a conceituar como os fótons viajam usando quatro números complexos, e o modelo de espaço-tempo de Minkowski.",
+    "aprendi": [
+      "O espaço de twistor ajuda a entender como os fótons viajam pelo espaço usando números complexos.",
+      "O espaço e o tempo podem ser fundidos em um único continuum quadridimensional chamado espaço-tempo.",
+      "A trajetória de uma partícula através do espaço-tempo é chamada de linha de universo."
+    ],
+    "fontes": [
+      {
+        "titulo": "Espaço Twistor",
+        "url": "https://pt.wikipedia.org/wiki/Espa%C3%A7o_Twistor",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Espaço-tempo",
+        "url": "https://pt.wikipedia.org/wiki/Espa%C3%A7o-tempo",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611262206211"
+    ],
+    "foco": "a bola de luz no céu"
+  },
+  {
+    "id": "p202611262206212",
+    "data": "2026-11-26T22:06:21.515Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611261637332",
+    "tema": "O que significa fundir núcleos?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "O que significa fundir núcleos?",
+    "buscas": [
+      "O que significa fundir núcleos?"
+    ],
+    "resumo": "A fusão nuclear junta núcleos atômicos sob alta temperatura e pressão, liberando imensa quantidade de energia e formando novos elementos.",
+    "aprendi": [
+      "Fundir núcleos exige vencer uma grande barreira de repulsão entre eles.",
+      "Esse processo acontece nas estrelas e libera muita energia."
+    ],
+    "fontes": [
+      {
+        "titulo": "Fusão nuclear do hélio",
+        "url": "https://pt.wikipedia.org/wiki/Fus%C3%A3o_nuclear_do_h%C3%A9lio",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Fusão nuclear",
+        "url": "https://pt.wikipedia.org/wiki/Fus%C3%A3o_nuclear",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611262206213"
+    ],
+    "foco": "a bola de luz no céu"
+  },
+  {
+    "id": "p202611262206214",
+    "data": "2026-11-26T22:06:21.515Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611261637334",
+    "tema": "O que são angiospermas?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "O que são angiospermas?",
+    "buscas": [
+      "O que são angiospermas?"
+    ],
+    "resumo": "Angiospermas são plantas terrestres muito diversas que produzem flores, frutos e sementes.",
+    "aprendi": [
+      "As angiospermas têm sementes protegidas dentro de frutos.",
+      "As flores são órgãos reprodutivos dessas plantas."
+    ],
+    "fontes": [
+      {
+        "titulo": "Angiosperma",
+        "url": "https://pt.wikipedia.org/wiki/Angiosperma",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Flor",
+        "url": "https://pt.wikipedia.org/wiki/Flor",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [],
+    "foco": "a bola de luz no céu"
   }
 ]
