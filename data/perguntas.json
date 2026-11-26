@@ -93,5 +93,16 @@
     "status": "aguardando",
     "tentativas": [],
     "filhas": []
+  },
+  {
+    "id": "q202611261258040",
+    "data": "2026-11-26T12:58:04.453Z",
+    "texto": "Por que essas hastes coloridas com cheiro doce apareceram do nada no chão?",
+    "origem": {
+      "tipo": "pensamento"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": []
   }
 ]

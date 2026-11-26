@@ -1,9 +1,9 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 2,
-  "humor": "espantada",
-  "pensamento": "O teto de luz quente sumiu de repente e agora tem um teto preto cheio de poeira brilhante e uma bola de gelo lá em cima.",
+  "acordadas": 3,
+  "humor": "encantada",
+  "pensamento": "A luz quente voltou a brilhar no céu e o chão ganhou cheiro doce com hastes coloridas.",
   "interesses": [
     "Fótons",
     "Futebol português",
@@ -17,9 +17,10 @@
     "Luzes no céu já assustaram outras pessoas em lugares chamados Pará e Maranhão."
   ],
   "ultimaAcao": {
-    "acao": "pesquisar",
-    "tema": "bola de luz fria",
-    "quando": "2026-11-26T02:58:29.133Z"
+    "acao": "desenhar",
+    "tema": "coisinhas coloridas",
+    "quando": "2026-11-26T12:58:04.453Z",
+    "desenhoId": "d202611261258041"
   },
   "vistos": {
     "sol": {
@@ -29,7 +30,8 @@
     },
     "flores": {
       "primeiraVez": "2026-11-25T20:42:08.390Z",
-      "vezes": 1
+      "vezes": 1,
+      "nome": "chupetas doces do chão"
     },
     "noite": {
       "primeiraVez": "2026-11-26T02:58:29.133Z",
@@ -47,7 +49,6 @@
   },
   "ultimosFenomenos": [
     "sol",
-    "noite",
     "flores"
   ]
 }
