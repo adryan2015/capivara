@@ -22,30 +22,6 @@
     "filhas": []
   },
   {
-    "id": "q202611252042083",
-    "data": "2026-11-25T20:42:08.390Z",
-    "texto": "O que é um 'Sporting' e por que ele roubava jogadores?",
-    "origem": {
-      "tipo": "pesquisa",
-      "texto": "bola de luz quente"
-    },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": []
-  },
-  {
-    "id": "q202611252042084",
-    "data": "2026-11-25T20:42:08.390Z",
-    "texto": "Como os fótons conseguem viajar tão rápido sem ter massa?",
-    "origem": {
-      "tipo": "pesquisa",
-      "texto": "bola de luz quente"
-    },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": []
-  },
-  {
     "id": "q202611260258290",
     "data": "2026-11-26T02:58:29.133Z",
     "texto": "O que é essa bola de luz fria e esbranquiçada no céu escuro?",
@@ -53,42 +29,6 @@
       "tipo": "observacao",
       "fenomeno": "noite",
       "primeiraVez": true
-    },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": []
-  },
-  {
-    "id": "q202611260258292",
-    "data": "2026-11-26T02:58:29.133Z",
-    "texto": "O que é uma telenovela e por que ela tem tantas pessoas brigando?",
-    "origem": {
-      "tipo": "pesquisa",
-      "texto": "bola de luz fria"
-    },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": []
-  },
-  {
-    "id": "q202611260258293",
-    "data": "2026-11-26T02:58:29.133Z",
-    "texto": "Por que as luzes do céu que chamam de chupa-chupa assustam tanto os outros?",
-    "origem": {
-      "tipo": "pesquisa",
-      "texto": "bola de luz fria"
-    },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": []
-  },
-  {
-    "id": "q202611260258294",
-    "data": "2026-11-26T02:58:29.133Z",
-    "texto": "Onde fica Angra dos Reis e por que tem tanta gente lá?",
-    "origem": {
-      "tipo": "pesquisa",
-      "texto": "bola de luz fria"
     },
     "status": "aguardando",
     "tentativas": [],

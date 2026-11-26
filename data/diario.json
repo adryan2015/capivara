@@ -8,7 +8,8 @@
     "clima": {
       "estacao": "primavera",
       "tempo": "sol"
-    }
+    },
+    "resultado": "(pesquisa apagada: a busca trouxe assuntos que não tinham nada a ver)"
   },
   {
     "data": "2026-11-26T02:58:29.133Z",
@@ -25,17 +26,7 @@
         "chave": "noite",
         "nomeDela": "bola de luz fria"
       }
-    ]
-  },
-  {
-    "data": "2026-11-26T12:58:04.453Z",
-    "acao": "desenhar",
-    "tema": "coisinhas coloridas",
-    "porque": "Quero registrar no mural essas hastes com cheiro doce que brotaram de repente.",
-    "pensamento": "A luz quente voltou a brilhar no céu e o chão ganhou cheiro doce com hastes coloridas.",
-    "clima": {
-      "estacao": "primavera",
-      "tempo": "sol"
-    }
+    ],
+    "resultado": "(pesquisa apagada: a busca trouxe assuntos que não tinham nada a ver)"
   }
 ]

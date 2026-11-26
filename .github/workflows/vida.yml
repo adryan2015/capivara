@@ -2,10 +2,12 @@ name: Vida
 
 on:
   schedule:
-    - cron: "27 * * * *"     # acorda toda hora, no minuto 27 (se mudar, mude também RITMO em app.js)
+    # O GitHub costuma pular horários agendados. Por isso ele "bate na porta" 4 vezes por hora,
+    # e o cérebro decide: se ela agiu há menos de 50 min, volta a dormir sem gastar nada.
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:          # botão "Run workflow" para acordar na hora
   push:
-    branches: [main]          # republica o site quando você muda algo
+    branches: [main]          # republica o site quando você muda algo ([acordar] na mensagem também acorda)
 
 permissions:
   contents: write
@@ -19,33 +21,38 @@ concurrency:
 
 jobs:
   acordar:
-    # roda no horário, no botão "Run workflow", ou num envio cuja mensagem tenha [acordar]
     if: github.event_name != 'push' || contains(github.event.head_commit.message, '[acordar]')
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
+    outputs:
+      mudou: ${{ steps.cerebro.outputs.mudou }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
         with:
           node-version: 22
       - name: Pensar e agir
+        id: cerebro
         run: node brain/cerebro.mjs
         env:
+          FORCAR: ${{ github.event_name != 'schedule' }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GROQ_MODEL: ${{ vars.GROQ_MODEL }}
       - name: Guardar memória
+        if: steps.cerebro.outputs.mudou == 'true'
         run: |
-          git config user.name "quartinho"
+          git config user.name "capivara"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data drawings
           git diff --cached --quiet || git commit -m "Uma acordada"
+          git pull --rebase
           git push
 
   empacotar:
     needs: acordar
-    if: always() && (needs.acordar.result == 'success' || needs.acordar.result == 'skipped')
+    if: always() && (needs.acordar.result == 'skipped' || (needs.acordar.result == 'success' && needs.acordar.outputs.mudou == 'true'))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5

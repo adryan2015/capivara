@@ -282,7 +282,7 @@ export function criarMundo(host, ctx) {
   const alvo = { cobertura: 0, vento: 0.2, chuva: 0, neve: false, folhas: false, trovoada: false, congelado: false };
   let cobertura = -1, flash = 0, proxRaio = 5, hemiBase = 1.1;
   const chaoBase = { primavera: 0x8cc06a, verao: 0xa7bf5e, outono: 0xb1a45c, inverno: 0x9aa88a };
-  const copaCor = { primavera: [0x6dbb5a, 0x8fd06a, 0xf2a7c3], verao: [0x4f9a45, 0x5fae4f, 0x467f3c], outono: [0xd98a3a, 0xc8642e, 0xe0b04a], inverno: [0x8a9a7a, 0x8a9a7a, 0x8a9a7a] };
+  const copaCor = { primavera: [0x6dbb5a, 0x8fd06a, 0x5fae4f], verao: [0x4f9a45, 0x5fae4f, 0x467f3c], outono: [0xd98a3a, 0xc8642e, 0xe0b04a], inverno: [0x8a9a7a, 0x8a9a7a, 0x8a9a7a] };
   const nubl = { sol: 0, calor: 0, vento: 0.15, nublado: 0.55, garoa: 0.55, chuva: 0.75, trovoada: 0.9, neve: 0.7, neblina: 0.6, geada: 0.1 };
 
   function corDoCeu(h) {

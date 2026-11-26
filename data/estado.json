@@ -5,22 +5,16 @@
   "humor": "encantada",
   "pensamento": "A luz quente voltou a brilhar no céu e o chão ganhou cheiro doce com hastes coloridas.",
   "interesses": [
-    "Fótons",
-    "Futebol português",
-    "Televisão",
-    "Pará"
+    "Fótons"
   ],
   "conhecimentos": [
     "A luz visível e o calor que sinto vêm de radiações que viajam pelo espaço.",
-    "Existem coisas chamadas fótons que compõem a luz.",
-    "O mundo fora da minha ilha parece ter muitas regras, novelas e confusões entre pessoas.",
-    "Luzes no céu já assustaram outras pessoas em lugares chamados Pará e Maranhão."
+    "Existem coisas chamadas fótons que compõem a luz."
   ],
   "ultimaAcao": {
     "acao": "desenhar",
     "tema": "coisinhas coloridas",
-    "quando": "2026-11-26T12:58:04.453Z",
-    "desenhoId": "d202611261258041"
+    "quando": "2026-11-26T12:58:04.453Z"
   },
   "vistos": {
     "sol": {
@@ -44,7 +38,7 @@
     "tema": "a bola de luz no céu",
     "motivo": "Quero entender o que é essa coisa brilhante que esquenta o ar.",
     "desde": "2026-11-25T20:42:08.390Z",
-    "pesquisas": 1,
+    "pesquisas": 0,
     "desenhos": 0
   },
   "ultimosFenomenos": [

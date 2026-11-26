@@ -8,7 +8,7 @@ const URLP = new URLSearchParams(location.search);
 const DEMO = URLP.has('demo');
 const $ = (s) => document.querySelector(s);
 const OCUPADO_MIN = 25;   // depois de uma acordada, ela passa ~25 min fazendo aquilo
-const RITMO = { minuto: 27, horas: 1 }; // igual ao cron de .github/workflows/vida.yml
+const RITMO = { minutos: [7, 22, 37, 52], descanso: 50 }; // igual ao cron de .github/workflows/vida.yml e ao cérebro
 const FUSO = 'America/Sao_Paulo';
 
 let dados = { estado: {}, pesquisas: [], perguntas: [], desenhos: [], diario: [], erro: null };
@@ -187,22 +187,25 @@ function atualizarTopo() {
 }
 
 // ---------------------------------------------------------------- cronômetro da próxima acordada
-function proximaAcordada(agora = new Date()) {
-  const d = new Date(agora);
-  d.setUTCMinutes(RITMO.minuto, 0, 0);
-  while (d <= agora || d.getUTCHours() % RITMO.horas) d.setUTCHours(d.getUTCHours() + 1);
+// O GitHub "bate na porta" nos minutos 7, 22, 37 e 52 de cada hora; ela só levanta se a última ação foi há 50 min ou mais.
+function proximaAcordada() {
+  const ultima = Date.parse(dados.estado?.ultimaAcao?.quando ?? '') || 0;
+  const d = new Date(Math.max(Date.now(), ultima + RITMO.descanso * 60000));
+  d.setUTCSeconds(0, 0);
+  while (!RITMO.minutos.includes(d.getUTCMinutes())) d.setTime(d.getTime() + 60000);
   return d;
 }
 function atualizarRelogio() {
-  const agora = new Date(), prox = proximaAcordada(agora);
-  const anterior = new Date(prox.getTime() - RITMO.horas * 3600000);
-  const ultima = Date.parse(dados.estado?.ultimaAcao?.quando ?? 0) || 0;
-  const atrasada = !DEMO && dados.estado?.nasceu && ultima < anterior.getTime() - 60000 && agora - anterior < 45 * 60000;
-  const s = Math.max(0, Math.floor((prox - agora) / 1000));
+  const agora = new Date();
+  const ultima = Date.parse(dados.estado?.ultimaAcao?.quando ?? '') || 0;
+  const prevista = new Date(proximaAcordada());
+  // passou da hora e ainda não acordou: o GitHub atrasou (é comum), então pode ser a qualquer momento
+  const atrasada = !DEMO && ultima && agora - (ultima + RITMO.descanso * 60000) > 20 * 60000;
+  const s = Math.max(0, Math.floor((prevista - agora) / 1000));
   const hhmmss = `${Math.floor(s / 3600)}:${String(Math.floor(s / 60) % 60).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
   $('#relogio').replaceChildren(...(atrasada
-    ? ['⏳ acordando agora…', el('strong', {}, 'pode levar uns minutos')]
-    : ['⏰ próxima acordada em', el('strong', {}, hhmmss)]));
+    ? ['⏳ pode acordar', el('strong', {}, 'a qualquer momento')]
+    : ['⏰ próxima acordada em', el('strong', {}, `~${hhmmss}`)]));
 }
 
 // ---------------------------------------------------------------- abas
@@ -303,7 +306,7 @@ function abaPesquisas() {
     const origem = p.perguntaId && porId(dados.perguntas, p.perguntaId);
     return el('article', { class: 'cartao' }, el('details', { open: i === 0 },
       el('summary', {}, el('h3', {}, p.tema, ' ', p.foco && el('span', { class: 'selo foco' }, 'investigação')),
-        el('span', { class: 'meta' }, `${dataCurta(p.data)} · ${quando(p.data)}${p.busca ? ` · buscou "${p.busca}"` : ''}`)),
+        el('span', { class: 'meta' }, `${dataCurta(p.data)} · ${quando(p.data)}${p.buscas?.length ? ` · buscou ${p.buscas.map((b) => `"${b}"`).join(' → ')}` : p.busca ? ` · buscou "${p.busca}"` : ''}`)),
       origem && el('p', { class: 'meta' }, 'Tentando responder: ', el('button', { class: 'linkbtn', onclick: () => abrirPergunta(origem.id) }, origem.texto)),
       p.porque && el('p', { class: 'porque' }, `Por quê: ${p.porque}`),
       p.resumo && el('p', {}, p.resumo),
