@@ -21,10 +21,25 @@
           }
         ],
         "pesquisaId": "p202611261621250"
+      },
+      {
+        "data": "2026-11-26T16:37:33.976Z",
+        "busca": "O que é a bola de luz quente no céu?",
+        "resposta": "Li sobre o Sol e descobri que ele transforma hidrogênio em hélio para criar toda aquela luz e calor. Mas o texto fala que isso acontece por meio de uma \"fusão de núcleos\", e eu ainda não faço ideia de como núcleos conseguem se fundir na prática.",
+        "satisfeito": false,
+        "fontes": [
+          {
+            "titulo": "Sol",
+            "url": "https://pt.wikipedia.org/wiki/Sol",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611261637331"
       }
     ],
     "filhas": [
-      "q202611261621251"
+      "q202611261621251",
+      "q202611261637332"
     ]
   },
   {
@@ -34,9 +49,31 @@
     "origem": {
       "tipo": "pensamento"
     },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": []
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-26T16:37:33.976Z",
+        "busca": "O que são essas coisinhas coloridas e cheirosas no chão? → flor",
+        "resposta": "Pesquisei aquelas coisinhas coloridas e cheirosas no chão e descobri que elas se chamam flores. O computador me disse que são estruturas de plantas usadas para reprodução e que guardam sementes. Agora já sei o nome e para que servem, então estou satisfeita com essa resposta.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Flor",
+            "url": "https://pt.wikipedia.org/wiki/Flor",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Angiosperma",
+            "url": "https://pt.wikipedia.org/wiki/Angiosperma",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611261637333"
+      }
+    ],
+    "filhas": [
+      "q202611261637334"
+    ]
   },
   {
     "id": "q202611260258290",
@@ -47,9 +84,26 @@
       "fenomeno": "noite",
       "primeiraVez": true
     },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": []
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-26T16:37:33.976Z",
+        "busca": "O que é essa bola de luz fria e esbranquiçada no céu escuro? → Lua",
+        "resposta": "Li que aquela bola de luz fria e esbranquiçada é chamada de Lua, um satélite natural que orbita a Terra. O texto diz que ela se formou de detritos após um impacto gigante antigo e tem montanhas e crateras, mas fiquei curiosa sobre como ela brilha tanto se a superfície dela é escura como asfalto.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Lua",
+            "url": "https://pt.wikipedia.org/wiki/Lua",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611261637335"
+      }
+    ],
+    "filhas": [
+      "q202611261637336"
+    ]
   },
   {
     "id": "q202611261258040",
@@ -58,8 +112,29 @@
     "origem": {
       "tipo": "pensamento"
     },
-    "status": "aguardando",
-    "tentativas": [],
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-26T16:37:33.976Z",
+        "busca": "O que são essas coisinhas coloridas e cheirosas no chão? → flor",
+        "resposta": "Essas hastes coloridas com cheiro doce que aparecem no chão são flores, órgãos de plantas formados por folhas modificadas que servem para a reprodução.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Flor",
+            "url": "https://pt.wikipedia.org/wiki/Flor",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Angiosperma",
+            "url": "https://pt.wikipedia.org/wiki/Angiosperma",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611261637333",
+        "deCarona": true
+      }
+    ],
     "filhas": []
   },
   {
@@ -70,9 +145,75 @@
       "tipo": "resposta",
       "texto": "O que é a bola de luz quente no céu?"
     },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-26T16:37:33.976Z",
+        "busca": "O que é a bola de luz quente no céu?",
+        "resposta": "Ainda não entendi direito o que é a fusão de núcleos na prática, só sei que é como o Sol cria sua energia.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Sol",
+            "url": "https://pt.wikipedia.org/wiki/Sol",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611261637331",
+        "deCarona": true
+      }
+    ],
+    "filhas": [],
+    "pai": "q202611252042080"
+  },
+  {
+    "id": "q202611261637330",
+    "data": "2026-11-26T16:37:33.976Z",
+    "texto": "Como os fótons viajam pelo espaço",
+    "origem": {
+      "tipo": "pensamento"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": []
+  },
+  {
+    "id": "q202611261637332",
+    "data": "2026-11-26T16:37:33.976Z",
+    "texto": "O que significa fundir núcleos?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que é a bola de luz quente no céu?"
+    },
     "status": "aguardando",
     "tentativas": [],
     "filhas": [],
     "pai": "q202611252042080"
+  },
+  {
+    "id": "q202611261637334",
+    "data": "2026-11-26T16:37:33.976Z",
+    "texto": "O que são angiospermas?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que são essas coisinhas coloridas e cheirosas no chão?"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": [],
+    "pai": "q202611252042081"
+  },
+  {
+    "id": "q202611261637336",
+    "data": "2026-11-26T16:37:33.976Z",
+    "texto": "Se a superfície da Lua é escura como asfalto, por que ela brilha tanto no escuro?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que é essa bola de luz fria e esbranquiçada no céu escuro?"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": [],
+    "pai": "q202611260258290"
   }
 ]

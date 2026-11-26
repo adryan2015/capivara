@@ -1,21 +1,24 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 4,
+  "acordadas": 5,
   "humor": "curiosa",
-  "pensamento": "A luz quente continua me chamando lá do alto e eu quero saber do que ela é feita de verdade.",
+  "pensamento": "Já sei bastante sobre o Sol, mas quero entender melhor essas partinhas de luz que viajam até aqui. Vou voltar ao computador para pesquisar mais sobre os fótons.",
   "interesses": [
     "Fótons"
   ],
   "conhecimentos": [
     "A luz visível e o calor que sinto vêm de radiações que viajam pelo espaço.",
     "Existem coisas chamadas fótons que compõem a luz.",
-    "O Sol é uma estrela gigante feita de gases que gera muita energia e calor."
+    "O Sol é uma estrela gigante feita de gases que gera muita energia e calor.",
+    "A bola de luz quente no céu é o Sol, uma estrela que gera calor unindo hidrogênio.",
+    "Flores são partes de plantas chamadas angiospermas e produzem sementes.",
+    "A Lua é o satélite natural da Terra que brilha no céu escuro e tem fases regulares."
   ],
   "ultimaAcao": {
     "acao": "responder",
     "tema": "O que é a bola de luz quente no céu?",
-    "quando": "2026-11-26T16:21:25.815Z"
+    "quando": "2026-11-26T16:37:33.976Z"
   },
   "vistos": {
     "sol": {
@@ -39,7 +42,7 @@
     "tema": "a bola de luz no céu",
     "motivo": "Quero entender o que é essa coisa brilhante que esquenta o ar.",
     "desde": "2026-11-25T20:42:08.390Z",
-    "pesquisas": 1,
+    "pesquisas": 4,
     "desenhos": 0
   },
   "ultimosFenomenos": [

@@ -27,5 +27,103 @@
       "q202611261621251"
     ],
     "foco": "a bola de luz no céu"
+  },
+  {
+    "id": "p202611261637331",
+    "data": "2026-11-26T16:37:33.976Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611252042080",
+    "tema": "O que é a bola de luz quente no céu?",
+    "porque": "Quero entender como os fótons saem daquela bola de luz quente no céu e chegam até a minha ilha.",
+    "busca": "O que é a bola de luz quente no céu?",
+    "buscas": [
+      "O que é a bola de luz quente no céu?"
+    ],
+    "resumo": "O Sol é a estrela central do Sistema Solar, composto principalmente de hidrogênio e hélio, e gera energia juntando núcleos de hidrogênio.",
+    "aprendi": [
+      "O Sol é composto por hidrogênio e hélio.",
+      "A energia do Sol vem da transformação de hidrogênio em hélio."
+    ],
+    "fontes": [
+      {
+        "titulo": "Sol",
+        "url": "https://pt.wikipedia.org/wiki/Sol",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611261637332"
+    ],
+    "respondeuTambem": [
+      "q202611261621251"
+    ],
+    "foco": "a bola de luz no céu"
+  },
+  {
+    "id": "p202611261637333",
+    "data": "2026-11-26T16:37:33.976Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611252042081",
+    "tema": "O que são essas coisinhas coloridas e cheirosas no chão?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "flor",
+    "buscas": [
+      "O que são essas coisinhas coloridas e cheirosas no chão?",
+      "flor"
+    ],
+    "resumo": "As flores são estruturas reprodutivas de plantas angiospérmicas que produzem sementes e frutos, existindo em grande diversidade no planeta.",
+    "aprendi": [
+      "Coisinhas coloridas e cheirosas no chão se chamam flores.",
+      "As flores servem para a reprodução das plantas e dão origem a sementes."
+    ],
+    "fontes": [
+      {
+        "titulo": "Flor",
+        "url": "https://pt.wikipedia.org/wiki/Flor",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Angiosperma",
+        "url": "https://pt.wikipedia.org/wiki/Angiosperma",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611261637334"
+    ],
+    "respondeuTambem": [
+      "q202611261258040"
+    ],
+    "foco": "a bola de luz no céu"
+  },
+  {
+    "id": "p202611261637335",
+    "data": "2026-11-26T16:37:33.976Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611260258290",
+    "tema": "O que é essa bola de luz fria e esbranquiçada no céu escuro?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "Lua",
+    "buscas": [
+      "O que é essa bola de luz fria e esbranquiçada no céu escuro?",
+      "Lua"
+    ],
+    "resumo": "A Lua é o único satélite natural da Terra, formado por detritos antigos e conhecido por suas fases e crateras.",
+    "aprendi": [
+      "A bola de luz fria no céu chama-se Lua e é um satélite natural da Terra.",
+      "A superfície da Lua é escura como asfalto, mesmo parecendo brilhante.",
+      "A Lua se formou a partir de detritos de um impacto gigantesco com a Terra."
+    ],
+    "fontes": [
+      {
+        "titulo": "Lua",
+        "url": "https://pt.wikipedia.org/wiki/Lua",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611261637336"
+    ],
+    "foco": "a bola de luz no céu"
   }
 ]

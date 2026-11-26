@@ -40,5 +40,39 @@
       "tempo": "sol"
     },
     "resultado": "ainda não ficou satisfeita"
+  },
+  {
+    "data": "2026-11-26T16:37:33.976Z",
+    "acao": "responder",
+    "tema": "O que é a bola de luz quente no céu?",
+    "porque": "Quero entender como os fótons saem daquela bola de luz quente no céu e chegam até a minha ilha.",
+    "pensamento": "Já sei bastante sobre o Sol, mas quero entender melhor essas partinhas de luz que viajam até aqui. Vou voltar ao computador para pesquisar mais sobre os fótons.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ainda não ficou satisfeita e, de quebra, respondeu mais 1"
+  },
+  {
+    "data": "2026-11-26T16:37:33.976Z",
+    "acao": "responder",
+    "tema": "O que são essas coisinhas coloridas e cheirosas no chão?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta e, de quebra, respondeu mais 1"
+  },
+  {
+    "data": "2026-11-26T16:37:33.976Z",
+    "acao": "responder",
+    "tema": "O que é essa bola de luz fria e esbranquiçada no céu escuro?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta"
   }
 ]
