@@ -8,7 +8,7 @@ const URLP = new URLSearchParams(location.search);
 const DEMO = URLP.has('demo');
 const $ = (s) => document.querySelector(s);
 const OCUPADO_MIN = 25;   // depois de uma acordada, ela passa ~25 min fazendo aquilo
-const RITMO = { minutos: [7, 22, 37, 52], descanso: 50 }; // igual ao cron de .github/workflows/vida.yml e ao cérebro
+const INTERVALO_MIN = 60; // o "relógio" de .github/workflows/vida.yml chama a próxima acordada ~1 h depois da anterior
 const FUSO = 'America/Sao_Paulo';
 
 let dados = { estado: {}, pesquisas: [], perguntas: [], desenhos: [], diario: [], erro: null };
@@ -96,7 +96,17 @@ function atividade() {
   const u = dados.estado?.ultimaAcao;
   if (!u?.quando) return null;
   const min = (Date.now() - Date.parse(u.quando)) / 60000;
-  return min >= 0 && min < OCUPADO_MIN ? { ...u, progresso: min / (OCUPADO_MIN * 0.85) } : null;
+  if (min < 0 || min >= OCUPADO_MIN) return null;
+  // pesquisou e depois desenhou: primeira metade no computador, segunda na mesinha
+  if (u.desenhoId && u.acao !== 'desenhar') {
+    const meio = OCUPADO_MIN / 2;
+    if (min >= meio) {
+      const d = porId(dados.desenhos, u.desenhoId);
+      return { acao: 'desenhar', tema: d?.titulo ?? '', desenhoId: u.desenhoId, quando: u.quando, progresso: (min - meio) / (meio * 0.85) };
+    }
+    return { ...u, progresso: min / (meio * 0.85) };
+  }
+  return { ...u, progresso: min / (OCUPADO_MIN * 0.85) };
 }
 function desenhoNaMesa() {
   const oc = atividade();
@@ -187,20 +197,17 @@ function atualizarTopo() {
 }
 
 // ---------------------------------------------------------------- cronômetro da próxima acordada
-// O GitHub "bate na porta" nos minutos 7, 22, 37 e 52 de cada hora; ela só levanta se a última ação foi há 50 min ou mais.
+// Ela acorda ~1 h depois da última acordada.
 function proximaAcordada() {
-  const ultima = Date.parse(dados.estado?.ultimaAcao?.quando ?? '') || 0;
-  const d = new Date(Math.max(Date.now(), ultima + RITMO.descanso * 60000));
-  d.setUTCSeconds(0, 0);
-  while (!RITMO.minutos.includes(d.getUTCMinutes())) d.setTime(d.getTime() + 60000);
-  return d;
+  const ultima = Date.parse(dados.estado?.ultimaAcao?.quando ?? '') || Date.now();
+  return new Date(ultima + INTERVALO_MIN * 60000);
 }
 function atualizarRelogio() {
   const agora = new Date();
   const ultima = Date.parse(dados.estado?.ultimaAcao?.quando ?? '') || 0;
   const prevista = new Date(proximaAcordada());
   // passou da hora e ainda não acordou: o GitHub atrasou (é comum), então pode ser a qualquer momento
-  const atrasada = !DEMO && ultima && agora - (ultima + RITMO.descanso * 60000) > 20 * 60000;
+  const atrasada = !DEMO && ultima && agora - prevista > 0;
   const s = Math.max(0, Math.floor((prevista - agora) / 1000));
   const hhmmss = `${Math.floor(s / 3600)}:${String(Math.floor(s / 60) % 60).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
   $('#relogio').replaceChildren(...(atrasada

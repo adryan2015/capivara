@@ -1,4 +1,4 @@
-// O cérebro. Roda sozinho na nuvem (GitHub Actions) a cada 3 horas:
+// O cérebro. Roda sozinho na nuvem (GitHub Actions) mais ou menos a cada hora:
 // olha o mundo lá fora, relê a memória, decide o que quer fazer, faz e anota tudo.
 //
 // Variáveis de ambiente:
@@ -65,8 +65,11 @@ async function pensar(prompt, tipo) {
 }
 
 // Tenta o modelo configurado e, se o Google tiver aposentado o nome, procura outro "flash" disponível na conta.
-let modeloQueFunciona = null;
+let modeloQueFunciona = null, listaDeModelos = null;
 async function modelosCandidatos() {
+  return (listaDeModelos ??= await descobrirModelos());
+}
+async function descobrirModelos() {
   const lista = [process.env.GEMINI_MODEL, 'gemini-flash-latest', 'gemini-2.5-flash', 'gemini-flash-lite-latest', 'gemini-2.5-flash-lite'].filter(Boolean);
   try {
     const r = await fetch('https://generativelanguage.googleapis.com/v1beta/models?pageSize=200', { headers: { 'x-goog-api-key': process.env.GEMINI_API_KEY } });
@@ -81,7 +84,9 @@ async function modelosCandidatos() {
   return lista;
 }
 async function gemini(prompt) {
-  const candidatos = modeloQueFunciona ? [modeloQueFunciona] : await modelosCandidatos();
+  const todos = await modelosCandidatos();
+  // começa pelo que já funcionou; se ele bater no limite do dia (429), passa para os outros
+  const candidatos = modeloQueFunciona ? [modeloQueFunciona, ...todos.filter((m) => m !== modeloQueFunciona)] : todos;
   let ultimoErro;
   for (const modelo of candidatos.slice(0, 6)) {
     const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${modelo}:generateContent`, {
@@ -183,7 +188,7 @@ Responda SOMENTE com JSON: {"relevantes":[números dos que servem, no máximo 2]
 // evita dúvidas repetidas ("quase iguais")
 const normal = (s) => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim();
 const VAZIAS = new Set(['que', 'por', 'como', 'qual', 'quais', 'essa', 'esse', 'essas', 'esses', 'isso', 'uma', 'para', 'com', 'sao', 'tem', 'dos', 'das', 'nos', 'nas', 'mais']);
-const palavras = (s) => new Set(normal(s).split(' ').filter((w) => w.length >= 3 && !VAZIAS.has(w)));
+const palavras = (s) => new Set(normal(s).split(' ').filter((w) => w.length >= 3 && !VAZIAS.has(w)).map((w) => w.slice(0, 5)));
 function parecida(a, b) {
   if (normal(a) === normal(b)) return true;
   const A = palavras(a), B = palavras(b);
@@ -228,6 +233,7 @@ async function viver() {
   await mkdir(DESENHOS, { recursive: true });
   const estado = await ler('estado', null) ?? { nome: null, nasceu: ISO, acordadas: 0, humor: 'confusa', pensamento: '', interesses: [], conhecimentos: [], ultimaAcao: null };
   estado.vistos ??= {}; estado.focosAnteriores ??= []; estado.foco ??= null; estado.ultimosFenomenos ??= [];
+  estado.semDesenhar = (estado.semDesenhar ?? 0) + 1; // acordadas desde o último desenho
   const pesquisas = await ler('pesquisas', []);
   const perguntas = await ler('perguntas', []);
   const desenhos = await ler('desenhos', []);
@@ -279,6 +285,9 @@ ${lista(pesquisas.slice(-8).map((p) => `- ${p.tema} (porque: ${p.porque}) → ${
 
 Suas dúvidas em aberto:
 ${lista(abertas.slice(-12).map((p) => `- (${p.id}) ${p.texto}${p.tentativas?.length ? ` [já tentou ${p.tentativas.length}x; na 3ª sem sucesso você desiste]` : ''}`))}
+
+Dúvidas que você já respondeu (não pergunte de novo, nem com outras palavras):
+${lista(perguntas.filter((p) => p.status === 'respondida').slice(-15).map((p) => `- ${p.texto}`))}
 
 Seus últimos desenhos (você já fez ${desenhos.length}):
 ${lista(desenhos.slice(-3).map((d) => `- "${d.titulo}": o que você achou: ${d.autocritica}`))}
@@ -347,6 +356,11 @@ Responda SOMENTE com JSON:
     });
   criarDuvidas(decisao.novas_duvidas, novos.length ? { tipo: 'observacao', fenomeno: novos[0], primeiraVez: true } : { tipo: 'pensamento' });
 
+  const jaPerguntou = () => `
+Dúvidas que você JÁ TEM ou já respondeu (uma dúvida nova não pode repetir nenhuma, nem dizer a mesma coisa com outras palavras):
+${perguntas.filter((p) => p.status !== 'aposentada').slice(-25).map((p) => `- ${p.texto}`).join('\n') || '(nenhuma)'}
+`;
+
   // uma leitura pode resolver outras dúvidas que estavam esperando
   const outrasAbertas = (excluir) => perguntas.filter((p) => estaAberta(p) && p.id !== excluir);
   const textoOutras = (excluir) => {
@@ -373,8 +387,9 @@ ${q.tentativas?.length ? `Suas tentativas anteriores:\n${q.tentativas.map((t) =>
 
 ${fontes.length ? textoFontes(fontes) : '(nada encontrado)'}
 
-Só fique satisfeita se a resposta realmente explicar sua dúvida.
-${fontes.length ? textoOutras(q.id) : ''}
+Fique satisfeita ("satisfeita": true) se agora você entende a ideia principal do que perguntou (por exemplo: descobriu o nome e o que aquilo é). Não precisa saber tudo: o que ainda faltar pode virar uma dúvida nova.
+Só fique insatisfeita se os textos não falarem do que você perguntou.
+${fontes.length ? textoOutras(q.id) : ''}${jaPerguntou()}
 Responda SOMENTE com JSON:
 {"resposta":"sua resposta, com suas palavras (2 a 5 frases). Se não deu, diga o que entendeu e o que ainda falta","satisfeita":true,"fontes_usadas":[1],"resumo":"o que você leu, em 1-2 frases","aprendi":["1 a 3 fatos"],"conhecimento":["0 a 2 frases para guardar"],"tambem_responde":[{"id":"id da dúvida","resposta":"1-3 frases"}],"novas_perguntas":["0 ou 1 dúvida nova que nasceu daqui"]}`, 'responder');
     aprender(r.conhecimento, []);
@@ -404,6 +419,34 @@ Responda SOMENTE com JSON:
   };
   const extra = {};
 
+  async function desenhar(temaD, porqueD) {
+    const numero = desenhos.length + 1;
+    const nivel = nivelDeDesenho(desenhos.length);
+    const ultimo = desenhos[desenhos.length - 1];
+    let ultimoTracos = '';
+    if (ultimo) { try { ultimoTracos = (await readFile(path.join(DESENHOS, ultimo.arquivo), 'utf8')).slice(0, 1800); } catch {} }
+    const r = await pensar(`Você foi até a mesinha desenhar "${temaD}" porque: ${porqueD}
+Este será seu desenho nº ${numero}. O papel é quadrado; as coordenadas vão de 0 a 200 (x da esquerda para a direita, y de cima para baixo).
+Cada traço é uma linha contínua feita sem levantar a caneta, dada como lista de pontos [x1,y1,x2,y2,...]. Curvas e círculos precisam de muitos pontos (um círculo tem uns 12 a 16 pontos).
+${nivel.regra}
+${desenhos.length ? `Seus últimos desenhos e o que você achou deles:\n${desenhos.slice(-3).map((d) => `- "${d.titulo}": ${d.autocritica}`).join('\n')}\nTraços do último (para você tentar melhorar algo):\n${ultimoTracos}` : 'É seu primeiro desenho. Você nunca desenhou antes.'}
+
+Responda SOMENTE com JSON:
+{"titulo":"nome curto do desenho","tracos":[{"cor":"${TINTA}","pontos":[x1,y1,x2,y2]}],"autocritica":"o que você achou do resultado, com sinceridade (1-2 frases)"}`, 'desenhar');
+    const tracos = limparTracos(r.tracos, nivel);
+    if (tracos.length) {
+      const arquivo = `${String(numero).padStart(4, '0')}.json`;
+      const id = novoId('d');
+      await writeFile(path.join(DESENHOS, arquivo), JSON.stringify({ tremor: nivel.tremor, tracos }) + '\n');
+      desenhos.push({ id, numero, data: ISO, titulo: txt(r.titulo, 80) || temaD, porque: porqueD, autocritica: txt(r.autocritica), arquivo, ...(noFoco ? { foco: estado.foco.tema } : {}) });
+      if (noFoco) estado.foco.desenhos += 1;
+      estado.semDesenhar = 0;
+      return desenhos[desenhos.length - 1];
+    }
+    return null;
+  }
+
+
   // 2. fazer
   if (acao === 'pesquisar') {
     const { fontes, buscas } = await buscar(tema, busca);
@@ -418,7 +461,7 @@ Depois de buscar (${buscas.map((b) => `"${b}"`).join(' → ')}), encontrou estes
 ${textoFontes(fontes)}
 
 Leia com calma e foque no que você queria saber. Se descobrir o nome de algo que você viu na ilha, fique feliz com isso.
-${textoOutras(null)}
+${textoOutras(null)}${jaPerguntou()}
 Responda SOMENTE com JSON:
 {"resumo":"3 a 5 frases, com suas palavras, do que você entendeu","aprendi":["3 a 5 fatos curtos"],"fontes_usadas":[1,2],"conhecimento":["1 a 3 frases curtas para guardar na memória"],"tambem_responde":[{"id":"id da dúvida","resposta":"a resposta com suas palavras (1-3 frases)"}],"novas_perguntas":["0 ou 1 dúvida que nasceu da leitura e tem a ver com o que você procurava"],"novos_interesses":["0 a 2 assuntos"],"sentimento":"como você se sentiu (1 frase)"}`, 'pesquisar');
       aprender(r.conhecimento, r.novos_interesses);
@@ -436,28 +479,8 @@ Responda SOMENTE com JSON:
   } else if (acao === 'responder') {
     entrada.resultado = await investigar(pergunta, busca, porque);
   } else if (acao === 'desenhar') {
-    const numero = desenhos.length + 1;
-    const nivel = nivelDeDesenho(desenhos.length);
-    const ultimo = desenhos[desenhos.length - 1];
-    let ultimoTracos = '';
-    if (ultimo) { try { ultimoTracos = (await readFile(path.join(DESENHOS, ultimo.arquivo), 'utf8')).slice(0, 1800); } catch {} }
-    const r = await pensar(`Você foi até a mesinha desenhar "${tema}" porque: ${porque}
-Este será seu desenho nº ${numero}. O papel é quadrado; as coordenadas vão de 0 a 200 (x da esquerda para a direita, y de cima para baixo).
-Cada traço é uma linha contínua feita sem levantar a caneta, dada como lista de pontos [x1,y1,x2,y2,...]. Curvas e círculos precisam de muitos pontos (um círculo tem uns 12 a 16 pontos).
-${nivel.regra}
-${desenhos.length ? `Seus últimos desenhos e o que você achou deles:\n${desenhos.slice(-3).map((d) => `- "${d.titulo}": ${d.autocritica}`).join('\n')}\nTraços do último (para você tentar melhorar algo):\n${ultimoTracos}` : 'É seu primeiro desenho. Você nunca desenhou antes.'}
-
-Responda SOMENTE com JSON:
-{"titulo":"nome curto do desenho","tracos":[{"cor":"${TINTA}","pontos":[x1,y1,x2,y2]}],"autocritica":"o que você achou do resultado, com sinceridade (1-2 frases)"}`, 'desenhar');
-    const tracos = limparTracos(r.tracos, nivel);
-    if (tracos.length) {
-      const arquivo = `${String(numero).padStart(4, '0')}.json`;
-      const id = novoId('d');
-      await writeFile(path.join(DESENHOS, arquivo), JSON.stringify({ tremor: nivel.tremor, tracos }) + '\n');
-      desenhos.push({ id, numero, data: ISO, titulo: txt(r.titulo, 80) || tema, porque, autocritica: txt(r.autocritica), arquivo, ...(noFoco ? { foco: estado.foco.tema } : {}) });
-      extra.desenhoId = id;
-      if (noFoco) estado.foco.desenhos += 1;
-    } else entrada.resultado = 'o desenho não saiu (amassou o papel)';
+    const d = await desenhar(tema, porque);
+    if (d) extra.desenhoId = d.id; else entrada.resultado = 'o desenho não saiu (amassou o papel)';
   }
 
   // 2b. já que está no computador, aproveita para ir atrás de outras dúvidas (até PESQUISAS_POR_CICLO no total)
@@ -479,6 +502,20 @@ Responda SOMENTE com JSON:
         break; // guarda o que já fez
       }
     }
+  }
+
+  // 2c. depois do computador, se faz tempo que não desenha, passa na mesinha e desenha algo do que leu
+  //     (assim os desenhos continuam evoluindo mesmo quando ela anda ocupada com dúvidas)
+  if ((acao === 'pesquisar' || acao === 'responder') && estado.semDesenhar >= 3) {
+    try {
+      const sobre = pesquisas.filter((p) => p.data === ISO && p.fontes?.length).map((p) => p.tema);
+      const d = await desenhar(sobre.length ? `algo do que você leu agora (${sobre.slice(0, 3).join('; ')}) ou da ilha` : 'alguma coisa da ilha', 'quis colocar no papel o que ficou na cabeça');
+      if (d) {
+        extra.desenhoId = d.id;
+        maisEntradas.push({ data: ISO, acao: 'desenhar', tema: d.titulo, porque: 'quis colocar no papel o que ficou na cabeça', clima: entrada.clima });
+        console.log(`  + desenhou: ${d.titulo}`);
+      }
+    } catch (e) { console.warn(`Não conseguiu desenhar: ${e.message}`); }
   }
 
   // 3. anotar

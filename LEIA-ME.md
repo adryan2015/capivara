@@ -6,7 +6,7 @@ Uma capivara que não sabe que é uma capivara. Ela vive numa ilhota em 3D, pesq
 
 | Parte | Onde roda | Custo |
 |---|---|---|
-| **Cérebro** (`brain/cerebro.mjs`): acorda toda hora, olha o tempo lá fora, relê a memória, decide, faz e anota | GitHub Actions | grátis (repositório público) |
+| **Cérebro** (`brain/cerebro.mjs`): acorda mais ou menos de hora em hora, olha o tempo lá fora, relê a memória, decide, faz e anota | GitHub Actions | grátis (repositório público) |
 | **Inteligência** | Google Gemini (plano gratuito) ou Groq | grátis |
 | **Pesquisa** | Wikipédia em português (e em inglês, se não achar) | grátis |
 | **Memória** (`data/*.json`, `drawings/*.json`) | dentro do próprio repositório | grátis |
@@ -28,7 +28,8 @@ Uma capivara que não sabe que é uma capivara. Ela vive numa ilhota em 3D, pesq
    - Name: `GEMINI_API_KEY`
    - Secret: a chave
 6. **Ligue o site:** *Settings → Pages → Source:* **GitHub Actions**
-7. **Acorde a capivara pela primeira vez:** aba *Actions → Vida → Run workflow*.
+7. **Ligue o despertador:** *Settings → Environments → New environment*, nome `relogio` → marque **Wait timer** e coloque `55` (minutos) → *Save protection rules*. O agendamento do GitHub pula muitos horários; este relógio é o que faz ela acordar de hora em hora.
+8. **Acorde a capivara pela primeira vez:** aba *Actions → Vida → Run workflow*.
 
 Em 1 ou 2 minutos, o mundo dela estará em `https://SEU-USUARIO.github.io/capivara/`. Salve esse endereço na tela inicial do celular.
 
@@ -42,15 +43,16 @@ Acrescente ao endereço:
 
 ## No dia a dia
 
-- **Você não precisa fazer nada.** Ela acorda toda hora (no minuto 27) e, depois de cada acordada, passa uns 25 minutos fazendo aquilo no mundo 3D. No resto do tempo ela passeia, cheira as flores, toma banho no lago, se abriga da chuva e dorme à noite.
+- **Você não precisa fazer nada.** Ela acorda mais ou menos de hora em hora. Quando vai ao computador, pesquisa até 3 dúvidas seguidas (e uma leitura pode responder várias). Se faz 3 acordadas que não desenha, passa na mesinha e desenha. Depois de cada acordada, passa uns 25 minutos fazendo aquilo no mundo 3D. No resto do tempo ela passeia, cheira as flores, toma banho no lago, se abriga da chuva e dorme à noite.
 - **Mural:** na aba Desenhos, a ★ escolhe os 5 desenhos do mural. A escolha fica salva no aparelho em que você marcou.
 - **Ver se está tudo bem:** aba *Actions* do repositório. Bolinha verde = acordou normalmente.
 - **Se o Gemini mudar as regras ou parar:** crie uma chave grátis em https://console.groq.com e salve como segredo `GROQ_API_KEY`. Se quiser trocar o modelo do Gemini, crie a variável `GEMINI_MODEL` em *Settings → Secrets and variables → Actions → Variables*.
 - **O GitHub desliga agendamentos depois de 60 dias sem atividade.** Como cada acordada salva a memória, isso não deve acontecer. Se acontecer, aparece um aviso na aba Actions, e é só clicar em "Enable workflow".
+- **Se ela parar de acordar:** confira se o ambiente `relogio` ainda tem o Wait timer de 55 min. Sem ele, a corrente para por segurança (aparece um aviso amarelo na execução) e ela só acorda pelo agendamento reserva, que o GitHub costuma pular.
 
 ## Mudar o ritmo
 
-No arquivo `.github/workflows/vida.yml`, a linha `cron: "27 * * * *"` define que ela acorda toda hora, no minuto 27. Se mudar, mude também `RITMO` em `app.js` para o cronômetro acompanhar. O tempo (sol, chuva, neve…) continua mudando a cada 3 h.
+O intervalo é o Wait timer do ambiente `relogio` (55 min + uns 5 min da própria acordada ≈ 1 h). Se mudar, mude também `INTERVALO_MIN` em `app.js` (cronômetro) e o descanso mínimo de 50 min na função `principal` de `brain/cerebro.mjs`. O tempo (sol, chuva, neve…) continua mudando a cada 3 h.
 
 ## Testar no computador sem IA
 

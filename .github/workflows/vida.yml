@@ -1,29 +1,38 @@
 name: Vida
 
+# Como ela acorda:
+#  1. "relogio": no fim de cada execução, uma etapa espera ~55 min (regra "Wait timer" do ambiente
+#     "relogio", que não gasta nada) e depois chama esta mesma automação de novo. Assim ela acorda
+#     mais ou menos de hora em hora, sem depender do agendamento do GitHub (que pula muitos horários).
+#  2. O agendamento (cron) abaixo é só um reserva: se a corrente parar por algum motivo, ele a reinicia.
+#  3. Enviar algo com [acordar] na mensagem, ou o botão "Run workflow", acorda ela na hora.
+
 on:
   schedule:
-    # O GitHub costuma pular horários agendados. Por isso ele "bate na porta" 4 vezes por hora,
-    # e o cérebro decide: se ela agiu há menos de 50 min, volta a dormir sem gastar nada.
-    - cron: "7,22,37,52 * * * *"
-  workflow_dispatch:          # botão "Run workflow" para acordar na hora
+    - cron: "17,47 * * * *"
+  workflow_dispatch:
+    inputs:
+      motivo:
+        description: "Deixe em branco para acordar agora"
+        required: false
+        default: ""
   push:
-    branches: [main]          # republica o site quando você muda algo ([acordar] na mensagem também acorda)
+    branches: [main]
 
 permissions:
   contents: write
   pages: write
   id-token: write
-  actions: read
-
-concurrency:
-  group: vida
-  cancel-in-progress: false
+  actions: write
 
 jobs:
   acordar:
     if: github.event_name != 'push' || contains(github.event.head_commit.message, '[acordar]')
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
+    concurrency:
+      group: cerebro
+      cancel-in-progress: false
     outputs:
       mudou: ${{ steps.cerebro.outputs.mudou }}
     steps:
@@ -35,7 +44,9 @@ jobs:
         id: cerebro
         run: node brain/cerebro.mjs
         env:
-          FORCAR: ${{ github.event_name != 'schedule' }}
+          # acordada pelo relógio ou pelo agendamento: o cérebro confere se já é hora (50 min de descanso)
+          # enviada por você ([acordar] ou botão): acorda na hora
+          FORCAR: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.motivo != 'relogio') }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -47,13 +58,15 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data drawings
           git diff --cached --quiet || git commit -m "Uma acordada"
-          git pull --rebase
-          git push
+          for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done
 
   empacotar:
     needs: acordar
     if: always() && (needs.acordar.result == 'skipped' || (needs.acordar.result == 'success' && needs.acordar.outputs.mudou == 'true'))
     runs-on: ubuntu-latest
+    concurrency:
+      group: site
+      cancel-in-progress: false
     steps:
       - uses: actions/checkout@v5
         with:
@@ -67,9 +80,39 @@ jobs:
     needs: empacotar
     if: always() && needs.empacotar.result == 'success'
     runs-on: ubuntu-latest
+    concurrency:
+      group: site
+      cancel-in-progress: false
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - id: deploy
         uses: actions/deploy-pages@v5
+
+  relogio:
+    needs: [acordar, publicar]
+    if: always()
+    runs-on: ubuntu-latest
+    # um relógio de cada vez: se chegar outro, ele espera na fila (e só fica 1 na fila)
+    concurrency:
+      group: relogio
+      cancel-in-progress: false
+    environment: relogio
+    steps:
+      - name: Chamar a próxima acordada
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          RUN: ${{ github.run_id }}
+        run: |
+          inicio=$(gh api "repos/$REPO/actions/runs/$RUN" --jq .run_started_at)
+          esperou=$(( ( $(date +%s) - $(date -d "$inicio" +%s) ) / 60 ))
+          echo "Esta execução começou há $esperou min."
+          # trava de segurança: se o ambiente "relogio" estiver sem o Wait timer, não dispara em sequência
+          if [ "$esperou" -lt 40 ]; then
+            echo "::warning::O ambiente 'relogio' está sem a espera (Wait timer de 55 min). A corrente parou; o agendamento reserva continua."
+            exit 0
+          fi
+          gh workflow run vida.yml --repo "$REPO" --ref main -f motivo=relogio
+          echo "Próxima acordada chamada."
