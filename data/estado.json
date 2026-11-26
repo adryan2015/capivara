@@ -1,21 +1,25 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 1,
+  "acordadas": 2,
   "humor": "espantada",
-  "pensamento": "Acabei de abrir os olhos e tudo é novo, especialmente essa luz redonda no céu que me aquece.",
+  "pensamento": "O teto de luz quente sumiu de repente e agora tem um teto preto cheio de poeira brilhante e uma bola de gelo lá em cima.",
   "interesses": [
     "Fótons",
-    "Futebol português"
+    "Futebol português",
+    "Televisão",
+    "Pará"
   ],
   "conhecimentos": [
     "A luz visível e o calor que sinto vêm de radiações que viajam pelo espaço.",
-    "Existem coisas chamadas fótons que compõem a luz."
+    "Existem coisas chamadas fótons que compõem a luz.",
+    "O mundo fora da minha ilha parece ter muitas regras, novelas e confusões entre pessoas.",
+    "Luzes no céu já assustaram outras pessoas em lugares chamados Pará e Maranhão."
   ],
   "ultimaAcao": {
     "acao": "pesquisar",
-    "tema": "bola de luz quente",
-    "quando": "2026-11-25T20:42:08.390Z"
+    "tema": "bola de luz fria",
+    "quando": "2026-11-26T02:58:29.133Z"
   },
   "vistos": {
     "sol": {
@@ -26,6 +30,11 @@
     "flores": {
       "primeiraVez": "2026-11-25T20:42:08.390Z",
       "vezes": 1
+    },
+    "noite": {
+      "primeiraVez": "2026-11-26T02:58:29.133Z",
+      "vezes": 1,
+      "nome": "bola de luz fria"
     }
   },
   "focosAnteriores": [],
@@ -33,11 +42,12 @@
     "tema": "a bola de luz no céu",
     "motivo": "Quero entender o que é essa coisa brilhante que esquenta o ar.",
     "desde": "2026-11-25T20:42:08.390Z",
-    "pesquisas": 0,
+    "pesquisas": 1,
     "desenhos": 0
   },
   "ultimosFenomenos": [
     "sol",
+    "noite",
     "flores"
   ]
 }

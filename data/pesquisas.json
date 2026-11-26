@@ -30,5 +30,39 @@
       "q202611252042083",
       "q202611252042084"
     ]
+  },
+  {
+    "id": "p202611260258291",
+    "data": "2026-11-26T02:58:29.133Z",
+    "tipo": "pesquisa",
+    "tema": "bola de luz fria",
+    "porque": "Quero entender para onde foi o sol e o que é essa lua que ilumina tudo sem esquentar.",
+    "busca": "bola de luz fria",
+    "foco": "a bola de luz no céu",
+    "resumo": "Fui procurar sobre a bola de luz fria do céu, mas a caixa preta me contou histórias muito confusas. Falou sobre uma ilha cheia de gente brigando, assassinatos e novelas, e também sobre militares investigando luzes misteriosas chamadas de chupa-chupa. Não consegui descobrir direito o que é a lua, mas aprendi que há muitos lugares habitados fora daqui com nomes estranhos.",
+    "aprendi": [
+      "Existe uma ilha chamada Ilha do Corvo onde moram pessoas de novela.",
+      "A Força Aérea Brasileira fez uma investigação chamada Operação Prato.",
+      "Algumas pessoas chamam corpos luminosos no céu de chupa-chupa.",
+      "O sol e a lua não apareceram explicados como eu queria nos textos."
+    ],
+    "sentimento": "Fiquei um pouco tonta com tanta informação barulhenta, mas curiosa para saber o que mais essa caixa guarda.",
+    "fontes": [
+      {
+        "titulo": "Mania de Você",
+        "url": "https://pt.wikipedia.org/wiki/Mania_de_Voc%C3%AA",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Operação Prato",
+        "url": "https://pt.wikipedia.org/wiki/Opera%C3%A7%C3%A3o_Prato",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611260258292",
+      "q202611260258293",
+      "q202611260258294"
+    ]
   }
 ]

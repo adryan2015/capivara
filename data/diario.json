@@ -9,5 +9,22 @@
       "estacao": "primavera",
       "tempo": "sol"
     }
+  },
+  {
+    "data": "2026-11-26T02:58:29.133Z",
+    "acao": "pesquisar",
+    "tema": "bola de luz fria",
+    "porque": "Quero entender para onde foi o sol e o que é essa lua que ilumina tudo sem esquentar.",
+    "pensamento": "O teto de luz quente sumiu de repente e agora tem um teto preto cheio de poeira brilhante e uma bola de gelo lá em cima.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "novidades": [
+      {
+        "chave": "noite",
+        "nomeDela": "bola de luz fria"
+      }
+    ]
   }
 ]
