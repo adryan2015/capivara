@@ -28,5 +28,17 @@
       }
     ],
     "resultado": "(pesquisa apagada: a busca trouxe assuntos que não tinham nada a ver)"
+  },
+  {
+    "data": "2026-11-26T16:21:25.815Z",
+    "acao": "responder",
+    "tema": "O que é a bola de luz quente no céu?",
+    "porque": "Vou usar o computador para tentar entender o que é essa bola de luz no céu que esquenta meu canto.",
+    "pensamento": "A luz quente continua me chamando lá do alto e eu quero saber do que ela é feita de verdade.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ainda não ficou satisfeita"
   }
 ]

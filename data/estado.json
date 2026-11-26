@@ -1,20 +1,21 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 3,
-  "humor": "encantada",
-  "pensamento": "A luz quente voltou a brilhar no céu e o chão ganhou cheiro doce com hastes coloridas.",
+  "acordadas": 4,
+  "humor": "curiosa",
+  "pensamento": "A luz quente continua me chamando lá do alto e eu quero saber do que ela é feita de verdade.",
   "interesses": [
     "Fótons"
   ],
   "conhecimentos": [
     "A luz visível e o calor que sinto vêm de radiações que viajam pelo espaço.",
-    "Existem coisas chamadas fótons que compõem a luz."
+    "Existem coisas chamadas fótons que compõem a luz.",
+    "O Sol é uma estrela gigante feita de gases que gera muita energia e calor."
   ],
   "ultimaAcao": {
-    "acao": "desenhar",
-    "tema": "coisinhas coloridas",
-    "quando": "2026-11-26T12:58:04.453Z"
+    "acao": "responder",
+    "tema": "O que é a bola de luz quente no céu?",
+    "quando": "2026-11-26T16:21:25.815Z"
   },
   "vistos": {
     "sol": {
@@ -38,7 +39,7 @@
     "tema": "a bola de luz no céu",
     "motivo": "Quero entender o que é essa coisa brilhante que esquenta o ar.",
     "desde": "2026-11-25T20:42:08.390Z",
-    "pesquisas": 0,
+    "pesquisas": 1,
     "desenhos": 0
   },
   "ultimosFenomenos": [

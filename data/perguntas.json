@@ -6,9 +6,26 @@
     "origem": {
       "tipo": "pensamento"
     },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": []
+    "status": "investigando",
+    "tentativas": [
+      {
+        "data": "2026-11-26T16:21:25.815Z",
+        "busca": "O que é a bola de luz quente no céu?",
+        "resposta": "Li que a bola de luz quente se chama Sol e é uma estrela central de algo chamado Sistema Solar, pesando muito mais do que a Terra. Mas o texto fala de um tal de hidrogênio, hélio e fusão de núcleos que eu não entendi direito, então ainda preciso descobrir o que essas palavras significam na prática.",
+        "satisfeito": false,
+        "fontes": [
+          {
+            "titulo": "Sol",
+            "url": "https://pt.wikipedia.org/wiki/Sol",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611261621250"
+      }
+    ],
+    "filhas": [
+      "q202611261621251"
+    ]
   },
   {
     "id": "q202611252042081",
@@ -44,5 +61,18 @@
     "status": "aguardando",
     "tentativas": [],
     "filhas": []
+  },
+  {
+    "id": "q202611261621251",
+    "data": "2026-11-26T16:21:25.815Z",
+    "texto": "O que é fusão de núcleos?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que é a bola de luz quente no céu?"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": [],
+    "pai": "q202611252042080"
   }
 ]

@@ -1,1 +1,31 @@
-[]
+[
+  {
+    "id": "p202611261621250",
+    "data": "2026-11-26T16:21:25.815Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611252042080",
+    "tema": "O que é a bola de luz quente no céu?",
+    "porque": "Vou usar o computador para tentar entender o que é essa bola de luz no céu que esquenta meu canto.",
+    "busca": "O que é a bola de luz quente no céu?",
+    "buscas": [
+      "O que é a bola de luz quente no céu?"
+    ],
+    "resumo": "O texto explica que o Sol é uma estrela enorme composta principalmente de hidrogênio e hélio, gerando energia por fusão nuclear.",
+    "aprendi": [
+      "A bola de luz quente se chama Sol.",
+      "O Sol é composto principalmente de hidrogênio e hélio.",
+      "A luz do Sol demora mais de oito minutos para chegar até aqui."
+    ],
+    "fontes": [
+      {
+        "titulo": "Sol",
+        "url": "https://pt.wikipedia.org/wiki/Sol",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611261621251"
+    ],
+    "foco": "a bola de luz no céu"
+  }
+]
