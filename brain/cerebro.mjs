@@ -23,6 +23,8 @@ const UA = 'CapivaraCuriosa/1.0 (projeto pessoal sem fins lucrativos)';
 let agora = process.env.AGORA ? new Date(process.env.AGORA) : new Date();
 let ISO = agora.toISOString();
 const FORCAR = process.env.FORCAR === 'true' || process.env.FORCAR === '1';
+const PESQUISAS_POR_CICLO = 3; // quando vai ao computador, faz até 3 pesquisas seguidas
+const LIMITE_DUVIDAS = 15;     // rede de segurança: passou disso, só guarda dúvidas novas depois de resolver algumas
 let seq = 0;
 const novoId = (p) => p + ISO.replace(/\D/g, '').slice(0, 14) + (seq++).toString(36);
 const esperar = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -128,15 +130,26 @@ function extrairJSON(texto) {
 // ------------------------------------------------------------------ enciclopédia (Wikipédia)
 // Ela busca, olha a lista de resultados e só lê o que fala MESMO do que ela procura.
 // Se nada servir, tenta outras palavras (até 4 buscas), como uma pessoa faria.
+// a Wikipédia pede calma: se ela disser "devagar" (429), espera um pouco e tenta de novo
+async function buscarWiki(url) {
+  for (let t = 0; t < 3; t++) {
+    const r = await fetch(url, { headers: { 'user-agent': UA } });
+    if (r.status !== 429 && r.status < 500) return r;
+    await esperar(5000 * (t + 1));
+  }
+  return { ok: false };
+}
 async function listarResultados(lang, termos) {
+  if (FALSO && process.env.WIKI_FALSA) return [{ lang, titulo: 'Sol', trecho: 'estrela no centro do Sistema Solar' }];
   const api = `https://${lang}.wikipedia.org/w/api.php`;
-  const r = await fetch(`${api}?action=query&list=search&format=json&srlimit=8&srsearch=${encodeURIComponent(termos)}`, { headers: { 'user-agent': UA } });
+  const r = await buscarWiki(`${api}?action=query&list=search&format=json&srlimit=8&srsearch=${encodeURIComponent(termos)}`);
   if (!r.ok) return [];
   return ((await r.json()).query?.search ?? []).map((s) => ({ lang, titulo: s.title, trecho: s.snippet.replace(/<[^>]+>/g, '').replace(/&quot;/g, '"').replace(/&#039;/g, "'").replace(/&amp;/g, '&') }));
 }
 async function lerArtigo(lang, titulo) {
+  if (FALSO && process.env.WIKI_FALSA) return { titulo, url: 'https://pt.wikipedia.org/wiki/Sol', site: 'Wikipédia (pt)', texto: 'O Sol é a estrela central do Sistema Solar.' };
   const api = `https://${lang}.wikipedia.org/w/api.php`;
-  const r = await fetch(`${api}?action=query&prop=extracts|info&inprop=url&explaintext=1&exsectionformat=plain&redirects=1&format=json&titles=${encodeURIComponent(titulo)}`, { headers: { 'user-agent': UA } });
+  const r = await buscarWiki(`${api}?action=query&prop=extracts|info&inprop=url&explaintext=1&exsectionformat=plain&redirects=1&format=json&titles=${encodeURIComponent(titulo)}`);
   if (!r.ok) return null;
   const pag = Object.values((await r.json()).query?.pages ?? {})[0];
   return pag?.extract ? { titulo: pag.title, url: pag.fullurl, site: `Wikipédia (${lang})`, texto: pag.extract.slice(0, 3500) } : null;
@@ -273,7 +286,7 @@ ${lista(desenhos.slice(-3).map((d) => `- "${d.titulo}": o que você achou: ${d.a
 O que você fez nas últimas acordadas:
 ${lista(diario.slice(-6).map((d) => `- ${d.acao}${d.tema ? ` (${d.tema})` : ''}: ${d.pensamento ?? ''}`))}
 
-${abertas.length >= 3 ? `Você já acumulou ${abertas.length} dúvidas sem resposta. Antes de começar assunto novo, escolha "responder" e vá atrás de uma delas (de preferência a que mais te incomoda).\n` : ''}O que você quer fazer agora? Escolha UMA:
+${abertas.length >= LIMITE_DUVIDAS ? `Sua cabeça está cheia de dúvidas (${abertas.length}). Você não consegue guardar nenhuma nova até resolver alguma.\n` : ''}${abertas.length >= 3 ? `Você já acumulou ${abertas.length} dúvidas sem resposta. Antes de começar assunto novo, escolha "responder" e vá atrás de uma delas (de preferência a que mais te incomoda).\n` : ''}O que você quer fazer agora? Escolha UMA:
 - "pesquisar": ir até o computador e pesquisar algo que te deixou curiosa.
 - "responder": tentar responder uma das suas dúvidas em aberto (diga o id).
 - "desenhar": ir até a mesinha e desenhar alguma coisa.
@@ -319,10 +332,12 @@ Responda SOMENTE com JSON:
   }
   const noFoco = !!(estado.foco && decisao.ligado_ao_foco === true);
 
-  // dúvidas
-  // no máximo 1 dúvida nova por vez, e nunca uma quase igual a outra que ela já tem
+  // dúvidas: no máximo 1 nova por leitura, nunca quase igual a outra que ela já tem.
+  // (rede de segurança: se um dia passar de LIMITE_DUVIDAS abertas, ela só guarda novas depois de resolver algumas)
+  const estaAberta = (p) => p.status === 'aguardando' || p.status === 'investigando';
   const criarDuvidas = (lista, origem, pai) => textos(lista, 3)
     .filter((texto) => !perguntas.some((p) => p.status !== 'aposentada' && parecida(p.texto, texto)))
+    .filter(() => perguntas.filter(estaAberta).length < LIMITE_DUVIDAS)
     .slice(0, 1)
     .map((texto) => {
       const q = { id: novoId('q'), data: ISO, texto, origem, status: 'aguardando', tentativas: [], filhas: [], ...(pai ? { pai: pai.id } : {}) };
@@ -331,6 +346,50 @@ Responda SOMENTE com JSON:
       return q.id;
     });
   criarDuvidas(decisao.novas_duvidas, novos.length ? { tipo: 'observacao', fenomeno: novos[0], primeiraVez: true } : { tipo: 'pensamento' });
+
+  // uma leitura pode resolver outras dúvidas que estavam esperando
+  const outrasAbertas = (excluir) => perguntas.filter((p) => estaAberta(p) && p.id !== excluir);
+  const textoOutras = (excluir) => {
+    const l = outrasAbertas(excluir);
+    return l.length ? `\nSuas outras dúvidas esperando resposta:\n${l.map((p) => `- (${p.id}) ${p.texto}`).join('\n')}\nSe o que você leu já responde BEM alguma delas, diga quais no campo "tambem_responde".\n` : '';
+  };
+  const resolverOutras = (lista, excluir, fontes, buscasFeitas, pid) => {
+    const ids = [];
+    for (const item of Array.isArray(lista) ? lista : []) {
+      const q = outrasAbertas(excluir).find((p) => p.id === item?.id);
+      if (!q || !txt(item.resposta)) continue;
+      q.tentativas = [...(q.tentativas ?? []), { data: ISO, busca: buscasFeitas.join(' → '), resposta: txt(item.resposta, 800), satisfeito: true, fontes, pesquisaId: pid, deCarona: true }];
+      q.status = 'respondida';
+      ids.push(q.id);
+    }
+    return ids;
+  };
+
+  // investigar uma dúvida: buscar, ler e ver se ficou satisfeita (pode ser usada várias vezes no mesmo ciclo)
+  async function investigar(q, buscaQ, porqueQ) {
+    const { fontes, buscas } = await buscar(q.texto, buscaQ);
+    const r = await pensar(`Você decidiu tentar responder sua dúvida: "${q.texto}"
+${q.tentativas?.length ? `Suas tentativas anteriores:\n${q.tentativas.map((t) => `- ${t.resposta}`).join('\n')}\n` : ''}Buscou ${buscas.map((b) => `"${b}"`).join(' → ')} e encontrou:
+
+${fontes.length ? textoFontes(fontes) : '(nada encontrado)'}
+
+Só fique satisfeita se a resposta realmente explicar sua dúvida.
+${fontes.length ? textoOutras(q.id) : ''}
+Responda SOMENTE com JSON:
+{"resposta":"sua resposta, com suas palavras (2 a 5 frases). Se não deu, diga o que entendeu e o que ainda falta","satisfeita":true,"fontes_usadas":[1],"resumo":"o que você leu, em 1-2 frases","aprendi":["1 a 3 fatos"],"conhecimento":["0 a 2 frases para guardar"],"tambem_responde":[{"id":"id da dúvida","resposta":"1-3 frases"}],"novas_perguntas":["0 ou 1 dúvida nova que nasceu daqui"]}`, 'responder');
+    aprender(r.conhecimento, []);
+    const satisfeita = (r.satisfeita === true || r.satisfeito === true) && fontes.length > 0;
+    const fu = fontes.length ? fontesUsadas(fontes, r.fontes_usadas) : [];
+    const pid = novoId('p');
+    const extras = fontes.length ? resolverOutras(r.tambem_responde, q.id, fu, buscas, pid) : [];
+    q.tentativas = [...(q.tentativas ?? []), { data: ISO, busca: buscas.join(' → '), resposta: txt(r.resposta, 1200), satisfeito: satisfeita, fontes: fu, pesquisaId: pid }];
+    q.status = satisfeita ? 'respondida' : q.tentativas.length >= 3 ? 'aposentada' : 'investigando';
+    const geradas = criarDuvidas(r.novas_perguntas, { tipo: 'resposta', texto: q.texto }, q);
+    pesquisas.push({ id: pid, data: ISO, tipo: 'resposta', perguntaId: q.id, tema: q.texto, porque: porqueQ, busca: buscas[buscas.length - 1] ?? buscaQ, buscas, resumo: txt(r.resumo, 800), aprendi: textos(r.aprendi, 4), fontes: fu, perguntasGeradas: geradas, ...(extras.length ? { respondeuTambem: extras } : {}), ...(noFoco ? { foco: estado.foco.tema } : {}) });
+    if (noFoco) estado.foco.pesquisas += 1;
+    return { respondida: 'ficou satisfeita com a resposta', aposentada: 'desistiu dessa dúvida depois de 3 tentativas', investigando: 'ainda não ficou satisfeita' }[q.status]
+      + (extras.length ? ` e, de quebra, respondeu mais ${extras.length}` : '');
+  }
 
   const entrada = {
     data: ISO, acao: primeiraVez && acao === 'descansar' ? 'nascer' : acao, tema: acao === 'descansar' ? null : tema, porque,
@@ -359,36 +418,23 @@ Depois de buscar (${buscas.map((b) => `"${b}"`).join(' → ')}), encontrou estes
 ${textoFontes(fontes)}
 
 Leia com calma e foque no que você queria saber. Se descobrir o nome de algo que você viu na ilha, fique feliz com isso.
+${textoOutras(null)}
 Responda SOMENTE com JSON:
-{"resumo":"3 a 5 frases, com suas palavras, do que você entendeu","aprendi":["3 a 5 fatos curtos"],"fontes_usadas":[1,2],"conhecimento":["1 a 3 frases curtas para guardar na memória"],"novas_perguntas":["0 ou 1 dúvida que nasceu da leitura e tem a ver com o que você procurava"],"novos_interesses":["0 a 2 assuntos"],"sentimento":"como você se sentiu (1 frase)"}`, 'pesquisar');
+{"resumo":"3 a 5 frases, com suas palavras, do que você entendeu","aprendi":["3 a 5 fatos curtos"],"fontes_usadas":[1,2],"conhecimento":["1 a 3 frases curtas para guardar na memória"],"tambem_responde":[{"id":"id da dúvida","resposta":"a resposta com suas palavras (1-3 frases)"}],"novas_perguntas":["0 ou 1 dúvida que nasceu da leitura e tem a ver com o que você procurava"],"novos_interesses":["0 a 2 assuntos"],"sentimento":"como você se sentiu (1 frase)"}`, 'pesquisar');
       aprender(r.conhecimento, r.novos_interesses);
+      const fu = fontesUsadas(fontes, r.fontes_usadas);
+      const extras = resolverOutras(r.tambem_responde, null, fu, buscas, p.id);
       Object.assign(p, {
-        resumo: txt(r.resumo, 1200), aprendi: textos(r.aprendi, 6), sentimento: txt(r.sentimento), fontes: fontesUsadas(fontes, r.fontes_usadas),
+        resumo: txt(r.resumo, 1200), aprendi: textos(r.aprendi, 6), sentimento: txt(r.sentimento), fontes: fu,
         perguntasGeradas: criarDuvidas(r.novas_perguntas, { tipo: 'pesquisa', texto: tema }),
+        ...(extras.length ? { respondeuTambem: extras } : {}),
       });
+      if (extras.length) entrada.resultado = `de quebra, respondeu ${extras.length} dúvida${extras.length > 1 ? 's' : ''} antiga${extras.length > 1 ? 's' : ''}`;
     }
     pesquisas.push(p);
     if (noFoco) estado.foco.pesquisas += 1;
   } else if (acao === 'responder') {
-    const { fontes, buscas } = await buscar(pergunta.texto, busca);
-    const r = await pensar(`Você decidiu tentar responder sua dúvida: "${pergunta.texto}"
-${pergunta.tentativas?.length ? `Suas tentativas anteriores:\n${pergunta.tentativas.map((t) => `- ${t.resposta}`).join('\n')}\n` : ''}Buscou ${buscas.map((b) => `"${b}"`).join(' → ')} e encontrou:
-
-${fontes.length ? textoFontes(fontes) : '(nada encontrado)'}
-
-Só fique satisfeita se a resposta realmente explicar sua dúvida.
-Responda SOMENTE com JSON:
-{"resposta":"sua resposta, com suas palavras (2 a 5 frases). Se não deu, diga o que entendeu e o que ainda falta","satisfeita":true,"fontes_usadas":[1],"resumo":"o que você leu, em 1-2 frases","aprendi":["1 a 3 fatos"],"conhecimento":["0 a 2 frases para guardar"],"novas_perguntas":["0 ou 1 dúvida nova que nasceu daqui"]}`, 'responder');
-    aprender(r.conhecimento, []);
-    const satisfeita = (r.satisfeita === true || r.satisfeito === true) && fontes.length > 0;
-    const fu = fontes.length ? fontesUsadas(fontes, r.fontes_usadas) : [];
-    const pid = novoId('p');
-    pergunta.tentativas = [...(pergunta.tentativas ?? []), { data: ISO, busca: buscas.join(' → '), resposta: txt(r.resposta, 1200), satisfeito: satisfeita, fontes: fu, pesquisaId: pid }];
-    pergunta.status = satisfeita ? 'respondida' : pergunta.tentativas.length >= 3 ? 'aposentada' : 'investigando';
-    const geradas = criarDuvidas(r.novas_perguntas, { tipo: 'resposta', texto: pergunta.texto }, pergunta);
-    pesquisas.push({ id: pid, data: ISO, tipo: 'resposta', perguntaId: pergunta.id, tema: pergunta.texto, porque, busca: buscas[buscas.length - 1] ?? busca, buscas, resumo: txt(r.resumo, 800), aprendi: textos(r.aprendi, 4), fontes: fu, perguntasGeradas: geradas, ...(noFoco ? { foco: estado.foco.tema } : {}) });
-    if (noFoco) estado.foco.pesquisas += 1;
-    entrada.resultado = { respondida: 'ficou satisfeita com a resposta', aposentada: 'desistiu dessa dúvida depois de 3 tentativas', investigando: 'ainda não ficou satisfeita' }[pergunta.status];
+    entrada.resultado = await investigar(pergunta, busca, porque);
   } else if (acao === 'desenhar') {
     const numero = desenhos.length + 1;
     const nivel = nivelDeDesenho(desenhos.length);
@@ -414,8 +460,29 @@ Responda SOMENTE com JSON:
     } else entrada.resultado = 'o desenho não saiu (amassou o papel)';
   }
 
+  // 2b. já que está no computador, aproveita para ir atrás de outras dúvidas (até PESQUISAS_POR_CICLO no total)
+  const maisEntradas = [];
+  if (acao === 'pesquisar' || acao === 'responder') {
+    const tentadas = new Set(pergunta ? [pergunta.id] : []);
+    for (let n = 1; n < PESQUISAS_POR_CICLO; n++) {
+      const prox = perguntas
+        .filter((p) => estaAberta(p) && !tentadas.has(p.id))
+        .sort((a, b) => (a.tentativas?.length ?? 0) - (b.tentativas?.length ?? 0) || (a.data ?? '').localeCompare(b.data ?? ''))[0];
+      if (!prox) break;
+      tentadas.add(prox.id);
+      try {
+        const resultado = await investigar(prox, prox.texto, 'aproveitei que ainda estava no computador');
+        maisEntradas.push({ data: ISO, acao: 'responder', tema: prox.texto, porque: 'aproveitou que ainda estava no computador', clima: entrada.clima, resultado });
+        console.log(`  + também investigou: ${prox.texto} → ${resultado}`);
+      } catch (e) {
+        console.warn(`Parou de pesquisar neste ciclo: ${e.message}`);
+        break; // guarda o que já fez
+      }
+    }
+  }
+
   // 3. anotar
-  diario.push(entrada);
+  diario.push(entrada, ...maisEntradas);
   estado.pensamento = txt(decisao.pensamento);
   estado.humor = txt(decisao.humor, 30) || estado.humor;
   estado.ultimosFenomenos = presentes;
@@ -429,7 +496,7 @@ function respostaFalsa(tipo) {
   const r = {
     decidir: { pensamento: 'O que é isso?', humor: 'curiosa', acao: process.env.ACAO_FALSA || 'pesquisar', tema: 'a luz lá em cima', porque: 'Quero saber o que é.', busca: 'luz solar',
       ligado_ao_foco: true, foco: process.env.FOCO_FALSO || 'manter', foco_tema: 'a luz', novas_duvidas: ['Por que o céu muda de cor?'], nomes: { A: 'coisa nova' }, nome: 'Teste' },
-    pesquisar: { resumo: 'A luz vem do sol.', aprendi: ['O sol é uma estrela'], fontes_usadas: [1], conhecimento: ['A luz vem do sol'], novas_perguntas: ['O que é uma estrela?'], novos_interesses: ['sol'], sentimento: 'Fiquei maravilhada.' },
+    pesquisar: { resumo: 'A luz vem do sol.', aprendi: ['O sol é uma estrela'], fontes_usadas: [1], conhecimento: ['A luz vem do sol'], tambem_responde: [{ id: process.env.RESPONDE_ID || 'x', resposta: 'É o sol!' }], novas_perguntas: ['O que é uma estrela?', 'E os planetas?'], novos_interesses: ['sol'], sentimento: 'Fiquei maravilhada.' },
     responder: { resposta: 'Ainda não sei direito.', satisfeita: false, fontes_usadas: [1], resumo: 'Li sobre o sol.', aprendi: ['algo'], conhecimento: [], novas_perguntas: ['E a lua?'] },
     escolher: { relevantes: [1], nova_busca: '' },
     desenhar: { titulo: 'a janela', tracos: [{ cor: '#ff0000', pontos: [20, 20, 180, 20, 180, 180, 20, 180, 20, 20] }, [50, 50, 150, 150], { pontos: [1] }], autocritica: 'Ficou quadrado demais.' },
