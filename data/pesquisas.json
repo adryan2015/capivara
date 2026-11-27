@@ -814,5 +814,66 @@
     "perguntasGeradas": [
       "q202611272058326"
     ]
+  },
+  {
+    "id": "p202611272154220",
+    "data": "2026-11-27T21:54:22.933Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611272058326",
+    "tema": "Para onde vão as moléculas de vapor depois que se misturam com o ar livre?",
+    "porque": "Quero tirar essa dúvida antiga da minha lista para entender o ciclo da água completo.",
+    "busca": "vapor de agua na atmosfera",
+    "buscas": [
+      "vapor de agua na atmosfera"
+    ],
+    "resumo": "O vapor de água fica invisível nas camadas baixas do ar e pode se condensar em neblina ou orvalho quando a temperatura cai.",
+    "aprendi": [
+      "O vapor de água ocupa as camadas baixas da atmosfera chamadas troposfera.",
+      "O vapor é invisível e o que a gente vê na água fervendo são gotinhas líquidas.",
+      "Quando o ar esfria o suficiente, o vapor vira orvalho ou neblina."
+    ],
+    "fontes": [
+      {
+        "titulo": "Humidade",
+        "url": "https://pt.wikipedia.org/wiki/Humidade",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Vapor de água",
+        "url": "https://pt.wikipedia.org/wiki/Vapor_de_%C3%A1gua",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611272154221"
+    ],
+    "respondeuTambem": [
+      "q202611272058324"
+    ]
+  },
+  {
+    "id": "p202611272154222",
+    "data": "2026-11-27T21:54:22.933Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611272154221",
+    "tema": "O que é a troposfera?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "O que é a troposfera?",
+    "buscas": [
+      "O que é a troposfera?"
+    ],
+    "resumo": "A troposfera é a camada inferior da atmosfera, cheia de vapor de água e onde o tempo acontece, com temperaturas que diminuem com a altitude.",
+    "aprendi": [
+      "A troposfera é a camada mais baixa da atmosfera terrestre.",
+      "A temperatura diminui conforme a altitude aumenta nessa camada."
+    ],
+    "fontes": [
+      {
+        "titulo": "Troposfera",
+        "url": "https://pt.wikipedia.org/wiki/Troposfera",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": []
   }
 ]

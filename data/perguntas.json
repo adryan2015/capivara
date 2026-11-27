@@ -916,7 +916,7 @@
       "tipo": "resposta",
       "texto": "O que é evaporação?"
     },
-    "status": "investigando",
+    "status": "respondida",
     "tentativas": [
       {
         "data": "2026-11-27T20:58:32.031Z",
@@ -931,6 +931,26 @@
           }
         ],
         "pesquisaId": "p202611272058325"
+      },
+      {
+        "data": "2026-11-27T21:54:22.933Z",
+        "busca": "vapor de agua na atmosfera",
+        "resposta": "Depois que escapam para o ar, as moléculas de vapor ficam invisíveis na atmosfera e podem se juntar para formar orvalho ou neblina quando a temperatura abaixa.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Humidade",
+            "url": "https://pt.wikipedia.org/wiki/Humidade",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Vapor de água",
+            "url": "https://pt.wikipedia.org/wiki/Vapor_de_%C3%A1gua",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611272154220",
+        "deCarona": true
       }
     ],
     "filhas": [
@@ -946,9 +966,59 @@
       "tipo": "resposta",
       "texto": "O que acontece com as moléculas de vapor depois que elas escapam para o ar?"
     },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": [],
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-27T21:54:22.933Z",
+        "busca": "vapor de agua na atmosfera",
+        "resposta": "Fui pesquisar para onde vão as moléculas de vapor e descobri que elas se misturam no ar até cinco quilômetros de altura, numa parte chamada troposfera. Elas ficam vagando invisíveis até que o ar esfria, formando o orvalho ou a neblina. Agora entendi que elas não somem, só passeiam pelo ar e às vezes viram gotinhas de novo.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Humidade",
+            "url": "https://pt.wikipedia.org/wiki/Humidade",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Vapor de água",
+            "url": "https://pt.wikipedia.org/wiki/Vapor_de_%C3%A1gua",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611272154220"
+      }
+    ],
+    "filhas": [
+      "q202611272154221"
+    ],
     "pai": "q202611272058324"
+  },
+  {
+    "id": "q202611272154221",
+    "data": "2026-11-27T21:54:22.933Z",
+    "texto": "O que é a troposfera?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Para onde vão as moléculas de vapor depois que se misturam com o ar livre?"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-27T21:54:22.933Z",
+        "busca": "O que é a troposfera?",
+        "resposta": "Fui pesquisar o que é a troposfera e descobri que ela é a camada mais baixa de ar aqui em cima, onde a gente vive e onde o tempo muda. A temperatura vai caindo conforme a gente sobe, e é ali que se concentra quase todo o vapor de água e o vento. Fiquei curiosa sobre como essa camada se comporta em lugares tão altos como as montanhas.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Troposfera",
+            "url": "https://pt.wikipedia.org/wiki/Troposfera",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611272154222"
+      }
+    ],
+    "filhas": [],
+    "pai": "q202611272058326"
   }
 ]

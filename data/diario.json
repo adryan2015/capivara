@@ -361,5 +361,28 @@
       "estacao": "primavera",
       "tempo": "chuva"
     }
+  },
+  {
+    "data": "2026-11-27T21:54:22.933Z",
+    "acao": "responder",
+    "tema": "Para onde vão as moléculas de vapor depois que se misturam com o ar livre?",
+    "porque": "Quero tirar essa dúvida antiga da minha lista para entender o ciclo da água completo.",
+    "pensamento": "A pingadeira do alto continua molhando tudo enquanto a bola de luz fria brilha no escuro. Quero entender para onde vai tanto vapor depois que ele sobe.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "ficou satisfeita com a resposta e, de quebra, respondeu mais 1"
+  },
+  {
+    "data": "2026-11-27T21:54:22.933Z",
+    "acao": "responder",
+    "tema": "O que é a troposfera?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "ficou satisfeita com a resposta"
   }
 ]
