@@ -6,7 +6,7 @@
     "origem": {
       "tipo": "pensamento"
     },
-    "status": "investigando",
+    "status": "respondida",
     "tentativas": [
       {
         "data": "2026-11-26T16:21:25.815Z",
@@ -35,11 +35,26 @@
           }
         ],
         "pesquisaId": "p202611261637331"
+      },
+      {
+        "data": "2026-11-27T04:16:46.387Z",
+        "busca": "o que é o Sol",
+        "resposta": "Fui pesquisar de novo sobre a bola de luz quente e descobri que ela é uma estrela chamada Sol, a dona de quase toda a massa do nosso sistema. Ela fica bem longe, mas sua luz e calor viajam por todo esse espaço para aquecer a terra e fazer as plantas crescerem. Agora só me falta entender direito como é que esses pedacinhos dela viajam por todo esse caminho.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Sol",
+            "url": "https://pt.wikipedia.org/wiki/Sol",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611270416460"
       }
     ],
     "filhas": [
       "q202611261621251",
-      "q202611261637332"
+      "q202611261637332",
+      "q202611270416461"
     ]
   },
   {
@@ -275,9 +290,31 @@
       "tipo": "resposta",
       "texto": "O que é essa bola de luz fria e esbranquiçada no céu escuro?"
     },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": [],
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-27T04:16:46.387Z",
+        "busca": "Se a superfície da Lua é escura como asfalto, por que ela brilha tanto no escuro?",
+        "resposta": "Fui pesquisar no computador antigo e descobri que, mesmo parecendo escura como o asfalto de perto, a superfície daquela grande bola no céu reflete a luz por causa de uma propriedade chamada albedo. O brilho forte acontece porque o espaço ao redor é totalmente escuro e a luz do Sol bate ali e bate de volta para cá. Fiquei curiosa para saber se o asfalto da estrada que vi nos textos também conseguiria brilhar se estivesse lá em cima.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Lua",
+            "url": "https://pt.wikipedia.org/wiki/Lua",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Albedo",
+            "url": "https://pt.wikipedia.org/wiki/Albedo",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611270416462"
+      }
+    ],
+    "filhas": [
+      "q202611270416463"
+    ],
     "pai": "q202611260258290"
   },
   {
@@ -288,9 +325,31 @@
       "tipo": "resposta",
       "texto": "Como os fótons viajam pelo espaço"
     },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": [],
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-27T04:16:46.387Z",
+        "busca": "O que são números complexos e matrizes de Pauli?",
+        "resposta": "Pesquisei e vi que essas matrizes formam um conjunto matemático criado por Wolfgang Pauli para descrever o spin, que é uma propriedade de partículas bem pequenininhas como elétrons. O texto fala muito de contas e direções abstratas, mas ainda quero entender melhor o que é esse tal de spin na prática.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Matrizes de Pauli",
+            "url": "https://pt.wikipedia.org/wiki/Matrizes_de_Pauli",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Spin",
+            "url": "https://pt.wikipedia.org/wiki/Spin",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611270416464"
+      }
+    ],
+    "filhas": [
+      "q202611270416465"
+    ],
     "pai": "q202611261637330"
   },
   {
@@ -301,9 +360,239 @@
       "tipo": "resposta",
       "texto": "O que significa fundir núcleos?"
     },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-27T04:17:06.300Z",
+        "busca": "Como um pedacinho tão pequeno consegue guardar tanta energia? → atomo → particula",
+        "resposta": "Fui pesquisar aquele mistério sobre o armazenamento de energia e descobri que tudo é feito de pedacinhos chamados partículas. Elas podem ser grandonas ou microscópicas, como os átomos e até menores ainda, chamadas de subatômicas. Fiquei muito contente por entender que essas coisinhas formam toda a matéria ao nosso redor.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Partícula",
+            "url": "https://pt.wikipedia.org/wiki/Part%C3%ADcula",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Partícula elementar",
+            "url": "https://pt.wikipedia.org/wiki/Part%C3%ADcula_elementar",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611270417068"
+      }
+    ],
+    "filhas": [
+      "q202611270417069"
+    ],
+    "pai": "q202611261637332"
+  },
+  {
+    "id": "q202611270416461",
+    "data": "2026-11-27T04:16:46.387Z",
+    "texto": "Como a luz do Sol faz para atravessar o espaço vazio e chegar até aqui?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que é a bola de luz quente no céu?"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-27T04:17:06.300Z",
+        "busca": "Como a luz do Sol faz para atravessar o espaço vazio e chegar até aqui? → luz solar",
+        "resposta": "Fui pesquisar como a luz do Sol atravessa o espaço vazio e descobri que ela é feita de partículas chamadas fótons, que viajam por tudo sem precisar de nada para se apoiar. A leitura explicou que esses pacotinhos de energia saem da estrela e correm pelo vazio até chegarem aqui em pouco mais de oito minutos. Agora entendi que o espaço não é totalmente vazio de luz, pois essas pequenas ondas e partículas cruzam a distância sozinhas.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Sol",
+            "url": "https://pt.wikipedia.org/wiki/Sol",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Luz",
+            "url": "https://pt.wikipedia.org/wiki/Luz",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p20261127041706a"
+      }
+    ],
+    "filhas": [],
+    "pai": "q202611252042080"
+  },
+  {
+    "id": "q202611270416463",
+    "data": "2026-11-27T04:16:46.387Z",
+    "texto": "O que é o asfalto que os textos comparam com o chão da Lua?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Se a superfície da Lua é escura como asfalto, por que ela brilha tanto no escuro?"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-27T04:17:06.300Z",
+        "busca": "o que e asfalto",
+        "resposta": "Pesquisei e descobri que o asfalto é uma mistura escura e grossa feita com restos de petróleo e pedras, usada para cobrir o chão onde os veículos andam. Ele é parente do betume e serve para deixar a superfície firme. Agora entendi por que dizem que o chão da Lua se parece com ele.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Asfalto",
+            "url": "https://pt.wikipedia.org/wiki/Asfalto",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Betume",
+            "url": "https://pt.wikipedia.org/wiki/Betume",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611270417066"
+      }
+    ],
+    "filhas": [
+      "q202611270417067"
+    ],
+    "pai": "q202611261637336"
+  },
+  {
+    "id": "q202611270416465",
+    "data": "2026-11-27T04:16:46.387Z",
+    "texto": "O que exatamente é o spin de uma partícula?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que são números complexos e matrizes de Pauli?"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-27T04:18:17.819Z",
+        "busca": "o que e spin quantico",
+        "resposta": "Fui pesquisar sobre o spin e descobri que é como um momento angular bem pequenininho que as partículas têm, meio que uma propriedade invisível e abstrata delas. Vi que no começo pensavam que era uma bolinha girando de verdade, mas isso não dava certo porque precisaria ir mais rápido que a luz. Agora entendi que é algo quantizado e que usa números especiais, mas ainda fiquei imaginando como algo tão miúdo consegue ter uma direção própria sem estar rodando de fato.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Spin",
+            "url": "https://pt.wikipedia.org/wiki/Spin",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Número quântico de spin",
+            "url": "https://pt.wikipedia.org/wiki/N%C3%BAmero_qu%C3%A2ntico_de_spin",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p20261127041817c"
+      }
+    ],
+    "filhas": [
+      "q20261127041817d"
+    ],
+    "pai": "q202611262206211"
+  },
+  {
+    "id": "q202611270417067",
+    "data": "2026-11-27T04:17:06.300Z",
+    "texto": "O que são hidrocarbonetos?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que é o asfalto que os textos comparam com o chão da Lua?"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-27T04:18:17.819Z",
+        "busca": "O que são hidrocarbonetos? → petróleo ou gás",
+        "resposta": "Fui pesquisar sobre os hidrocarbonetos e descobri que eles fazem parte do gás natural e do petróleo, formados lá no fundo da terra por restos de seres bem pequenininhos ao longo de milhões de anos. O texto fala muito sobre como o metano e outros gases vêm dessa matéria antiga soterrada, mas fiquei curiosa para saber exatamente qual é a cara ou a forma dessas moléculas que se escondem embaixo do chão.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Gás natural",
+            "url": "https://pt.wikipedia.org/wiki/G%C3%A1s_natural",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Combustível fóssil",
+            "url": "https://pt.wikipedia.org/wiki/Combust%C3%ADvel_f%C3%B3ssil",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p20261127041817e"
+      }
+    ],
+    "filhas": [],
+    "pai": "q202611270416463"
+  },
+  {
+    "id": "q202611270417069",
+    "data": "2026-11-27T04:17:06.300Z",
+    "texto": "O que são quarks e como eles se prendem dentro das partículas?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Como um pedacinho tão pequeno consegue guardar tanta energia?"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-27T04:18:17.819Z",
+        "busca": "O que são quarks e como eles se prendem dentro das partículas? → partículas elementares",
+        "resposta": "Li que os quarks são pedacinhos bem pequenininhos que ficam grudados lá no fundo dos prótons e nêutrons usando cores que se misturam para dar branco ou negro. Achei engraçado pensar que essas coisas invisíveis têm cores que não podem ficar sozinhas. Fiquei curiosa para saber se essas cores parecem com as que vejo nas flores da ilha.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Partícula elementar",
+            "url": "https://pt.wikipedia.org/wiki/Part%C3%ADcula_elementar",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p20261127041817f"
+      }
+    ],
+    "filhas": [
+      "q20261127041817g"
+    ],
+    "pai": "q202611262206213"
+  },
+  {
+    "id": "q20261127041817d",
+    "data": "2026-11-27T04:18:17.819Z",
+    "texto": "O que diferencia um bóson de um férmion?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que exatamente é o spin de uma partícula?"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-27T04:18:17.819Z",
+        "busca": "O que são quarks e como eles se prendem dentro das partículas? → partículas elementares",
+        "resposta": "O texto menciona que os férmions são partículas de massa com divisão interna, enquanto os bósons são partículas de radiação que medeiam as forças.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Partícula elementar",
+            "url": "https://pt.wikipedia.org/wiki/Part%C3%ADcula_elementar",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p20261127041817f",
+        "deCarona": true
+      }
+    ],
+    "filhas": [],
+    "pai": "q202611270416465"
+  },
+  {
+    "id": "q20261127041817g",
+    "data": "2026-11-27T04:18:17.819Z",
+    "texto": "Como as cores dos quarks funcionam de verdade?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que são quarks e como eles se prendem dentro das partículas?"
+    },
     "status": "aguardando",
     "tentativas": [],
     "filhas": [],
-    "pai": "q202611261637332"
+    "pai": "q202611270417069"
   }
 ]

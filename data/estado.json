@@ -1,9 +1,9 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 6,
+  "acordadas": 9,
   "humor": "curiosa",
-  "pensamento": "Já tenho muitas perguntas anotadas e preciso tentar resolver pelo menos uma delas antes de seguir em frente.",
+  "pensamento": "O dia clareou e a luz quente já está esquentando a ilha, mas ainda quero entender aquela propriedade estranha das partículas que parece um pião sem sair do lugar.",
   "interesses": [
     "Fótons"
   ],
@@ -16,12 +16,21 @@
     "A Lua é o satélite natural da Terra que brilha no céu escuro e tem fases regulares.",
     "Os fótons viajam pelo espaço de formas ligadas ao espaço-tempo e a conceitos complexos de twistor.",
     "Juntar núcleos gera novos elementos e libera muita energia quando a temperatura está bem alta.",
-    "Plantas com flores e frutos são chamadas de angiospermas."
+    "Plantas com flores e frutos são chamadas de angiospermas.",
+    "A bola de luz quente se chama Sol e é uma estrela gigante que nos aquece de longe.",
+    "O brilho da Lua no céu escuro é causado pela reflexão da luz solar em sua superfície.",
+    "Matrizes de Pauli descrevem o spin de partículas na mecânica quântica.",
+    "O asfalto é um ligante escuro que une pedras para formar superfícies de ruas.",
+    "A matéria é formada por partículas organizadas em diferentes escalas de tamanho.",
+    "Os fótons viajam pelo espaço vazio como partículas e ondas a uma velocidade constante.",
+    "O spin é uma propriedade quântica abstrata ligada a simetrias, onde a interpretação concreta de rotação virou secundária.",
+    "Hidrocarbonetos estão presentes no gás natural e no petróleo gerados sob calor e pressão profundos.",
+    "Quarks são pedacinhos básicos da matéria que se prendem por cargas de cor dentro de partículas maiores."
   ],
   "ultimaAcao": {
     "acao": "responder",
-    "tema": "Como os fótons viajam pelo espaço",
-    "quando": "2026-11-26T22:06:21.515Z"
+    "tema": "O que exatamente é o spin de uma partícula?",
+    "quando": "2026-11-27T04:18:17.819Z"
   },
   "vistos": {
     "sol": {
@@ -40,14 +49,18 @@
       "nome": "bola de luz fria"
     }
   },
-  "focosAnteriores": [],
-  "foco": {
-    "tema": "a bola de luz no céu",
-    "motivo": "Quero entender o que é essa coisa brilhante que esquenta o ar.",
-    "desde": "2026-11-25T20:42:08.390Z",
-    "pesquisas": 7,
-    "desenhos": 0
-  },
+  "focosAnteriores": [
+    {
+      "tema": "a bola de luz no céu",
+      "motivo": "Quero entender o que é essa coisa brilhante que esquenta o ar.",
+      "desde": "2026-11-25T20:42:08.390Z",
+      "pesquisas": 7,
+      "desenhos": 0,
+      "ate": "2026-11-27T04:16:46.387Z",
+      "conclusao": "A bola de luz quente no céu é o Sol, uma estrela que gera calor unindo hidrogênio."
+    }
+  ],
+  "foco": null,
   "ultimosFenomenos": [
     "sol",
     "noite",

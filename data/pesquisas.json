@@ -223,5 +223,288 @@
     ],
     "perguntasGeradas": [],
     "foco": "a bola de luz no céu"
+  },
+  {
+    "id": "p202611270416460",
+    "data": "2026-11-27T04:16:46.387Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611252042080",
+    "tema": "O que é a bola de luz quente no céu?",
+    "porque": "Já perguntei várias vezes sobre essa bola de luz quente e quero ver se consigo encerrar essa dúvida de vez.",
+    "busca": "o que é o Sol",
+    "buscas": [
+      "o que é o Sol"
+    ],
+    "resumo": "O Sol é a estrela central que segura e aquece tudo ao seu redor, sendo formado principalmente por hidrogênio e hélio.",
+    "aprendi": [
+      "O Sol é a estrela central de um sistema e possui mais de 99% da massa total dele",
+      "A luz que sai dele demora pouco mais de oito minutos para chegar até aqui"
+    ],
+    "fontes": [
+      {
+        "titulo": "Sol",
+        "url": "https://pt.wikipedia.org/wiki/Sol",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611270416461"
+    ]
+  },
+  {
+    "id": "p202611270416462",
+    "data": "2026-11-27T04:16:46.387Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611261637336",
+    "tema": "Se a superfície da Lua é escura como asfalto, por que ela brilha tanto no escuro?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "Se a superfície da Lua é escura como asfalto, por que ela brilha tanto no escuro?",
+    "buscas": [
+      "Se a superfície da Lua é escura como asfalto, por que ela brilha tanto no escuro?"
+    ],
+    "resumo": "A Lua tem uma superfície escura como o asfalto, mas brilha intensamente no céu noturno porque sua capacidade de refletir a luz, chamada albedo, se destaca na escuridão do espaço.",
+    "aprendi": [
+      "A superfície da Lua tem uma refletância pouco acima da do asfalto.",
+      "Albedo é o poder de reflexão de uma superfície, medido numa escala de zero a um."
+    ],
+    "fontes": [
+      {
+        "titulo": "Lua",
+        "url": "https://pt.wikipedia.org/wiki/Lua",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Albedo",
+        "url": "https://pt.wikipedia.org/wiki/Albedo",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611270416463"
+    ]
+  },
+  {
+    "id": "p202611270416464",
+    "data": "2026-11-27T04:16:46.387Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611262206211",
+    "tema": "O que são números complexos e matrizes de Pauli?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "O que são números complexos e matrizes de Pauli?",
+    "buscas": [
+      "O que são números complexos e matrizes de Pauli?"
+    ],
+    "resumo": "As matrizes de Pauli são ferramentas matemáticas usadas na física para descrever o spin e outras propriedades quânticas das partículas. O spin é uma espécie de momento angular intrínseco, mas tratado de forma abstrata.",
+    "aprendi": [
+      "As matrizes de Pauli são três matrizes complexas associadas ao físico Wolfgang Pauli.",
+      "O spin é uma propriedade quântica das partículas semelhante a um momento angular, mas sem uma rotação física real de massa."
+    ],
+    "fontes": [
+      {
+        "titulo": "Matrizes de Pauli",
+        "url": "https://pt.wikipedia.org/wiki/Matrizes_de_Pauli",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Spin",
+        "url": "https://pt.wikipedia.org/wiki/Spin",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611270416465"
+    ]
+  },
+  {
+    "id": "p202611270417066",
+    "data": "2026-11-27T04:17:06.300Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611270416463",
+    "tema": "O que é o asfalto que os textos comparam com o chão da Lua?",
+    "porque": "Quero tirar essa dúvida antiga da minha lista para entender com o que exatamente estão comparando a superfície da Lua.",
+    "busca": "o que e asfalto",
+    "buscas": [
+      "o que e asfalto"
+    ],
+    "resumo": "O asfalto é um material escuro e viscoso derivado do petróleo, misturado com pedras para pavimentar ruas e estradas.",
+    "aprendi": [
+      "O asfalto é feito com restos de petróleo e misturado com pedras.",
+      "Ele serve para pavimentar estradas e deixar o chão firme."
+    ],
+    "fontes": [
+      {
+        "titulo": "Asfalto",
+        "url": "https://pt.wikipedia.org/wiki/Asfalto",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Betume",
+        "url": "https://pt.wikipedia.org/wiki/Betume",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611270417067"
+    ]
+  },
+  {
+    "id": "p202611270417068",
+    "data": "2026-11-27T04:17:06.300Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611262206213",
+    "tema": "Como um pedacinho tão pequeno consegue guardar tanta energia?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "particula",
+    "buscas": [
+      "Como um pedacinho tão pequeno consegue guardar tanta energia?",
+      "atomo",
+      "particula"
+    ],
+    "resumo": "Os textos explicam que tudo é composto por partículas, divididas em categorias que vão desde o tamanho macroscópico até partículas elementares e subatômicas invisíveis.",
+    "aprendi": [
+      "Partículas são pequenos objetos que variam em tamanho, desde grãos de poeira até átomos e pedaços ainda menores.",
+      "Partículas subatômicas são menores que os átomos e incluem prótons, nêutrons e elétrons."
+    ],
+    "fontes": [
+      {
+        "titulo": "Partícula",
+        "url": "https://pt.wikipedia.org/wiki/Part%C3%ADcula",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Partícula elementar",
+        "url": "https://pt.wikipedia.org/wiki/Part%C3%ADcula_elementar",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611270417069"
+    ]
+  },
+  {
+    "id": "p20261127041706a",
+    "data": "2026-11-27T04:17:06.300Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611270416461",
+    "tema": "Como a luz do Sol faz para atravessar o espaço vazio e chegar até aqui?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "luz solar",
+    "buscas": [
+      "Como a luz do Sol faz para atravessar o espaço vazio e chegar até aqui?",
+      "luz solar"
+    ],
+    "resumo": "O Sol envia radiação eletromagnética e fótons sem massa pelo espaço a uma velocidade altíssima, demorando cerca de oito minutos para iluminar a Terra.",
+    "aprendi": [
+      "A luz é formada por fótons sem massa que se comportam como partículas e ondas.",
+      "A luz do Sol demora aproximadamente 8 minutos e 18 segundos para chegar até nós."
+    ],
+    "fontes": [
+      {
+        "titulo": "Sol",
+        "url": "https://pt.wikipedia.org/wiki/Sol",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Luz",
+        "url": "https://pt.wikipedia.org/wiki/Luz",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": []
+  },
+  {
+    "id": "p20261127041817c",
+    "data": "2026-11-27T04:18:17.819Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611270416465",
+    "tema": "O que exatamente é o spin de uma partícula?",
+    "porque": "Quero tirar essa dúvida antiga da minha lista para entender melhor o que é esse tal spin.",
+    "busca": "o que e spin quantico",
+    "buscas": [
+      "o que e spin quantico"
+    ],
+    "resumo": "O spin é uma propriedade intrínseca de momento angular das partículas, quantizada e descrita por números quânticos, indo além de uma simples rotação física.",
+    "aprendi": [
+      "O spin é uma forma de momento angular carregada por partículas elementares.",
+      "A ideia de que o elétron seria uma massa carregada em rotação não funciona porque exigiria velocidade maior que a da luz.",
+      "O número quântico de spin pode ser inteiro para bósons e semi-inteiro para férmions."
+    ],
+    "fontes": [
+      {
+        "titulo": "Spin",
+        "url": "https://pt.wikipedia.org/wiki/Spin",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Número quântico de spin",
+        "url": "https://pt.wikipedia.org/wiki/N%C3%BAmero_qu%C3%A2ntico_de_spin",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q20261127041817d"
+    ]
+  },
+  {
+    "id": "p20261127041817e",
+    "data": "2026-11-27T04:18:17.819Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611270417067",
+    "tema": "O que são hidrocarbonetos?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "petróleo ou gás",
+    "buscas": [
+      "O que são hidrocarbonetos?",
+      "petróleo ou gás"
+    ],
+    "resumo": "Os textos explicam que o gás natural e o petróleo são combustíveis fósseis formados pela decomposição de matéria orgânica subterrânea ao longo de milhões de anos.",
+    "aprendi": [
+      "O gás natural é formado principalmente por metano e vem de restos soterrados.",
+      "Combustíveis fósseis não são de dinossauros, mas sim de organismos microscópicos e plantas antigas."
+    ],
+    "fontes": [
+      {
+        "titulo": "Gás natural",
+        "url": "https://pt.wikipedia.org/wiki/G%C3%A1s_natural",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Combustível fóssil",
+        "url": "https://pt.wikipedia.org/wiki/Combust%C3%ADvel_f%C3%B3ssil",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": []
+  },
+  {
+    "id": "p20261127041817f",
+    "data": "2026-11-27T04:18:17.819Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611270417069",
+    "tema": "O que são quarks e como eles se prendem dentro das partículas?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "partículas elementares",
+    "buscas": [
+      "O que são quarks e como eles se prendem dentro das partículas?",
+      "partículas elementares"
+    ],
+    "resumo": "Quarks são partículas fundamentais que compõem hádrons como prótons e nêutrons, e eles nunca são encontrados sozinhos pois se prendem formando combinações neutras de cor.",
+    "aprendi": [
+      "Os prótons e nêutrons são feitos de quarks menores que eles.",
+      "Os quarks carregam cargas de cor que se cancelam para formar branco ou negro, impedindo que fiquem isolados."
+    ],
+    "fontes": [
+      {
+        "titulo": "Partícula elementar",
+        "url": "https://pt.wikipedia.org/wiki/Part%C3%ADcula_elementar",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q20261127041817g"
+    ],
+    "respondeuTambem": [
+      "q20261127041817d"
+    ]
   }
 ]

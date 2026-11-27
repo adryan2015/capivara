@@ -108,5 +108,117 @@
       "tempo": "sol"
     },
     "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-27T04:16:46.387Z",
+    "acao": "responder",
+    "tema": "O que é a bola de luz quente no céu?",
+    "porque": "Já perguntei várias vezes sobre essa bola de luz quente e quero ver se consigo encerrar essa dúvida de vez.",
+    "pensamento": "Estou com um pouco de sono por causa da hora, mas decidi olhar a minha lista para tentar entender finalmente o que é aquela bola de luz quente no céu.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-27T04:16:46.387Z",
+    "acao": "responder",
+    "tema": "Se a superfície da Lua é escura como asfalto, por que ela brilha tanto no escuro?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-27T04:16:46.387Z",
+    "acao": "responder",
+    "tema": "O que são números complexos e matrizes de Pauli?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-27T04:17:06.300Z",
+    "acao": "responder",
+    "tema": "O que é o asfalto que os textos comparam com o chão da Lua?",
+    "porque": "Quero tirar essa dúvida antiga da minha lista para entender com o que exatamente estão comparando a superfície da Lua.",
+    "pensamento": "Acordei de madrugada e vi a bola de luz fria brilhando lá em cima, mas minhas dúvidas sobre o asfalto da Lua ainda me incomodam bastante.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-27T04:17:06.300Z",
+    "acao": "responder",
+    "tema": "Como um pedacinho tão pequeno consegue guardar tanta energia?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-27T04:17:06.300Z",
+    "acao": "responder",
+    "tema": "Como a luz do Sol faz para atravessar o espaço vazio e chegar até aqui?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-27T04:17:06.300Z",
+    "acao": "desenhar",
+    "tema": "o chao e a lua",
+    "porque": "quis colocar no papel o que ficou na cabeça",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    }
+  },
+  {
+    "data": "2026-11-27T04:18:17.819Z",
+    "acao": "responder",
+    "tema": "O que exatamente é o spin de uma partícula?",
+    "porque": "Quero tirar essa dúvida antiga da minha lista para entender melhor o que é esse tal spin.",
+    "pensamento": "O dia clareou e a luz quente já está esquentando a ilha, mas ainda quero entender aquela propriedade estranha das partículas que parece um pião sem sair do lugar.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-27T04:18:17.819Z",
+    "acao": "responder",
+    "tema": "O que são hidrocarbonetos?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-27T04:18:17.819Z",
+    "acao": "responder",
+    "tema": "O que são quarks e como eles se prendem dentro das partículas?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta e, de quebra, respondeu mais 1"
   }
 ]
