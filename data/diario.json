@@ -417,5 +417,16 @@
       "tempo": "chuva"
     },
     "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-27T23:45:28.922Z",
+    "acao": "descansar",
+    "tema": null,
+    "porque": "está escuro, já fiz bastante coisa e quero dormir um pouco.",
+    "pensamento": "A bola de luz fria está lá no alto do céu preto e meu sono finalmente chegou. Vou deitar na minha caminha de folhas para descansar.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    }
   }
 ]

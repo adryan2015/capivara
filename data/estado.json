@@ -1,9 +1,9 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 16,
-  "humor": "curiosa",
-  "pensamento": "A pingadeira do alto não para de cair e molhar a grama, então quero entender o que acontece quando esse monte de água desce de volta.",
+  "acordadas": 17,
+  "humor": "sonolenta",
+  "pensamento": "A bola de luz fria está lá no alto do céu preto e meu sono finalmente chegou. Vou deitar na minha caminha de folhas para descansar.",
   "interesses": [
     "Fótons",
     "ciclo da água",
@@ -47,14 +47,14 @@
     "Um bloqueio atmosférico é um sistema de alta pressão que estaciona no ar e obriga o tempo de uma região a não mudar por semanas."
   ],
   "ultimaAcao": {
-    "acao": "pesquisar",
-    "tema": "precipitação",
-    "quando": "2026-11-27T22:50:18.077Z"
+    "acao": "descansar",
+    "tema": null,
+    "quando": "2026-11-27T23:45:28.922Z"
   },
   "vistos": {
     "sol": {
       "primeiraVez": "2026-11-25T20:42:08.390Z",
-      "vezes": 1,
+      "vezes": 2,
       "nome": "luz quente"
     },
     "flores": {
@@ -86,9 +86,9 @@
   ],
   "foco": null,
   "ultimosFenomenos": [
-    "chuva",
+    "sol",
     "noite",
     "flores"
   ],
-  "semDesenhar": 2
+  "semDesenhar": 3
 }
