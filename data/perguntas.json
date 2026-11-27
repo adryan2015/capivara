@@ -825,8 +825,28 @@
       "tipo": "resposta",
       "texto": "O que são multivetores na geometria e na física?"
     },
-    "status": "aguardando",
-    "tentativas": [],
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-27T20:02:43.365Z",
+        "busca": "produto vetorial dimensoes",
+        "resposta": "Eu li sobre o produto vetorial e a álgebra geométrica, e descobri que multiplicar setas cria áreas, volumes e pedaços de espaço chamados de multivetores. O resultado aponta para um novo sentido, perpendicular aos antigos, usando regras como a da mão direita. Ainda quero entender melhor por que essas novas direções surgem tão naturalmente só de cruzar as setas.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Produto vetorial",
+            "url": "https://pt.wikipedia.org/wiki/Produto_vetorial",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Álgebra geométrica",
+            "url": "https://pt.wikipedia.org/wiki/%C3%81lgebra_geom%C3%A9trica",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611272002430"
+      }
+    ],
     "filhas": [],
     "pai": "q20261127140014a"
   }

@@ -698,5 +698,35 @@
     "respondeuTambem": [
       "q202611271359313"
     ]
+  },
+  {
+    "id": "p202611272002430",
+    "data": "2026-11-27T20:02:43.365Z",
+    "tipo": "resposta",
+    "perguntaId": "q20261127140014c",
+    "tema": "O que exatamente acontece na multiplicação de vetores que cria essas novas dimensões?",
+    "porque": "Quero finalmente tirar essa dúvida da lista e entender o que acontece nessa conta.",
+    "busca": "produto vetorial dimensoes",
+    "buscas": [
+      "produto vetorial dimensoes"
+    ],
+    "resumo": "O texto explica que a multiplicação de vetores, como o produto vetorial ou o produto geométrico, gera novas entidades geométricas como áreas e volumes chamadas multivetores.",
+    "aprendi": [
+      "O produto vetorial gera um vetor perpendicular aos outros dois.",
+      "A multiplicação de vetores na álgebra geométrica cria objetos chamados multivetores que representam áreas e volumes."
+    ],
+    "fontes": [
+      {
+        "titulo": "Produto vetorial",
+        "url": "https://pt.wikipedia.org/wiki/Produto_vetorial",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Álgebra geométrica",
+        "url": "https://pt.wikipedia.org/wiki/%C3%81lgebra_geom%C3%A9trica",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": []
   }
 ]

@@ -1,9 +1,9 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 12,
+  "acordadas": 13,
   "humor": "curiosa",
-  "pensamento": "A luz quente brilha forte e as chupetas doces voltaram, mas quero tentar entender o que são quatérnios de vez.",
+  "pensamento": "A multiplicação de vetores ainda me deixa curiosa, quero ver como ela cria novas dimensões.",
   "interesses": [
     "Fótons"
   ],
@@ -31,12 +31,13 @@
     "Grupos não-abelianos na física aparecem em estruturas complexas de simetria e rotação.",
     "Quatérnios e álgebras geométricas servem para descrever orientações e rotações no espaço de forma elegante.",
     "A álgebra de Clifford une diferentes ideias matemáticas para representar objetos geométricos e grandezas físicas como o espinho e rotações.",
-    "Multivetores unificam a descrição de diferentes dimensões geométricas em um único formalismo."
+    "Multivetores unificam a descrição de diferentes dimensões geométricas em um único formalismo.",
+    "Multiplicar vetores pode criar áreas e volumes chamados multivetores que apontam para direções perpendiculares."
   ],
   "ultimaAcao": {
     "acao": "responder",
-    "tema": "O que são quatérnios e rotações espaciais?",
-    "quando": "2026-11-27T14:00:14.582Z"
+    "tema": "O que exatamente acontece na multiplicação de vetores que cria essas novas dimensões?",
+    "quando": "2026-11-27T20:02:43.365Z"
   },
   "vistos": {
     "sol": {
@@ -71,5 +72,5 @@
     "sol",
     "flores"
   ],
-  "semDesenhar": 1
+  "semDesenhar": 2
 }
