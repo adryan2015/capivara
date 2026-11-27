@@ -1,13 +1,15 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 15,
+  "acordadas": 16,
   "humor": "curiosa",
-  "pensamento": "A pingadeira do alto continua molhando tudo enquanto a bola de luz fria brilha no escuro. Quero entender para onde vai tanto vapor depois que ele sobe.",
+  "pensamento": "A pingadeira do alto não para de cair e molhar a grama, então quero entender o que acontece quando esse monte de água desce de volta.",
   "interesses": [
     "Fótons",
     "ciclo da água",
-    "nuvens"
+    "nuvens",
+    "indústrias",
+    "povos"
   ],
   "conhecimentos": [
     "A luz visível e o calor que sinto vêm de radiações que viajam pelo espaço.",
@@ -39,12 +41,15 @@
     "A evaporação faz as moléculas de líquidos escaparem para o ar em forma de gás.",
     "O vapor surge quando partículas da superfície ganham força suficiente para escapar.",
     "As moléculas de vapor se misturam no ar livre e podem voltar a ser água líquida na precipitação.",
-    "A troposfera guarda a maior parte da massa de ar e do vapor de água do mundo."
+    "A troposfera guarda a maior parte da massa de ar e do vapor de água do mundo.",
+    "Existe um lugar chamado São Paulo onde vivem milhões de pessoas e há muitas fábricas e plantações.",
+    "Bloqueios de ar podem segurar as nuvens e a chuva por muito tempo.",
+    "Um bloqueio atmosférico é um sistema de alta pressão que estaciona no ar e obriga o tempo de uma região a não mudar por semanas."
   ],
   "ultimaAcao": {
-    "acao": "responder",
-    "tema": "Para onde vão as moléculas de vapor depois que se misturam com o ar livre?",
-    "quando": "2026-11-27T21:54:22.933Z"
+    "acao": "pesquisar",
+    "tema": "precipitação",
+    "quando": "2026-11-27T22:50:18.077Z"
   },
   "vistos": {
     "sol": {
@@ -85,5 +90,5 @@
     "noite",
     "flores"
   ],
-  "semDesenhar": 1
+  "semDesenhar": 2
 }

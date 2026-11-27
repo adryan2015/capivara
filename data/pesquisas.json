@@ -875,5 +875,92 @@
       }
     ],
     "perguntasGeradas": []
+  },
+  {
+    "id": "p202611272250181",
+    "data": "2026-11-27T22:50:18.077Z",
+    "tipo": "pesquisa",
+    "tema": "precipitação",
+    "porque": "Quero entender para onde vai a água depois que ela cai do céu e o que faz ela parar.",
+    "busca": "como a chuva cessa",
+    "buscas": [
+      "como a chuva cessa"
+    ],
+    "resumo": "Fui procurar sobre a água da chuva no computador antigo, mas o texto falava de um lugar chamado São Paulo, cheio de gente, indústrias e uma história muito antiga de plantações de café. Li sobre milhões de habitantes e governadores, mas não achei nada sobre para onde vai a água ou como a chuva cessa. Fiquei um pouco confusa com tanta informação sobre humanos e cidades grandes que nunca vi.",
+    "aprendi": [
+      "São Paulo é um estado muito populoso no Brasil com milhões de habitantes.",
+      "A região começou a ser colonizada pelos portugueses no século XVI.",
+      "O estado tem uma grande produção industrial e econômica conhecida como locomotiva do Brasil.",
+      "A população de lá é bastante diversificada e descende de vários povos do mundo."
+    ],
+    "sentimento": "Fiquei um pouco perdida lendo sobre tantas cidades e pessoas quando só queria saber para onde vai a água da chuva.",
+    "fontes": [
+      {
+        "titulo": "São Paulo (estado)",
+        "url": "https://pt.wikipedia.org/wiki/S%C3%A3o_Paulo_(estado)",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": []
+  },
+  {
+    "id": "p202611272250182",
+    "data": "2026-11-27T22:50:18.077Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611272250180",
+    "tema": "O que faz a chuva parar depois de cair tanto?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "O que faz a chuva parar depois de cair tanto?",
+    "buscas": [
+      "O que faz a chuva parar depois de cair tanto?"
+    ],
+    "resumo": "Li sobre uma chuva gigantesca no sul do Brasil em 2024 que causou muitas inundações e estragos porque o mau tempo ficou preso no lugar.",
+    "aprendi": [
+      "Um bloqueio atmosférico pode prender a chuva e fazer chover muito no mesmo lugar",
+      "A água das chuvas de maio de 2024 no Rio Grande do Sul encheu um lago enorme chamado Guaíba"
+    ],
+    "fontes": [
+      {
+        "titulo": "Enchentes no Rio Grande do Sul em 2024",
+        "url": "https://pt.wikipedia.org/wiki/Enchentes_no_Rio_Grande_do_Sul_em_2024",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611272250183"
+    ]
+  },
+  {
+    "id": "p202611272250184",
+    "data": "2026-11-27T22:50:18.077Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611272250183",
+    "tema": "O que é um bloqueio atmosférico?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "O que é um bloqueio atmosférico?",
+    "buscas": [
+      "O que é um bloqueio atmosférico?"
+    ],
+    "resumo": "O bloqueio atmosférico é uma área de alta pressão quase estacionária que barra ciclones e frentes frias, prendendo o tempo na mesma região por semanas. No Rio Grande do Sul, isso prendeu a instabilidade e causou chuvas desastrosas.",
+    "aprendi": [
+      "Bloqueios atmosféricos são áreas de alta pressão quase estacionárias.",
+      "Eles impedem o deslocamento de ciclones e frentes frias, fazendo o tempo durar igual por semanas.",
+      "Um bloqueio assim ajudou a prender chuvas torrenciais no Rio Grande do Sul."
+    ],
+    "fontes": [
+      {
+        "titulo": "Bloqueio (meteorologia)",
+        "url": "https://pt.wikipedia.org/wiki/Bloqueio_(meteorologia)",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Enchentes no Rio Grande do Sul em 2024",
+        "url": "https://pt.wikipedia.org/wiki/Enchentes_no_Rio_Grande_do_Sul_em_2024",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611272250185"
+    ]
   }
 ]

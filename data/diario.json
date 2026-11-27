@@ -384,5 +384,38 @@
       "tempo": "chuva"
     },
     "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-27T22:50:18.077Z",
+    "acao": "pesquisar",
+    "tema": "precipitação",
+    "porque": "Quero entender para onde vai a água depois que ela cai do céu e o que faz ela parar.",
+    "pensamento": "A pingadeira do alto não para de cair e molhar a grama, então quero entender o que acontece quando esse monte de água desce de volta.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    }
+  },
+  {
+    "data": "2026-11-27T22:50:18.077Z",
+    "acao": "responder",
+    "tema": "O que faz a chuva parar depois de cair tanto?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-27T22:50:18.077Z",
+    "acao": "responder",
+    "tema": "O que é um bloqueio atmosférico?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "ficou satisfeita com a resposta"
   }
 ]

@@ -1020,5 +1020,81 @@
     ],
     "filhas": [],
     "pai": "q202611272058326"
+  },
+  {
+    "id": "q202611272250180",
+    "data": "2026-11-27T22:50:18.077Z",
+    "texto": "O que faz a chuva parar depois de cair tanto?",
+    "origem": {
+      "tipo": "pensamento"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-27T22:50:18.077Z",
+        "busca": "O que faz a chuva parar depois de cair tanto?",
+        "resposta": "Pesquisei sobre o que faz a chuva parar e li sobre uma tempestade muito grande chamada enchente que aconteceu num lugar chamado Rio Grande do Sul. Descobri que a chuva não ia embora porque um bloqueio de ar quente ficou parado em cima, prendendo a água por dias e dias. Fiquei triste com a quantidade de estradas quebradas e casas cheias d'água, mas entendi que a chuva para quando o vento e o ar conseguem empurrar o bloqueio para longe.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Enchentes no Rio Grande do Sul em 2024",
+            "url": "https://pt.wikipedia.org/wiki/Enchentes_no_Rio_Grande_do_Sul_em_2024",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611272250182"
+      }
+    ],
+    "filhas": [
+      "q202611272250183"
+    ]
+  },
+  {
+    "id": "q202611272250183",
+    "data": "2026-11-27T22:50:18.077Z",
+    "texto": "O que é um bloqueio atmosférico?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que faz a chuva parar depois de cair tanto?"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-27T22:50:18.077Z",
+        "busca": "O que é um bloqueio atmosférico?",
+        "resposta": "Li que o tal bloqueio atmosférico é uma área de alta pressão que fica parada no mesmo lugar por muito tempo e impede o vento e as chuvas de seguirem seus caminhos normais. Descobri também que isso aconteceu lá no sul do Brasil e deixou as nuvens de chuva presas no mesmo lugar, causando enchentes terríveis. Agora entendi o que prende o tempo, mas fiquei curiosa para saber como essa área de alta pressão consegue ficar tão parada sem se mexer.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Bloqueio (meteorologia)",
+            "url": "https://pt.wikipedia.org/wiki/Bloqueio_(meteorologia)",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Enchentes no Rio Grande do Sul em 2024",
+            "url": "https://pt.wikipedia.org/wiki/Enchentes_no_Rio_Grande_do_Sul_em_2024",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611272250184"
+      }
+    ],
+    "filhas": [
+      "q202611272250185"
+    ],
+    "pai": "q202611272250180"
+  },
+  {
+    "id": "q202611272250185",
+    "data": "2026-11-27T22:50:18.077Z",
+    "texto": "Como uma área de alta pressão consegue ficar parada no ar sem se mexer?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que é um bloqueio atmosférico?"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": [],
+    "pai": "q202611272250183"
   }
 ]
