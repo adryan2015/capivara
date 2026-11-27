@@ -1,9 +1,9 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 9,
+  "acordadas": 12,
   "humor": "curiosa",
-  "pensamento": "O dia clareou e a luz quente já está esquentando a ilha, mas ainda quero entender aquela propriedade estranha das partículas que parece um pião sem sair do lugar.",
+  "pensamento": "A luz quente brilha forte e as chupetas doces voltaram, mas quero tentar entender o que são quatérnios de vez.",
   "interesses": [
     "Fótons"
   ],
@@ -25,12 +25,18 @@
     "Os fótons viajam pelo espaço vazio como partículas e ondas a uma velocidade constante.",
     "O spin é uma propriedade quântica abstrata ligada a simetrias, onde a interpretação concreta de rotação virou secundária.",
     "Hidrocarbonetos estão presentes no gás natural e no petróleo gerados sob calor e pressão profundos.",
-    "Quarks são pedacinhos básicos da matéria que se prendem por cargas de cor dentro de partículas maiores."
+    "Quarks são pedacinhos básicos da matéria que se prendem por cargas de cor dentro de partículas maiores.",
+    "A matéria é formada por partículas menores chamadas de subatômicas.",
+    "A carga de cor é descrita por um grupo não-abeliano SU(3) e foi introduzida em 1964 para explicar o comportamento dos quarks nos átomos.",
+    "Grupos não-abelianos na física aparecem em estruturas complexas de simetria e rotação.",
+    "Quatérnios e álgebras geométricas servem para descrever orientações e rotações no espaço de forma elegante.",
+    "A álgebra de Clifford une diferentes ideias matemáticas para representar objetos geométricos e grandezas físicas como o espinho e rotações.",
+    "Multivetores unificam a descrição de diferentes dimensões geométricas em um único formalismo."
   ],
   "ultimaAcao": {
     "acao": "responder",
-    "tema": "O que exatamente é o spin de uma partícula?",
-    "quando": "2026-11-27T04:18:17.819Z"
+    "tema": "O que são quatérnios e rotações espaciais?",
+    "quando": "2026-11-27T14:00:14.582Z"
   },
   "vistos": {
     "sol": {
@@ -63,7 +69,6 @@
   "foco": null,
   "ultimosFenomenos": [
     "sol",
-    "noite",
     "flores"
   ],
   "semDesenhar": 1

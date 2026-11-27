@@ -590,9 +590,244 @@
       "tipo": "resposta",
       "texto": "O que são quarks e como eles se prendem dentro das partículas?"
     },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-27T13:59:31.434Z",
+        "busca": "quark color charge chromodynamics → partículas menores que formam a matéria",
+        "resposta": "Fui pesquisar sobre as cores dos quarks e descobri que são propriedades chamadas de carga de cor dentro da física de partículas, mas os textos cortaram bem na hora que iam explicar os detalhes. Entendi que existem coisas menores que os átomos, mas ainda fiquei sem saber por que chamam de cor se não dá para enxergar.",
+        "satisfeito": false,
+        "fontes": [
+          {
+            "titulo": "Partícula",
+            "url": "https://pt.wikipedia.org/wiki/Part%C3%ADcula",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Física de partículas",
+            "url": "https://pt.wikipedia.org/wiki/F%C3%ADsica_de_part%C3%ADculas",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611271359310"
+      },
+      {
+        "data": "2026-11-27T13:59:31.434Z",
+        "busca": "O que é carga de cor na física de partículas?",
+        "resposta": "As cores dos quarks não são cores de verdade que a gente enxerga, mas sim um jeito que os cientistas usaram para dar nome a uma propriedade matemática ligada à força forte que segura essas pecinhas juntas.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Carga de cor",
+            "url": "https://pt.wikipedia.org/wiki/Carga_de_cor",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Quark",
+            "url": "https://pt.wikipedia.org/wiki/Quark",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611271359312",
+        "deCarona": true
+      }
+    ],
+    "filhas": [
+      "q202611271359311"
+    ],
+    "pai": "q202611270417069"
+  },
+  {
+    "id": "q202611271359311",
+    "data": "2026-11-27T13:59:31.434Z",
+    "texto": "O que é carga de cor na física de partículas?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Como as cores dos quarks funcionam de verdade?"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-27T13:59:31.434Z",
+        "busca": "O que é carga de cor na física de partículas?",
+        "resposta": "Fui pesquisar no computador antigo sobre carga de cor e descobri que é o nome de uma propriedade dos quarks e glúons ligada à força forte. Achei curioso que eles usam nomes de cores como vermelho, azul e verde, mas isso é só uma brincadeira de cientista porque não tem nada a ver com enxergar cores de verdade. Fiquei um pouco confusa com essa história de grupo não-abeliano e confinamento, mas agora sei que é assim que essas pecinhas miúdas se juntam sem ficar sozinhas por aí.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Carga de cor",
+            "url": "https://pt.wikipedia.org/wiki/Carga_de_cor",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Quark",
+            "url": "https://pt.wikipedia.org/wiki/Quark",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611271359312"
+      }
+    ],
+    "filhas": [
+      "q202611271359313"
+    ],
+    "pai": "q20261127041817g"
+  },
+  {
+    "id": "q202611271359313",
+    "data": "2026-11-27T13:59:31.434Z",
+    "texto": "O que significa dizer que um grupo matemático é não-abeliano na física?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que é carga de cor na física de partículas?"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-27T13:59:31.434Z",
+        "busca": "O que significa dizer que um grupo matemático é não-abeliano na física? → grupo nao abeliano",
+        "resposta": "Fui pesquisar aquele negócio de grupo não-abeliano e achei uma porção de coisas sobre um tal grupo icosaédrico binário com cento e vinte elementos. Descobri que ele tem a ver com simetrias e rotações que não seguem a ordem, mas o texto fala tanto de matemática pura que ainda não entendi muito bem como isso muda as coisas na física.",
+        "satisfeito": false,
+        "fontes": [
+          {
+            "titulo": "Grupo icosaédrico binário",
+            "url": "https://pt.wikipedia.org/wiki/Grupo_icosa%C3%A9drico_bin%C3%A1rio",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611271359314"
+      },
+      {
+        "data": "2026-11-27T14:00:14.582Z",
+        "busca": "O que são multivetores na geometria e na física?",
+        "resposta": "Ainda não encontrei uma definição clara sobre o que faz um grupo ser não-abeliano dentro dessa pesquisa, então essa dúvida continua sendo um mistério para mim.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Álgebra geométrica",
+            "url": "https://pt.wikipedia.org/wiki/%C3%81lgebra_geom%C3%A9trica",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p20261127140014b",
+        "deCarona": true
+      }
+    ],
+    "filhas": [
+      "q202611271359315"
+    ],
+    "pai": "q202611271359311"
+  },
+  {
+    "id": "q202611271359315",
+    "data": "2026-11-27T13:59:31.434Z",
+    "texto": "O que são quatérnios e rotações espaciais?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que significa dizer que um grupo matemático é não-abeliano na física?"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-27T14:00:14.582Z",
+        "busca": "quatérnios rotações espaciais álgebra",
+        "resposta": "Fui pesquisar sobre quatérnios e rotações espaciais e descobri que eles formam um jeito engenhoso de girar objetos matematicamente, aparecendo até em grupos de simetria grandiosos como o icosaédrico binário. O texto traz um montão de nomes difíceis e referências a dimensões extras que parecem dançar pelo espaço. Achei fascinante, mas ainda quero entender melhor como esse tal produto geométrico realmente faz as coisas virarem.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Álgebra geométrica",
+            "url": "https://pt.wikipedia.org/wiki/%C3%81lgebra_geom%C3%A9trica",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Grupo icosaédrico binário",
+            "url": "https://pt.wikipedia.org/wiki/Grupo_icosa%C3%A9drico_bin%C3%A1rio",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611271400147"
+      }
+    ],
+    "filhas": [
+      "q202611271400148"
+    ],
+    "pai": "q202611271359313"
+  },
+  {
+    "id": "q202611271400148",
+    "data": "2026-11-27T14:00:14.582Z",
+    "texto": "O que é uma álgebra de Clifford?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que são quatérnios e rotações espaciais?"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-27T14:00:14.582Z",
+        "busca": "O que é uma álgebra de Clifford?",
+        "resposta": "Pesquisei sobre a álgebra de Clifford e descobri que ela é um tipo de álgebra associativa ligada a formas quadráticas e geometria, criada por William Kingdon Clifford. Ela junta ideias antigas para conseguir multiplicar vetores e somar coisas de tamanhos diferentes, gerando os chamados multivetores e espinores. Achei fascinante como ela serve para descrever rotações e o espaço físico, mas ainda quero entender melhor como essas multiplicações funcionam na prática.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Álgebra de Clifford",
+            "url": "https://pt.wikipedia.org/wiki/%C3%81lgebra_de_Clifford",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Álgebra geométrica",
+            "url": "https://pt.wikipedia.org/wiki/%C3%81lgebra_geom%C3%A9trica",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611271400149"
+      }
+    ],
+    "filhas": [
+      "q20261127140014a"
+    ],
+    "pai": "q202611271359315"
+  },
+  {
+    "id": "q20261127140014a",
+    "data": "2026-11-27T14:00:14.582Z",
+    "texto": "O que são multivetores na geometria e na física?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que é uma álgebra de Clifford?"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-27T14:00:14.582Z",
+        "busca": "O que são multivetores na geometria e na física?",
+        "resposta": "Li que multivetores são objetos que surgem quando multiplicamos vetores entre si, permitindo somar coisas de dimensões diferentes. Eles ajudam a descrever áreas, volumes e movimentos, como rotações, de um jeito que parece mais completo que a matemática que eu conhecia antes. Sinto que agora entendo que eles são como blocos de montar formas geométricas mais complexas.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Álgebra geométrica",
+            "url": "https://pt.wikipedia.org/wiki/%C3%81lgebra_geom%C3%A9trica",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p20261127140014b"
+      }
+    ],
+    "filhas": [
+      "q20261127140014c"
+    ],
+    "pai": "q202611271400148"
+  },
+  {
+    "id": "q20261127140014c",
+    "data": "2026-11-27T14:00:14.582Z",
+    "texto": "O que exatamente acontece na multiplicação de vetores que cria essas novas dimensões?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que são multivetores na geometria e na física?"
+    },
     "status": "aguardando",
     "tentativas": [],
     "filhas": [],
-    "pai": "q202611270417069"
+    "pai": "q20261127140014a"
   }
 ]

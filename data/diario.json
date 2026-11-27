@@ -220,5 +220,84 @@
       "tempo": "sol"
     },
     "resultado": "ficou satisfeita com a resposta e, de quebra, respondeu mais 1"
+  },
+  {
+    "data": "2026-11-27T13:59:31.434Z",
+    "acao": "responder",
+    "tema": "Como as cores dos quarks funcionam de verdade?",
+    "porque": "Quero finalmente entender como essas tais cargas de cor funcionam de verdade na prática.",
+    "pensamento": "A luz quente esquenta o chão onde nasceram aquelas hastes perfumadas, mas quero mesmo é tirar aquela dúvida sobre as cores dos quarks da cabeça.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ainda não ficou satisfeita"
+  },
+  {
+    "data": "2026-11-27T13:59:31.434Z",
+    "acao": "responder",
+    "tema": "O que é carga de cor na física de partículas?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta e, de quebra, respondeu mais 1"
+  },
+  {
+    "data": "2026-11-27T13:59:31.434Z",
+    "acao": "responder",
+    "tema": "O que significa dizer que um grupo matemático é não-abeliano na física?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ainda não ficou satisfeita"
+  },
+  {
+    "data": "2026-11-27T14:00:12.517Z",
+    "acao": "desenhar",
+    "tema": "as chupetas doces do chão",
+    "porque": "quero registrar o cheiro e a forma dessas coisinhas coloridas que nasceram no chão",
+    "pensamento": "As chupetas doces do chão brotaram de novo com aquele cheiro doce, mas prefiro ir até a mesinha desenhar umas pétalas com a caneta azul.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    }
+  },
+  {
+    "data": "2026-11-27T14:00:14.582Z",
+    "acao": "responder",
+    "tema": "O que são quatérnios e rotações espaciais?",
+    "porque": "Quero tirar essa dúvida antiga da minha lista para entender melhor como a matemática descreve as rotações.",
+    "pensamento": "A luz quente brilha forte e as chupetas doces voltaram, mas quero tentar entender o que são quatérnios de vez.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-27T14:00:14.582Z",
+    "acao": "responder",
+    "tema": "O que é uma álgebra de Clifford?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-27T14:00:14.582Z",
+    "acao": "responder",
+    "tema": "O que são multivetores na geometria e na física?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta e, de quebra, respondeu mais 1"
   }
 ]

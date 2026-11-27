@@ -506,5 +506,197 @@
     "respondeuTambem": [
       "q20261127041817d"
     ]
+  },
+  {
+    "id": "p202611271359310",
+    "data": "2026-11-27T13:59:31.434Z",
+    "tipo": "resposta",
+    "perguntaId": "q20261127041817g",
+    "tema": "Como as cores dos quarks funcionam de verdade?",
+    "porque": "Quero finalmente entender como essas tais cargas de cor funcionam de verdade na prática.",
+    "busca": "partículas menores que formam a matéria",
+    "buscas": [
+      "quark color charge chromodynamics",
+      "partículas menores que formam a matéria"
+    ],
+    "resumo": "Li sobre partículas que formam a matéria, divididas em tamanhos macroscópicos, microscópicos e subatômicos, e sobre a física de partículas e diagramas.",
+    "aprendi": [
+      "Partículas podem ser macroscópicas, microscópicas ou subatômicas.",
+      "Os prótons e nêutrons são feitos de quarks."
+    ],
+    "fontes": [
+      {
+        "titulo": "Partícula",
+        "url": "https://pt.wikipedia.org/wiki/Part%C3%ADcula",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Física de partículas",
+        "url": "https://pt.wikipedia.org/wiki/F%C3%ADsica_de_part%C3%ADculas",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611271359311"
+    ]
+  },
+  {
+    "id": "p202611271359312",
+    "data": "2026-11-27T13:59:31.434Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611271359311",
+    "tema": "O que é carga de cor na física de partículas?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "O que é carga de cor na física de partículas?",
+    "buscas": [
+      "O que é carga de cor na física de partículas?"
+    ],
+    "resumo": "A carga de cor é uma propriedade dos quarks e glúons na física que usa nomes de cores como analogia para explicar a força forte e o confinamento dessas partículas.",
+    "aprendi": [
+      "Carga de cor é uma propriedade de quarks e glúons relacionada à força forte.",
+      "As cores usadas são vermelho, azul e verde, além de suas anticores, mas isso é apenas uma analogia matemática.",
+      "O confinamento impede que quarks existam livres na natureza, fazendo com que se agrupem de forma a anular suas cargas."
+    ],
+    "fontes": [
+      {
+        "titulo": "Carga de cor",
+        "url": "https://pt.wikipedia.org/wiki/Carga_de_cor",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Quark",
+        "url": "https://pt.wikipedia.org/wiki/Quark",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611271359313"
+    ],
+    "respondeuTambem": [
+      "q20261127041817g"
+    ]
+  },
+  {
+    "id": "p202611271359314",
+    "data": "2026-11-27T13:59:31.434Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611271359313",
+    "tema": "O que significa dizer que um grupo matemático é não-abeliano na física?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "grupo nao abeliano",
+    "buscas": [
+      "O que significa dizer que um grupo matemático é não-abeliano na física?",
+      "grupo nao abeliano"
+    ],
+    "resumo": "Li sobre o grupo icosaédrico binário, que tem 120 elementos, propriedades complexas de extensão central e ligações com rotações espaciais e quatérnios.",
+    "aprendi": [
+      "O grupo icosaédrico binário tem 120 elementos e é um subgrupo dos quatérnios de norma um.",
+      "Ele se relaciona com rotações e extensões centrais, mas os textos se perderam muito na matemática pura."
+    ],
+    "fontes": [
+      {
+        "titulo": "Grupo icosaédrico binário",
+        "url": "https://pt.wikipedia.org/wiki/Grupo_icosa%C3%A9drico_bin%C3%A1rio",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611271359315"
+    ]
+  },
+  {
+    "id": "p202611271400147",
+    "data": "2026-11-27T14:00:14.582Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611271359315",
+    "tema": "O que são quatérnios e rotações espaciais?",
+    "porque": "Quero tirar essa dúvida antiga da minha lista para entender melhor como a matemática descreve as rotações.",
+    "busca": "quatérnios rotações espaciais álgebra",
+    "buscas": [
+      "quatérnios rotações espaciais álgebra"
+    ],
+    "resumo": "Li sobre álgebra geométrica e quatérnios, vendo como eles ajudam a descrever rotações, espaços quadridimensionais e o grupo icosaédrico binário.",
+    "aprendi": [
+      "A álgebra geométrica une o produto de Grassmann com os quatérnios de Hamilton para manipular objetos.",
+      "O grupo icosaédrico binário tem 120 elementos que se encaixam perfeitamente na simetria de um 4-politopo."
+    ],
+    "fontes": [
+      {
+        "titulo": "Álgebra geométrica",
+        "url": "https://pt.wikipedia.org/wiki/%C3%81lgebra_geom%C3%A9trica",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Grupo icosaédrico binário",
+        "url": "https://pt.wikipedia.org/wiki/Grupo_icosa%C3%A9drico_bin%C3%A1rio",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611271400148"
+    ]
+  },
+  {
+    "id": "p202611271400149",
+    "data": "2026-11-27T14:00:14.582Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611271400148",
+    "tema": "O que é uma álgebra de Clifford?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "O que é uma álgebra de Clifford?",
+    "buscas": [
+      "O que é uma álgebra de Clifford?"
+    ],
+    "resumo": "Li que as álgebras de Clifford, também chamadas de álgebras geométricas, estendem a manipulação de vetores usando um produto geométrico para criar multivetores.",
+    "aprendi": [
+      "As álgebras de Clifford também são conhecidas como álgebras geométricas.",
+      "Elas permitem multiplicar vetores e somar objetos de dimensões diferentes, gerando multivetores e espinores."
+    ],
+    "fontes": [
+      {
+        "titulo": "Álgebra de Clifford",
+        "url": "https://pt.wikipedia.org/wiki/%C3%81lgebra_de_Clifford",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Álgebra geométrica",
+        "url": "https://pt.wikipedia.org/wiki/%C3%81lgebra_geom%C3%A9trica",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q20261127140014a"
+    ]
+  },
+  {
+    "id": "p20261127140014b",
+    "data": "2026-11-27T14:00:14.582Z",
+    "tipo": "resposta",
+    "perguntaId": "q20261127140014a",
+    "tema": "O que são multivetores na geometria e na física?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "O que são multivetores na geometria e na física?",
+    "buscas": [
+      "O que são multivetores na geometria e na física?"
+    ],
+    "resumo": "Multivetores são elementos da álgebra geométrica criados pela multiplicação de vetores, capazes de representar grandezas como áreas, volumes e transformações geométricas.",
+    "aprendi": [
+      "O produto geométrico permite combinar vetores para formar multivetores.",
+      "Bivetores representam áreas orientadas e trivetores representam volumes orientados.",
+      "A álgebra geométrica foi popularizada por David Hestenes para descrever a física."
+    ],
+    "fontes": [
+      {
+        "titulo": "Álgebra geométrica",
+        "url": "https://pt.wikipedia.org/wiki/%C3%81lgebra_geom%C3%A9trica",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q20261127140014c"
+    ],
+    "respondeuTambem": [
+      "q202611271359313"
+    ]
   }
 ]
