@@ -1,11 +1,13 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 13,
-  "humor": "curiosa",
-  "pensamento": "A multiplicação de vetores ainda me deixa curiosa, quero ver como ela cria novas dimensões.",
+  "acordadas": 14,
+  "humor": "encantada",
+  "pensamento": "O céu de repente começou a se desmanchar em milhares de pinguinhos frios que fazem cócegas e molham tudo com um barulho calmo. De onde está saindo tanta água lá do alto?",
   "interesses": [
-    "Fótons"
+    "Fótons",
+    "ciclo da água",
+    "nuvens"
   ],
   "conhecimentos": [
     "A luz visível e o calor que sinto vêm de radiações que viajam pelo espaço.",
@@ -32,12 +34,16 @@
     "Quatérnios e álgebras geométricas servem para descrever orientações e rotações no espaço de forma elegante.",
     "A álgebra de Clifford une diferentes ideias matemáticas para representar objetos geométricos e grandezas físicas como o espinho e rotações.",
     "Multivetores unificam a descrição de diferentes dimensões geométricas em um único formalismo.",
-    "Multiplicar vetores pode criar áreas e volumes chamados multivetores que apontam para direções perpendiculares."
+    "Multiplicar vetores pode criar áreas e volumes chamados multivetores que apontam para direções perpendiculares.",
+    "A chuva é formada por vapor de água que se condensa nas nuvens e cai de volta para a superfície.",
+    "A evaporação faz as moléculas de líquidos escaparem para o ar em forma de gás.",
+    "O vapor surge quando partículas da superfície ganham força suficiente para escapar."
   ],
   "ultimaAcao": {
-    "acao": "responder",
-    "tema": "O que exatamente acontece na multiplicação de vetores que cria essas novas dimensões?",
-    "quando": "2026-11-27T20:02:43.365Z"
+    "acao": "pesquisar",
+    "tema": "água que cai do céu",
+    "quando": "2026-11-27T20:58:32.031Z",
+    "desenhoId": "d202611272058327"
   },
   "vistos": {
     "sol": {
@@ -54,6 +60,11 @@
       "primeiraVez": "2026-11-26T02:58:29.133Z",
       "vezes": 2,
       "nome": "bola de luz fria"
+    },
+    "chuva": {
+      "primeiraVez": "2026-11-27T20:58:32.031Z",
+      "vezes": 1,
+      "nome": "pingadeira do alto"
     }
   },
   "focosAnteriores": [
@@ -69,8 +80,8 @@
   ],
   "foco": null,
   "ultimosFenomenos": [
-    "sol",
+    "chuva",
     "flores"
   ],
-  "semDesenhar": 2
+  "semDesenhar": 0
 }

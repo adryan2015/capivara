@@ -311,5 +311,55 @@
       "tempo": "sol"
     },
     "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-27T20:58:32.031Z",
+    "acao": "pesquisar",
+    "tema": "água que cai do céu",
+    "porque": "Quero entender como essa água toda foi parar no céu e por que ela começou a cair do nada.",
+    "pensamento": "O céu de repente começou a se desmanchar em milhares de pinguinhos frios que fazem cócegas e molham tudo com um barulho calmo. De onde está saindo tanta água lá do alto?",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "novidades": [
+      {
+        "chave": "chuva",
+        "nomeDela": "pingadeira do alto"
+      }
+    ],
+    "resultado": "de quebra, respondeu 1 dúvida antiga"
+  },
+  {
+    "data": "2026-11-27T20:58:32.031Z",
+    "acao": "responder",
+    "tema": "O que é evaporação?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-27T20:58:32.031Z",
+    "acao": "responder",
+    "tema": "O que acontece com as moléculas de vapor depois que elas escapam para o ar?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "ainda não ficou satisfeita"
+  },
+  {
+    "data": "2026-11-27T20:58:32.031Z",
+    "acao": "desenhar",
+    "tema": "o voo das moleculas invisiveis",
+    "porque": "quis colocar no papel o que ficou na cabeça",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    }
   }
 ]

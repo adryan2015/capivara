@@ -849,5 +849,106 @@
     ],
     "filhas": [],
     "pai": "q20261127140014a"
+  },
+  {
+    "id": "q202611272058320",
+    "data": "2026-11-27T20:58:32.031Z",
+    "texto": "De onde vem a água que cai do céu?",
+    "origem": {
+      "tipo": "observacao",
+      "fenomeno": "chuva",
+      "primeiraVez": true
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-27T20:58:32.031Z",
+        "busca": "agua caindo do ceu → chuva",
+        "resposta": "A água que cai do céu vem do vapor que sobe dos oceanos, do solo e das plantas, acumulando-se nas nuvens até cair.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Chuva",
+            "url": "https://pt.wikipedia.org/wiki/Chuva",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611272058321",
+        "deCarona": true
+      }
+    ],
+    "filhas": []
+  },
+  {
+    "id": "q202611272058322",
+    "data": "2026-11-27T20:58:32.031Z",
+    "texto": "O que é evaporação?",
+    "origem": {
+      "tipo": "pesquisa",
+      "texto": "água que cai do céu"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-27T20:58:32.031Z",
+        "busca": "O que é evaporação?",
+        "resposta": "Fui pesquisar no computador antigo e descobri que evaporação é quando as moléculas de um líquido ganham energia e conseguem escapar para o ar, virando gás. O texto fala de átomos, tensão superficial e um monte de cálculos que achei meio difíceis de acompanhar de primeira. Mas entendi que é assim que a água some da poça e vai subindo. Agora me pergunto para onde exatamente essas moléculas voam depois que fogem do líquido.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Evaporação",
+            "url": "https://pt.wikipedia.org/wiki/Evapora%C3%A7%C3%A3o",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611272058323"
+      }
+    ],
+    "filhas": [
+      "q202611272058324"
+    ]
+  },
+  {
+    "id": "q202611272058324",
+    "data": "2026-11-27T20:58:32.031Z",
+    "texto": "O que acontece com as moléculas de vapor depois que elas escapam para o ar?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que é evaporação?"
+    },
+    "status": "investigando",
+    "tentativas": [
+      {
+        "data": "2026-11-27T20:58:32.031Z",
+        "busca": "O que acontece com as moléculas de vapor depois que elas escapam para o ar?",
+        "resposta": "Fiquei olhando para a tela depois de ler, porque o texto fala muito de como a água sai do lago e vira vapor, mas não explica bem para onde ela vai depois de sumir no ar. Descobri que as moléculas que escapam levam calor embora e que elas podem voltar se o espaço for fechado, mas ainda falta saber o que acontece com elas lá em cima, longe da água.",
+        "satisfeito": false,
+        "fontes": [
+          {
+            "titulo": "Evaporação",
+            "url": "https://pt.wikipedia.org/wiki/Evapora%C3%A7%C3%A3o",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611272058325"
+      }
+    ],
+    "filhas": [
+      "q202611272058326"
+    ],
+    "pai": "q202611272058322"
+  },
+  {
+    "id": "q202611272058326",
+    "data": "2026-11-27T20:58:32.031Z",
+    "texto": "Para onde vão as moléculas de vapor depois que se misturam com o ar livre?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que acontece com as moléculas de vapor depois que elas escapam para o ar?"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": [],
+    "pai": "q202611272058324"
   }
 ]

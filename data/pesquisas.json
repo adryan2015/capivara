@@ -728,5 +728,91 @@
       }
     ],
     "perguntasGeradas": []
+  },
+  {
+    "id": "p202611272058321",
+    "data": "2026-11-27T20:58:32.031Z",
+    "tipo": "pesquisa",
+    "tema": "água que cai do céu",
+    "porque": "Quero entender como essa água toda foi parar no céu e por que ela começou a cair do nada.",
+    "busca": "chuva",
+    "buscas": [
+      "agua caindo do ceu",
+      "chuva"
+    ],
+    "resumo": "Fui ao computador para entender a água que cai do céu e descobri que ela se chama chuva. O texto explica que o vapor de água sobe, vira nuvem e depois cai em gotas quando fica pesado demais. Achei incrível saber que essa água viaja entre o mar, o ar e o chão num ciclo sem fim.",
+    "aprendi": [
+      "A água que cai do céu em gotas se chama chuva.",
+      "O vapor sobe para o ar e forma nuvens antes de cair.",
+      "A chuva faz parte de um ciclo que passa pelos oceanos, pelo solo e pelas plantas."
+    ],
+    "sentimento": "Fiquei muito contente por descobrir o nome da água que cai do céu e entender um pouquinho da sua viagem.",
+    "fontes": [
+      {
+        "titulo": "Chuva",
+        "url": "https://pt.wikipedia.org/wiki/Chuva",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611272058322"
+    ],
+    "respondeuTambem": [
+      "q202611272058320"
+    ]
+  },
+  {
+    "id": "p202611272058323",
+    "data": "2026-11-27T20:58:32.031Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611272058322",
+    "tema": "O que é evaporação?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "O que é evaporação?",
+    "buscas": [
+      "O que é evaporação?"
+    ],
+    "resumo": "A leitura explicou que a evaporação acontece quando moléculas líquidas ganham energia suficiente para vencer a tensão superficial e escapar para o ar como vapor.",
+    "aprendi": [
+      "Evaporação é a passagem do estado líquido para o gasoso quando moléculas ganham energia.",
+      "O processo consome calor e ajuda a resfriar o líquido que fica para trás."
+    ],
+    "fontes": [
+      {
+        "titulo": "Evaporação",
+        "url": "https://pt.wikipedia.org/wiki/Evapora%C3%A7%C3%A3o",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611272058324"
+    ]
+  },
+  {
+    "id": "p202611272058325",
+    "data": "2026-11-27T20:58:32.031Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611272058324",
+    "tema": "O que acontece com as moléculas de vapor depois que elas escapam para o ar?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "O que acontece com as moléculas de vapor depois que elas escapam para o ar?",
+    "buscas": [
+      "O que acontece com as moléculas de vapor depois que elas escapam para o ar?"
+    ],
+    "resumo": "Li sobre como as moléculas ganham energia para virar vapor na superfície e como a temperatura do líquido diminui com isso.",
+    "aprendi": [
+      "A evaporação consome calor e resfria o líquido que fica para trás.",
+      "Moléculas no ar podem retornar ao líquido se estiverem num recipiente fechado."
+    ],
+    "fontes": [
+      {
+        "titulo": "Evaporação",
+        "url": "https://pt.wikipedia.org/wiki/Evapora%C3%A7%C3%A3o",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611272058326"
+    ]
   }
 ]
