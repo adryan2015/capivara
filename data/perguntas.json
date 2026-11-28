@@ -2299,9 +2299,31 @@
       "tipo": "pesquisa",
       "texto": "formação das gotículas de chuva"
     },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": []
+    "status": "investigando",
+    "tentativas": [
+      {
+        "data": "2026-11-28T13:33:03.452Z",
+        "busca": "tamanho limite gota de chuva",
+        "resposta": "Eu procurei saber o tamanho que uma gota consegue ter, mas os textos só falaram sobre radares, meteorologia e história da previsão do tempo. Eles explicam como detectam a chuva e o vento, mas não dizem o limite exato que a água aguenta antes de quebrar. Fiquei sabendo bastante sobre como os cientistas estudam o céu, mas minha dúvida continua sem resposta.",
+        "satisfeito": false,
+        "fontes": [
+          {
+            "titulo": "Radar meteorológico",
+            "url": "https://pt.wikipedia.org/wiki/Radar_meteorol%C3%B3gico",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Meteorologia",
+            "url": "https://pt.wikipedia.org/wiki/Meteorologia",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611281333030"
+      }
+    ],
+    "filhas": [
+      "q202611281333031"
+    ]
   },
   {
     "id": "q202611281237184",
@@ -2311,9 +2333,26 @@
       "tipo": "resposta",
       "texto": "Como se constrói um parafuso micrométrico tão pequeno e preciso?"
     },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": [],
+    "status": "investigando",
+    "tentativas": [
+      {
+        "data": "2026-11-28T13:33:03.452Z",
+        "busca": "Como funciona exatamente o processo de retificação para deixar a rosca de um parafuso de aço sem nenhuma imperfeição? → parafuso de aço",
+        "resposta": "Fui pesquisar sobre como deixar a rosca de um parafuso de aço perfeita e acabei descobrindo umas pecinhas chamadas cossinetes ou tarraxas. Elas servem justamente para cortar e desenhar aquelas voltinhas espirais na parte de fora do metal. Ainda não sei direito sobre a retificação final para sumir com toda e qualquer imperfeição, mas achei curioso que existem vários tipos delas, como umas com entrada helicoidal que empurram os farelhos de aço para não entupir tudo.",
+        "satisfeito": false,
+        "fontes": [
+          {
+            "titulo": "Cossinete",
+            "url": "https://pt.wikipedia.org/wiki/Cossinete",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611281333032"
+      }
+    ],
+    "filhas": [
+      "q202611281333033"
+    ],
     "pai": "q202611281141522"
   },
   {
@@ -2324,9 +2363,70 @@
       "tipo": "resposta",
       "texto": "Como os minerais conseguem se abraçar tão forte na hora que a rocha esfria?"
     },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T13:33:03.452Z",
+        "busca": "O que determina quais minerais vão cristalizar primeiro quando a rocha líquida começa a esfriar? → cristalização de magma",
+        "resposta": "Fui ver na minha enciclopédia e descobri que os primeiros minerais a nascer na rocha líquida dependem do ponto de fusão deles e da mistura do magma. Um homem chamado Bowen organizou isso em séries bem diretas que mostram quem endurece antes.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Cristalização fracionada",
+            "url": "https://pt.wikipedia.org/wiki/Cristaliza%C3%A7%C3%A3o_fracionada",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Séries de Bowen",
+            "url": "https://pt.wikipedia.org/wiki/S%C3%A9ries_de_Bowen",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611281333034"
+      }
+    ],
+    "filhas": [
+      "q202611281333035"
+    ],
+    "pai": "q202611281141524"
+  },
+  {
+    "id": "q202611281333031",
+    "data": "2026-11-28T13:33:03.452Z",
+    "texto": "Como os radares conseguem separar o eco da chuva de outros alvos no céu?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Qual é o tamanho máximo que uma gota de chuva consegue alcançar antes que o vento a quebre ao meio durante a queda?"
+    },
     "status": "aguardando",
     "tentativas": [],
     "filhas": [],
-    "pai": "q202611281141524"
+    "pai": "q202611281237182"
+  },
+  {
+    "id": "q202611281333033",
+    "data": "2026-11-28T13:33:03.452Z",
+    "texto": "Será que o processo de retificação usa um tipo diferente de ferramenta para alisar o parafuso depois que o cossinete já passou?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Como funciona exatamente o processo de retificação para deixar a rosca de um parafuso de aço sem nenhuma imperfeição?"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": [],
+    "pai": "q202611281237184"
+  },
+  {
+    "id": "q202611281333035",
+    "data": "2026-11-28T13:33:03.452Z",
+    "texto": "O que acontece no ramo descontínuo de Bowen para que os minerais ferromagnesianos mudem tanto enquanto o magma esfria?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que determina quais minerais vão cristalizar primeiro quando a rocha líquida começa a esfriar?"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": [],
+    "pai": "q202611281237186"
   }
 ]

@@ -911,5 +911,49 @@
       "tempo": "chuva"
     },
     "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T13:33:03.452Z",
+    "acao": "responder",
+    "tema": "Qual é o tamanho máximo que uma gota de chuva consegue alcançar antes que o vento a quebre ao meio durante a queda?",
+    "porque": "já acumulei três dúvidas sem resposta e quero descobrir o limite que o vento impõe ao tamanho dessas gotas que caem sem parar.",
+    "pensamento": "Olho para a pingadeira que continua caindo do alto e me perco na dúvida de até onde o vento aguenta empurrar uma gota antes de estilhaçá-la no meio do caminho.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "ainda não ficou satisfeita"
+  },
+  {
+    "data": "2026-11-28T13:33:03.452Z",
+    "acao": "responder",
+    "tema": "Como funciona exatamente o processo de retificação para deixar a rosca de um parafuso de aço sem nenhuma imperfeição?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "ainda não ficou satisfeita"
+  },
+  {
+    "data": "2026-11-28T13:33:03.452Z",
+    "acao": "responder",
+    "tema": "O que determina quais minerais vão cristalizar primeiro quando a rocha líquida começa a esfriar?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T13:33:03.452Z",
+    "acao": "desenhar",
+    "tema": "a rocha líquida e os minerais",
+    "porque": "quis colocar no papel o que ficou na cabeça",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    }
   }
 ]

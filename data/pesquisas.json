@@ -2118,5 +2118,98 @@
       "q202611281237186"
     ],
     "foco": "gotículas de água"
+  },
+  {
+    "id": "p202611281333030",
+    "data": "2026-11-28T13:33:03.452Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611281237182",
+    "tema": "Qual é o tamanho máximo que uma gota de chuva consegue alcançar antes que o vento a quebre ao meio durante a queda?",
+    "porque": "já acumulei três dúvidas sem resposta e quero descobrir o limite que o vento impõe ao tamanho dessas gotas que caem sem parar.",
+    "busca": "tamanho limite gota de chuva",
+    "buscas": [
+      "tamanho limite gota de chuva"
+    ],
+    "resumo": "Os textos explicam o funcionamento dos radares meteorológicos e a história da ciência que estuda a atmosfera e a previsão do tempo.",
+    "aprendi": [
+      "Radares meteorológicos detectam chuva, neve e granizo medindo ecos no céu.",
+      "A meteorologia usa instrumentos como barômetros, satélites e supercomputadores para prever o tempo."
+    ],
+    "fontes": [
+      {
+        "titulo": "Radar meteorológico",
+        "url": "https://pt.wikipedia.org/wiki/Radar_meteorol%C3%B3gico",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Meteorologia",
+        "url": "https://pt.wikipedia.org/wiki/Meteorologia",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611281333031"
+    ]
+  },
+  {
+    "id": "p202611281333032",
+    "data": "2026-11-28T13:33:03.452Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611281237184",
+    "tema": "Como funciona exatamente o processo de retificação para deixar a rosca de um parafuso de aço sem nenhuma imperfeição?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "parafuso de aço",
+    "buscas": [
+      "Como funciona exatamente o processo de retificação para deixar a rosca de um parafuso de aço sem nenhuma imperfeição?",
+      "parafuso de aço"
+    ],
+    "resumo": "O texto explica que os cossinetes são ferramentas de aço temperado usadas para criar rosqueamento externo em parafusos e eixos, existindo em vários tipos como o redondo aberto, fechado, bipartido e de pente.",
+    "aprendi": [
+      "Cossinetes são ferramentas usadas para fabricar roscas externas em parafusos e eixos.",
+      "Existem cossinetes com entrada helicoidal que ajudam a afastar os cavacos longos de aço para evitar que a ferramenta engripe."
+    ],
+    "fontes": [
+      {
+        "titulo": "Cossinete",
+        "url": "https://pt.wikipedia.org/wiki/Cossinete",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611281333033"
+    ]
+  },
+  {
+    "id": "p202611281333034",
+    "data": "2026-11-28T13:33:03.452Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611281237186",
+    "tema": "O que determina quais minerais vão cristalizar primeiro quando a rocha líquida começa a esfriar?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "cristalização de magma",
+    "buscas": [
+      "O que determina quais minerais vão cristalizar primeiro quando a rocha líquida começa a esfriar?",
+      "cristalização de magma"
+    ],
+    "resumo": "A cristalização fracionada e as séries de Bowen explicam que a rocha líquida esfria formando minerais em ordem decrescente de fusão, guiada pela termodinâmica e pela composição do magma.",
+    "aprendi": [
+      "O resfriamento do magma forma cristais na ordem do ponto de fusão de cada mineral.",
+      "As séries de Bowen dividem a cristalização em ramos descontínuos e contínuos que terminam em quartzo."
+    ],
+    "fontes": [
+      {
+        "titulo": "Cristalização fracionada",
+        "url": "https://pt.wikipedia.org/wiki/Cristaliza%C3%A7%C3%A3o_fracionada",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Séries de Bowen",
+        "url": "https://pt.wikipedia.org/wiki/S%C3%A9ries_de_Bowen",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611281333035"
+    ]
   }
 ]

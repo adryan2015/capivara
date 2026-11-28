@@ -1,9 +1,9 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 31,
+  "acordadas": 32,
   "humor": "curiosa",
-  "pensamento": "A pingadeira do alto molha as folhas e faz um som ritmado nas pedras. Quero descobrir como pequenos pedacinhos de água viram essas gotas pesadas que caem lá de cima.",
+  "pensamento": "Olho para a pingadeira que continua caindo do alto e me perco na dúvida de até onde o vento aguenta empurrar uma gota antes de estilhaçá-la no meio do caminho.",
   "interesses": [
     "Marés dos oceanos",
     "Cartas hidrográficas",
@@ -19,9 +19,6 @@
     "Velocidade terminal"
   ],
   "conhecimentos": [
-    "O asfalto é um ligante escuro que une pedras para formar superfícies de ruas.",
-    "A matéria é formada por partículas organizadas em diferentes escalas de tamanho.",
-    "Os fótons viajam pelo espaço vazio como partículas e ondas a uma velocidade constante.",
     "O spin é uma propriedade quântica abstrata ligada a simetrias, onde a interpretação concreta de rotação virou secundária.",
     "Hidrocarbonetos estão presentes no gás natural e no petróleo gerados sob calor e pressão profundos.",
     "Quarks são pedacinhos básicos da matéria que se prendem por cargas de cor dentro de partículas maiores.",
@@ -78,12 +75,16 @@
     "As gotas de chuva só conseguem cair na minha ilha porque vão se abraçando lá no alto até ficarem pesadas o bastante.",
     "Instrumentos de medição de alta precisão usam parafusos de aço retificado para conseguir ler frações minúsculas de milímetro.",
     "A força atômica é o que faz os minerais se organizarem de forma periódica ao cristalizarem.",
-    "Na nucleação, os aglomerados de átomos precisam atingir um tamanho crítico para ficarem estáveis."
+    "Na nucleação, os aglomerados de átomos precisam atingir um tamanho crítico para ficarem estáveis.",
+    "Os cientistas usam radares para enxergar o que está caindo nas nuvens.",
+    "O cossinete usa arestas cortantes para abrir as ranhuras espirais no metal.",
+    "O resfriamento da rocha líquida obedece a regras de temperatura e composição chamadas de séries de Bowen."
   ],
   "ultimaAcao": {
-    "acao": "pesquisar",
-    "tema": "formação das gotículas de chuva",
-    "quando": "2026-11-28T12:37:18.117Z"
+    "acao": "responder",
+    "tema": "Qual é o tamanho máximo que uma gota de chuva consegue alcançar antes que o vento a quebre ao meio durante a queda?",
+    "quando": "2026-11-28T13:33:03.452Z",
+    "desenhoId": "d202611281333036"
   },
   "vistos": {
     "sol": {
@@ -125,18 +126,21 @@
       "desenhos": 0,
       "ate": "2026-11-27T04:16:46.387Z",
       "conclusao": "A bola de luz quente no céu é o Sol, uma estrela que gera calor unindo hidrogênio."
+    },
+    {
+      "tema": "gotículas de água",
+      "motivo": "está caindo água do céu sem parar e quero saber como ela se junta até despencar",
+      "desde": "2026-11-28T12:37:18.117Z",
+      "pesquisas": 3,
+      "desenhos": 0,
+      "ate": "2026-11-28T13:33:03.452Z",
+      "conclusao": "Entendi que as gotas de chuva ganham peso ao se abraçarem lá no alto e que o vento limita o tamanho delas quebrando as maiores ao meio durante a queda."
     }
   ],
-  "foco": {
-    "tema": "gotículas de água",
-    "motivo": "está caindo água do céu sem parar e quero saber como ela se junta até despencar",
-    "desde": "2026-11-28T12:37:18.117Z",
-    "pesquisas": 3,
-    "desenhos": 0
-  },
+  "foco": null,
   "ultimosFenomenos": [
     "chuva",
     "flores"
   ],
-  "semDesenhar": 2
+  "semDesenhar": 0
 }
