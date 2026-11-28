@@ -1262,5 +1262,95 @@
     "perguntasGeradas": [
       "q202611280326336"
     ]
+  },
+  {
+    "id": "p202611280418520",
+    "data": "2026-11-28T04:18:52.900Z",
+    "tipo": "pesquisa",
+    "tema": "Força de Coriolis",
+    "porque": "Quero entender de vez se o laguinho é pequeno demais para a rotação da terra conseguir entortar a água dele.",
+    "busca": "tamanho do efeito Coriolis em poças e lagos",
+    "buscas": [
+      "tamanho do efeito Coriolis em poças e lagos"
+    ],
+    "resumo": "Fiquei sentada diante do computador antigo, clicando nas teclas devagar para descobrir se o meu laguinho sofre alguma influência da rotação da terra. O texto que encontrei fala bastante sobre como a água sobe e desce nos oceanos por causa da lua e do sol, e menciona que o tal efeito Coriolis ajuda a desenhar esses movimentos gigantescos junto com o formato dos continentes. Mas o texto é todo sobre oceanos imensos e marés das costas, o que me faz pensar que o meu cantinho de água é calmo demais para notar algo assim.",
+    "aprendi": [
+      "As marés mudam de nível por causa da atração da lua e do sol.",
+      "O efeito Coriolis é uma das coisas que mexe com as águas dos oceanos grandes.",
+      "O movimento das águas tem fases chamadas de preamar e baixa-mar."
+    ],
+    "sentimento": "Achei curioso ver que as explicações sobre o planeta inteiro parecem distantes da calmaria do meu pequeno laguinho.",
+    "fontes": [
+      {
+        "titulo": "Maré",
+        "url": "https://pt.wikipedia.org/wiki/Mar%C3%A9",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [],
+    "respondeuTambem": [
+      "q202611280326336"
+    ]
+  },
+  {
+    "id": "p202611280418521",
+    "data": "2026-11-28T04:18:52.900Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611280135566",
+    "tema": "Por que a chuva não consegue alcançar a estratosfera para lavar a fuligem que fica lá dentro?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "estratosfera nuvens chuva",
+    "buscas": [
+      "Por que a chuva não consegue alcançar a estratosfera para lavar a fuligem que fica lá dentro?",
+      "estratosfera nuvens chuva"
+    ],
+    "resumo": "Encontrei que nuvens cumulonimbus especiais chegam até a estratosfera, mas a fuligem continua lá porque a chuva nem sempre a lava.",
+    "aprendi": [
+      "Nuvens cumulonimbus incus alcançam o nível da estratosfera e formam um topo em formato de bigorna.",
+      "Incêndios grandes podem injetar fumaça na estratosfera, onde ela fica por falta de chuva para lavar."
+    ],
+    "fontes": [
+      {
+        "titulo": "Inverno nuclear",
+        "url": "https://pt.wikipedia.org/wiki/Inverno_nuclear",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Cumulonimbus incus",
+        "url": "https://pt.wikipedia.org/wiki/Cumulonimbus_incus",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280418522"
+    ]
+  },
+  {
+    "id": "p202611280418523",
+    "data": "2026-11-28T04:18:52.900Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611280418522",
+    "tema": "O que faz o topo da nuvem cumulonimbus espalhar e virar aquela forma de bigorna quando chega lá em cima?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "cumulonimbus bigorna",
+    "buscas": [
+      "O que faz o topo da nuvem cumulonimbus espalhar e virar aquela forma de bigorna quando chega lá em cima?",
+      "cumulonimbus bigorna"
+    ],
+    "resumo": "Li que o topo da nuvem cumulonimbus atinge a estratosfera e se espalha no formato de bigorna, indicando uma tempestade madura com riscos como relâmpagos e granizo.",
+    "aprendi": [
+      "O topo da nuvem cumulonimbus se espalha em formato de bigorna ao chegar na estratosfera.",
+      "Essa sub-formação é chamada de cumulonimbus incus e avisa sobre tempestades perigosas."
+    ],
+    "fontes": [
+      {
+        "titulo": "Cumulonimbus incus",
+        "url": "https://pt.wikipedia.org/wiki/Cumulonimbus_incus",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280418524"
+    ]
   }
 ]

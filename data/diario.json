@@ -568,5 +568,39 @@
       "estacao": "primavera",
       "tempo": "vento"
     }
+  },
+  {
+    "data": "2026-11-28T04:18:52.900Z",
+    "acao": "pesquisar",
+    "tema": "Força de Coriolis",
+    "porque": "Quero entender de vez se o laguinho é pequeno demais para a rotação da terra conseguir entortar a água dele.",
+    "pensamento": "Olho para a bola de luz fria e escuto o empurrão invisível que assobia passando pelas árvores no meio da escuridão.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "vento"
+    },
+    "resultado": "de quebra, respondeu 1 dúvida antiga"
+  },
+  {
+    "data": "2026-11-28T04:18:52.900Z",
+    "acao": "responder",
+    "tema": "Por que a chuva não consegue alcançar a estratosfera para lavar a fuligem que fica lá dentro?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "vento"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T04:18:52.900Z",
+    "acao": "responder",
+    "tema": "O que faz o topo da nuvem cumulonimbus espalhar e virar aquela forma de bigorna quando chega lá em cima?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "vento"
+    },
+    "resultado": "ficou satisfeita com a resposta"
   }
 ]

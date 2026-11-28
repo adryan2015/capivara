@@ -1,9 +1,9 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 21,
+  "acordadas": 22,
   "humor": "espantada",
-  "pensamento": "Tem algo invisível empurrando as folhas e fazendo a grama dançar com um assobio estranho. Levei um susto quando senti esse empurrão passar por mim sem ter corpo nenhum.",
+  "pensamento": "Olho para a bola de luz fria e escuto o empurrão invisível que assobia passando pelas árvores no meio da escuridão.",
   "interesses": [
     "Fótons",
     "ciclo da água",
@@ -13,7 +13,9 @@
     "Vulcões e o céu",
     "Movimentos da atmosfera",
     "força de Coriolis",
-    "escala de Beaufort"
+    "escala de Beaufort",
+    "Marés dos oceanos",
+    "Cartas hidrográficas"
   ],
   "conhecimentos": [
     "A luz visível e o calor que sinto vêm de radiações que viajam pelo espaço.",
@@ -57,13 +59,15 @@
     "A estratosfera é uma camada alta do céu onde a fuligem de tempestades de fogo pode se acumular e bloquear a luz solar.",
     "O vento é o ar em movimento gerado pelas diferenças de calor na Terra e pelo giro do próprio planeta.",
     "A rotação da Terra faz com que ventos de longa distância desviem sua trajetória devido ao efeito de Coriolis.",
-    "O movimento de rotação do planeta cria forças fictícias que desviam coisas em movimento, como ventos e correntes."
+    "O movimento de rotação do planeta cria forças fictícias que desviam coisas em movimento, como ventos e correntes.",
+    "O efeito Coriolis ajuda a guiar o comportamento das grandes massas de água do planeta, junto com os continentes e os astros.",
+    "A nuvem cumulonimbus incus chega à estratosfera e parece uma bigorna.",
+    "A nuvem-bigorna marca o estágio maduro de uma tempestade poderosa."
   ],
   "ultimaAcao": {
     "acao": "pesquisar",
-    "tema": "o empurrão invisível que move as folhas",
-    "quando": "2026-11-28T03:26:33.112Z",
-    "desenhoId": "d202611280326337"
+    "tema": "Força de Coriolis",
+    "quando": "2026-11-28T04:18:52.900Z"
   },
   "vistos": {
     "sol": {
@@ -109,5 +113,5 @@
     "noite",
     "flores"
   ],
-  "semDesenhar": 0
+  "semDesenhar": 1
 }

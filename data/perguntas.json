@@ -1271,7 +1271,7 @@
       "tipo": "resposta",
       "texto": "O que é exatamente a estratosfera onde essas cinzas conseguem chegar?"
     },
-    "status": "investigando",
+    "status": "respondida",
     "tentativas": [
       {
         "data": "2026-11-28T02:31:14.016Z",
@@ -1291,9 +1291,30 @@
           }
         ],
         "pesquisaId": "p202611280231140"
+      },
+      {
+        "data": "2026-11-28T04:18:52.900Z",
+        "busca": "Por que a chuva não consegue alcançar a estratosfera para lavar a fuligem que fica lá dentro? → estratosfera nuvens chuva",
+        "resposta": "Li que algumas nuvens muito fortes, chamadas cumulonimbus incus, conseguem sim encostar na estratosfera e formar um topo de bigorna. Mas a fuligem costuma ficar presa lá em cima porque a chuva nem sempre consegue lavar tudo o que essas tempestades levantam. Fiquei curiosa sobre como essa nuvem em forma de bigorna consegue subir tanto.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Inverno nuclear",
+            "url": "https://pt.wikipedia.org/wiki/Inverno_nuclear",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Cumulonimbus incus",
+            "url": "https://pt.wikipedia.org/wiki/Cumulonimbus_incus",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280418521"
       }
     ],
-    "filhas": [],
+    "filhas": [
+      "q202611280418522"
+    ],
     "pai": "q202611280135564"
   },
   {
@@ -1397,9 +1418,68 @@
       "tipo": "resposta",
       "texto": "Será que a água do laguinho aqui da ilha também sofre um pouquinho desse desvio de Coriolis?"
     },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T04:18:52.900Z",
+        "busca": "tamanho do efeito Coriolis em poças e lagos",
+        "resposta": "O texto fala que o efeito Coriolis afeta bacias oceânicas e o contorno dos continentes, sugerindo que ele precisa de espaços imensos para acontecer de verdade, o que deixa o meu laguinho quieto demais para sofrer esse desvio.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Maré",
+            "url": "https://pt.wikipedia.org/wiki/Mar%C3%A9",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280418520",
+        "deCarona": true
+      }
+    ],
+    "filhas": [],
+    "pai": "q202611280326334"
+  },
+  {
+    "id": "q202611280418522",
+    "data": "2026-11-28T04:18:52.900Z",
+    "texto": "O que faz o topo da nuvem cumulonimbus espalhar e virar aquela forma de bigorna quando chega lá em cima?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Por que a chuva não consegue alcançar a estratosfera para lavar a fuligem que fica lá dentro?"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T04:18:52.900Z",
+        "busca": "O que faz o topo da nuvem cumulonimbus espalhar e virar aquela forma de bigorna quando chega lá em cima? → cumulonimbus bigorna",
+        "resposta": "Fiquei sabendo que o topo daquela nuvem com nome difícil chega lá na estratosfera e bate numa barreira que faz o vento espalhar tudo de lado, criando a tal forma de bigorna. O texto ainda fala de tempestades e raios, mas agora já sei o motivo daquele formato esticado no céu.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Cumulonimbus incus",
+            "url": "https://pt.wikipedia.org/wiki/Cumulonimbus_incus",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280418523"
+      }
+    ],
+    "filhas": [
+      "q202611280418524"
+    ],
+    "pai": "q202611280135566"
+  },
+  {
+    "id": "q202611280418524",
+    "data": "2026-11-28T04:18:52.900Z",
+    "texto": "O que existe na estratosfera que obriga o topo da nuvem a parar de subir e deitar daquele jeito?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que faz o topo da nuvem cumulonimbus espalhar e virar aquela forma de bigorna quando chega lá em cima?"
+    },
     "status": "aguardando",
     "tentativas": [],
     "filhas": [],
-    "pai": "q202611280326334"
+    "pai": "q202611280418522"
   }
 ]
