@@ -2211,5 +2211,88 @@
     "perguntasGeradas": [
       "q202611281333035"
     ]
+  },
+  {
+    "id": "p202611281428200",
+    "data": "2026-11-28T14:28:20.837Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611281237182",
+    "tema": "Qual é o tamanho máximo que uma gota de chuva consegue alcançar antes que o vento a quebre ao meio durante a queda?",
+    "porque": "já tentei uma vez e quero ver se encontro logo a resposta sobre o tamanho que o vento aguenta antes de quebrar a gota.",
+    "busca": "tamanho máximo gota chuva",
+    "buscas": [
+      "tamanho máximo gota chuva"
+    ],
+    "resumo": "O texto explicou que o limite máximo para uma gota de chuva é de dez milímetros, pois acima disso ela se rompe ao cair e se transforma em um elipsoide achatado.",
+    "aprendi": [
+      "O tamanho máximo de uma gota de chuva antes de quebrar é de dez milímetros.",
+      "Gotas menores que um milímetro são esféricas, enquanto as maiores ficam achatadas parecendo um elipsoide."
+    ],
+    "fontes": [
+      {
+        "titulo": "Distribuição das gotas de chuva",
+        "url": "https://pt.wikipedia.org/wiki/Distribui%C3%A7%C3%A3o_das_gotas_de_chuva",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611281428201"
+    ]
+  },
+  {
+    "id": "p202611281428202",
+    "data": "2026-11-28T14:28:20.837Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611281333031",
+    "tema": "Como os radares conseguem separar o eco da chuva de outros alvos no céu?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "chuva radar ondas",
+    "buscas": [
+      "Como os radares conseguem separar o eco da chuva de outros alvos no céu?",
+      "chuva radar ondas"
+    ],
+    "resumo": "Li sobre a história das ondas eletromagnéticas e do radar, e também sobre como a chuva se forma e cai no ciclo da água.",
+    "aprendi": [
+      "O radar mede a distância dos objetos enviando ondas de rádio e contando o tempo que elas demoram para voltar.",
+      "Heinrich Hertz comprovou em 1887 que as ondas de rádio podem ser refletidas igualzinho à luz."
+    ],
+    "fontes": [
+      {
+        "titulo": "Radar",
+        "url": "https://pt.wikipedia.org/wiki/Radar",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Chuva",
+        "url": "https://pt.wikipedia.org/wiki/Chuva",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611281428203"
+    ]
+  },
+  {
+    "id": "p202611281428204",
+    "data": "2026-11-28T14:28:20.837Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611281333033",
+    "tema": "Será que o processo de retificação usa um tipo diferente de ferramenta para alisar o parafuso depois que o cossinete já passou?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "como fazer rosca em metal",
+    "buscas": [
+      "Será que o processo de retificação usa um tipo diferente de ferramenta para alisar o parafuso depois que o cossinete já passou?",
+      "retificação de rosca",
+      "retificação de roscas",
+      "como fazer rosca em metal"
+    ],
+    "resumo": "A pesquisa na enciclopédia sobre retificação de roscas não retornou nenhum texto útil.",
+    "aprendi": [
+      "A enciclopédia não encontrou explicações sobre a ferramenta que alisa o parafuso após o cossinete."
+    ],
+    "fontes": [],
+    "perguntasGeradas": [
+      "q202611281428205"
+    ]
   }
 ]

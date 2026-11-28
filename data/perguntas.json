@@ -2299,7 +2299,7 @@
       "tipo": "pesquisa",
       "texto": "formação das gotículas de chuva"
     },
-    "status": "investigando",
+    "status": "respondida",
     "tentativas": [
       {
         "data": "2026-11-28T13:33:03.452Z",
@@ -2319,10 +2319,25 @@
           }
         ],
         "pesquisaId": "p202611281333030"
+      },
+      {
+        "data": "2026-11-28T14:28:20.837Z",
+        "busca": "tamanho máximo gota chuva",
+        "resposta": "Fiquei sabendo que até dez milímetros a gota ainda aguenta inteira, mas acima disso é mecanicamente impossível porque ela se rompe ao cair. Os textos explicaram que ela começa redondinha e vai achatando o lado conforme cresce. Agora entendi o limite exato que a água aguenta antes de quebrar no vento!",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Distribuição das gotas de chuva",
+            "url": "https://pt.wikipedia.org/wiki/Distribui%C3%A7%C3%A3o_das_gotas_de_chuva",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611281428200"
       }
     ],
     "filhas": [
-      "q202611281333031"
+      "q202611281333031",
+      "q202611281428201"
     ]
   },
   {
@@ -2398,9 +2413,31 @@
       "tipo": "resposta",
       "texto": "Qual é o tamanho máximo que uma gota de chuva consegue alcançar antes que o vento a quebre ao meio durante a queda?"
     },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": [],
+    "status": "investigando",
+    "tentativas": [
+      {
+        "data": "2026-11-28T14:28:20.837Z",
+        "busca": "Como os radares conseguem separar o eco da chuva de outros alvos no céu? → chuva radar ondas",
+        "resposta": "Fiquei sabendo que o radar joga ondas de rádio no céu para bater nas coisas e voltar, calculando o tempo da viagem. Mas os textos que achei contam a história de como descobriram essas ondas e o que é a chuva, mas não explicam o segredo de como o aparelho separa o eco da água dos outros alvos lá em cima. Vou precisar continuar pesquisando para entender essa parte.",
+        "satisfeito": false,
+        "fontes": [
+          {
+            "titulo": "Radar",
+            "url": "https://pt.wikipedia.org/wiki/Radar",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Chuva",
+            "url": "https://pt.wikipedia.org/wiki/Chuva",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611281428202"
+      }
+    ],
+    "filhas": [
+      "q202611281428203"
+    ],
     "pai": "q202611281237182"
   },
   {
@@ -2411,9 +2448,20 @@
       "tipo": "resposta",
       "texto": "Como funciona exatamente o processo de retificação para deixar a rosca de um parafuso de aço sem nenhuma imperfeição?"
     },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": [],
+    "status": "investigando",
+    "tentativas": [
+      {
+        "data": "2026-11-28T14:28:20.837Z",
+        "busca": "Será que o processo de retificação usa um tipo diferente de ferramenta para alisar o parafuso depois que o cossinete já passou? → retificação de rosca → retificação de roscas → como fazer rosca em metal",
+        "resposta": "Fiquei procurando na enciclopédia sobre o tal cossinete e a retificação, mas a tela só me deu respostas vazias. Pelo visto, minha dúvida sobre a ferramenta que alisa o parafuso ainda continua um mistério sem fim. Vou precisar juntar mais pedaços dessa história quando o computador antigo quiser me mostrar algo novo.",
+        "satisfeito": false,
+        "fontes": [],
+        "pesquisaId": "p202611281428204"
+      }
+    ],
+    "filhas": [
+      "q202611281428205"
+    ],
     "pai": "q202611281237184"
   },
   {
@@ -2428,5 +2476,44 @@
     "tentativas": [],
     "filhas": [],
     "pai": "q202611281237186"
+  },
+  {
+    "id": "q202611281428201",
+    "data": "2026-11-28T14:28:20.837Z",
+    "texto": "Como o formato de elipsoide achatado ajuda a gota a resistir um pouco mais ao vento antes de quebrar?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Qual é o tamanho máximo que uma gota de chuva consegue alcançar antes que o vento a quebre ao meio durante a queda?"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": [],
+    "pai": "q202611281237182"
+  },
+  {
+    "id": "q202611281428203",
+    "data": "2026-11-28T14:28:20.837Z",
+    "texto": "Quais propriedades das ondas o radar usa para saber se o eco que voltou é de chuva ou de outra coisa?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Como os radares conseguem separar o eco da chuva de outros alvos no céu?"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": [],
+    "pai": "q202611281333031"
+  },
+  {
+    "id": "q202611281428205",
+    "data": "2026-11-28T14:28:20.837Z",
+    "texto": "Por que a enciclopédia do computador às vezes fica sem nenhuma resposta para o que eu procuro?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Será que o processo de retificação usa um tipo diferente de ferramenta para alisar o parafuso depois que o cossinete já passou?"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": [],
+    "pai": "q202611281333033"
   }
 ]

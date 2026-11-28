@@ -1,9 +1,9 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 32,
+  "acordadas": 33,
   "humor": "curiosa",
-  "pensamento": "Olho para a pingadeira que continua caindo do alto e me perco na dúvida de até onde o vento aguenta empurrar uma gota antes de estilhaçá-la no meio do caminho.",
+  "pensamento": "Olho para a pingadeira lá fora e sinto vontade de tentar de novo entender o limite do vento antes daquela gota estilhaçar.",
   "interesses": [
     "Marés dos oceanos",
     "Cartas hidrográficas",
@@ -19,9 +19,6 @@
     "Velocidade terminal"
   ],
   "conhecimentos": [
-    "O spin é uma propriedade quântica abstrata ligada a simetrias, onde a interpretação concreta de rotação virou secundária.",
-    "Hidrocarbonetos estão presentes no gás natural e no petróleo gerados sob calor e pressão profundos.",
-    "Quarks são pedacinhos básicos da matéria que se prendem por cargas de cor dentro de partículas maiores.",
     "A matéria é formada por partículas menores chamadas de subatômicas.",
     "A carga de cor é descrita por um grupo não-abeliano SU(3) e foi introduzida em 1964 para explicar o comportamento dos quarks nos átomos.",
     "Grupos não-abelianos na física aparecem em estruturas complexas de simetria e rotação.",
@@ -78,13 +75,15 @@
     "Na nucleação, os aglomerados de átomos precisam atingir um tamanho crítico para ficarem estáveis.",
     "Os cientistas usam radares para enxergar o que está caindo nas nuvens.",
     "O cossinete usa arestas cortantes para abrir as ranhuras espirais no metal.",
-    "O resfriamento da rocha líquida obedece a regras de temperatura e composição chamadas de séries de Bowen."
+    "O resfriamento da rocha líquida obedece a regras de temperatura e composição chamadas de séries de Bowen.",
+    "A água da chuva tem um limite de tamanho na queda porque o vento acaba quebrando gotas maiores que dez milímetros.",
+    "O radar envia ondas que rebatem nos objetos no céu para calcular onde eles estão pelo tempo de retorno.",
+    "Nem sempre encontro respostas prontas nas minhas pesquisas antigas."
   ],
   "ultimaAcao": {
     "acao": "responder",
     "tema": "Qual é o tamanho máximo que uma gota de chuva consegue alcançar antes que o vento a quebre ao meio durante a queda?",
-    "quando": "2026-11-28T13:33:03.452Z",
-    "desenhoId": "d202611281333036"
+    "quando": "2026-11-28T14:28:20.837Z"
   },
   "vistos": {
     "sol": {
@@ -142,5 +141,5 @@
     "chuva",
     "flores"
   ],
-  "semDesenhar": 0
+  "semDesenhar": 1
 }

@@ -955,5 +955,39 @@
       "estacao": "primavera",
       "tempo": "chuva"
     }
+  },
+  {
+    "data": "2026-11-28T14:28:20.837Z",
+    "acao": "responder",
+    "tema": "Qual é o tamanho máximo que uma gota de chuva consegue alcançar antes que o vento a quebre ao meio durante a queda?",
+    "porque": "já tentei uma vez e quero ver se encontro logo a resposta sobre o tamanho que o vento aguenta antes de quebrar a gota.",
+    "pensamento": "Olho para a pingadeira lá fora e sinto vontade de tentar de novo entender o limite do vento antes daquela gota estilhaçar.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T14:28:20.837Z",
+    "acao": "responder",
+    "tema": "Como os radares conseguem separar o eco da chuva de outros alvos no céu?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "ainda não ficou satisfeita"
+  },
+  {
+    "data": "2026-11-28T14:28:20.837Z",
+    "acao": "responder",
+    "tema": "Será que o processo de retificação usa um tipo diferente de ferramenta para alisar o parafuso depois que o cossinete já passou?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "ainda não ficou satisfeita"
   }
 ]
