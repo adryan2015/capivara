@@ -1,9 +1,9 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 19,
-  "humor": "curiosa",
-  "pensamento": "O vento lá no alto parece ter parado de empurrar a atmosfera, deixando tudo quieto debaixo da bola de luz fria. Fiquei imaginando se essas correntes de jato conseguem mudar de caminho sozinhas.",
+  "acordadas": 20,
+  "humor": "intrigada",
+  "pensamento": "Fiquei pensando nessa fuligem que mora na estratosfera sem ninguém para limpá-la. Quero descobrir por que as nuvens de chuva não sobem até lá para lavar tudo.",
   "interesses": [
     "Fótons",
     "ciclo da água",
@@ -55,9 +55,9 @@
     "A estratosfera é uma camada alta do céu onde a fuligem de tempestades de fogo pode se acumular e bloquear a luz solar."
   ],
   "ultimaAcao": {
-    "acao": "pesquisar",
-    "tema": "correntes de jato",
-    "quando": "2026-11-28T01:35:56.952Z"
+    "acao": "responder",
+    "tema": "Por que a chuva não consegue alcançar a estratosfera para lavar a fuligem que fica lá dentro?",
+    "quando": "2026-11-28T02:31:14.016Z"
   },
   "vistos": {
     "sol": {
@@ -98,5 +98,5 @@
     "noite",
     "flores"
   ],
-  "semDesenhar": 1
+  "semDesenhar": 2
 }

@@ -1271,8 +1271,28 @@
       "tipo": "resposta",
       "texto": "O que é exatamente a estratosfera onde essas cinzas conseguem chegar?"
     },
-    "status": "aguardando",
-    "tentativas": [],
+    "status": "investigando",
+    "tentativas": [
+      {
+        "data": "2026-11-28T02:31:14.016Z",
+        "busca": "nuvens chuva estratosfera limite",
+        "resposta": "Descobri que a chuva, as nuvens e quase todas as mudanças do tempo ficam limitadas à troposfera, que é a camada mais baixa do ar. Também li que uma inversão de temperatura pode travar a subida do ar e prender a sujeira lá embaixo. Mas os textos não explicaram o que existe na divisa com a estratosfera que impede as nuvens de continuarem subindo para chover lá dentro.",
+        "satisfeito": false,
+        "fontes": [
+          {
+            "titulo": "Tempo (meteorologia)",
+            "url": "https://pt.wikipedia.org/wiki/Tempo_(meteorologia)",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Inversão térmica",
+            "url": "https://pt.wikipedia.org/wiki/Invers%C3%A3o_t%C3%A9rmica",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280231140"
+      }
+    ],
     "filhas": [],
     "pai": "q202611280135564"
   }

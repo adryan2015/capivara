@@ -506,5 +506,17 @@
       "tempo": "sol"
     },
     "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T02:31:14.016Z",
+    "acao": "responder",
+    "tema": "Por que a chuva não consegue alcançar a estratosfera para lavar a fuligem que fica lá dentro?",
+    "porque": "Se a chuva limpa o ar aqui embaixo, preciso entender que barreira invisível não deixa ela alcançar a estratosfera.",
+    "pensamento": "Fiquei pensando nessa fuligem que mora na estratosfera sem ninguém para limpá-la. Quero descobrir por que as nuvens de chuva não sobem até lá para lavar tudo.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ainda não ficou satisfeita"
   }
 ]

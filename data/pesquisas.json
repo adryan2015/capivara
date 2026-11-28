@@ -1139,5 +1139,35 @@
     "perguntasGeradas": [
       "q202611280135566"
     ]
+  },
+  {
+    "id": "p202611280231140",
+    "data": "2026-11-28T02:31:14.016Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611280135566",
+    "tema": "Por que a chuva não consegue alcançar a estratosfera para lavar a fuligem que fica lá dentro?",
+    "porque": "Se a chuva limpa o ar aqui embaixo, preciso entender que barreira invisível não deixa ela alcançar a estratosfera.",
+    "busca": "nuvens chuva estratosfera limite",
+    "buscas": [
+      "nuvens chuva estratosfera limite"
+    ],
+    "resumo": "Li que os fenômenos meteorológicos como a chuva ocorrem na troposfera e que inversões térmicas impedem o movimento vertical do ar.",
+    "aprendi": [
+      "Praticamente toda a chuva, nuvens e vento que conhecemos acontecem apenas na troposfera, abaixo da estratosfera.",
+      "A inversão térmica ocorre quando a temperatura sobe com a altitude em vez de cair, impedindo o ar de circular e subir."
+    ],
+    "fontes": [
+      {
+        "titulo": "Tempo (meteorologia)",
+        "url": "https://pt.wikipedia.org/wiki/Tempo_(meteorologia)",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Inversão térmica",
+        "url": "https://pt.wikipedia.org/wiki/Invers%C3%A3o_t%C3%A9rmica",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": []
   }
 ]
