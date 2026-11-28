@@ -877,5 +877,39 @@
       "tempo": "nublado"
     },
     "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T12:37:18.117Z",
+    "acao": "pesquisar",
+    "tema": "formação das gotículas de chuva",
+    "porque": "está caindo água do céu sem parar e quero saber como ela se junta até despencar",
+    "pensamento": "A pingadeira do alto molha as folhas e faz um som ritmado nas pedras. Quero descobrir como pequenos pedacinhos de água viram essas gotas pesadas que caem lá de cima.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "de quebra, respondeu 1 dúvida antiga"
+  },
+  {
+    "data": "2026-11-28T12:37:18.117Z",
+    "acao": "responder",
+    "tema": "Como se constrói um parafuso micrométrico tão pequeno e preciso?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T12:37:18.117Z",
+    "acao": "responder",
+    "tema": "Como os minerais conseguem se abraçar tão forte na hora que a rocha esfria?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "ficou satisfeita com a resposta"
   }
 ]

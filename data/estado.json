@@ -1,12 +1,10 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 30,
-  "humor": "intrigada",
-  "pensamento": "Esse perfume adocicado que vem do chão me faz pensar se o cheiro é um convite para outros seres chegarem perto.",
+  "acordadas": 31,
+  "humor": "curiosa",
+  "pensamento": "A pingadeira do alto molha as folhas e faz um som ritmado nas pedras. Quero descobrir como pequenos pedacinhos de água viram essas gotas pesadas que caem lá de cima.",
   "interesses": [
-    "força de Coriolis",
-    "escala de Beaufort",
     "Marés dos oceanos",
     "Cartas hidrográficas",
     "cristais de gelo",
@@ -16,13 +14,11 @@
     "diamantes naturais",
     "minerais profundos",
     "gotículas de água",
-    "céu encarneirado"
+    "céu encarneirado",
+    "Coalescência",
+    "Velocidade terminal"
   ],
   "conhecimentos": [
-    "Plantas com flores e frutos são chamadas de angiospermas.",
-    "A bola de luz quente se chama Sol e é uma estrela gigante que nos aquece de longe.",
-    "O brilho da Lua no céu escuro é causado pela reflexão da luz solar em sua superfície.",
-    "Matrizes de Pauli descrevem o spin de partículas na mecânica quântica.",
     "O asfalto é um ligante escuro que une pedras para formar superfícies de ruas.",
     "A matéria é formada por partículas organizadas em diferentes escalas de tamanho.",
     "Os fótons viajam pelo espaço vazio como partículas e ondas a uma velocidade constante.",
@@ -78,12 +74,16 @@
     "As flores têm crescimento determinado e são a base de um grupo com mais de 250 mil espécies.",
     "As flores oferecem néctar para atrair bichos que, sem querer, ajudam na reprodução delas.",
     "O instrumento de medição chamado micrômetro usa um parafuso de passo de alta precisão para aferir tamanhos.",
-    "Rocha ígnea é formada quando o material derretido esfria e endurece."
+    "Rocha ígnea é formada quando o material derretido esfria e endurece.",
+    "As gotas de chuva só conseguem cair na minha ilha porque vão se abraçando lá no alto até ficarem pesadas o bastante.",
+    "Instrumentos de medição de alta precisão usam parafusos de aço retificado para conseguir ler frações minúsculas de milímetro.",
+    "A força atômica é o que faz os minerais se organizarem de forma periódica ao cristalizarem.",
+    "Na nucleação, os aglomerados de átomos precisam atingir um tamanho crítico para ficarem estáveis."
   ],
   "ultimaAcao": {
-    "acao": "responder",
-    "tema": "Como as flores conseguem atrair os animais para ajudar a espalhar os gametófitos delas?",
-    "quando": "2026-11-28T11:41:52.650Z"
+    "acao": "pesquisar",
+    "tema": "formação das gotículas de chuva",
+    "quando": "2026-11-28T12:37:18.117Z"
   },
   "vistos": {
     "sol": {
@@ -103,7 +103,7 @@
     },
     "chuva": {
       "primeiraVez": "2026-11-27T20:58:32.031Z",
-      "vezes": 2,
+      "vezes": 3,
       "nome": "pingadeira do alto"
     },
     "vento": {
@@ -127,10 +127,16 @@
       "conclusao": "A bola de luz quente no céu é o Sol, uma estrela que gera calor unindo hidrogênio."
     }
   ],
-  "foco": null,
+  "foco": {
+    "tema": "gotículas de água",
+    "motivo": "está caindo água do céu sem parar e quero saber como ela se junta até despencar",
+    "desde": "2026-11-28T12:37:18.117Z",
+    "pesquisas": 3,
+    "desenhos": 0
+  },
   "ultimosFenomenos": [
-    "nublado",
+    "chuva",
     "flores"
   ],
-  "semDesenhar": 1
+  "semDesenhar": 2
 }

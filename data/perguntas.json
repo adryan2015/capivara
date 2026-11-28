@@ -2202,9 +2202,26 @@
       "tipo": "resposta",
       "texto": "Como um micrômetro é pequeno o bastante para caber dentro da ponta da minha caneta azul?"
     },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": [],
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T12:37:18.117Z",
+        "busca": "Como se constrói um parafuso micrométrico tão pequeno e preciso? → micrômetro",
+        "resposta": "Entendi que esse parafuso tão preciso é construído com um aço especial de alta liga, que passa por tratamentos de temperagem e depois é retificado com extremo cuidado para garantir a exatidão da rosca. Ele funciona deslizando dentro de uma porca ajustável que evita qualquer folga, permitindo medir coisas minúsculas. Fiquei fascinada ao saber que o segredo dessa precisão toda está no polimento refinado e no desenho do aço.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Micrómetro (instrumento)",
+            "url": "https://pt.wikipedia.org/wiki/Micr%C3%B3metro_(instrumento)",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611281237183"
+      }
+    ],
+    "filhas": [
+      "q202611281237184"
+    ],
     "pai": "q202611281046402"
   },
   {
@@ -2215,9 +2232,101 @@
       "tipo": "resposta",
       "texto": "Como milhares de cristais grudados conseguem ser tão duros quanto um cristal só?"
     },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T12:37:18.117Z",
+        "busca": "Como os minerais conseguem se abraçar tão forte na hora que a rocha esfria? → cristalização dos minerais",
+        "resposta": "Descobri que quando a pedra derretida vai esfriando, os átomos começam a se reunir em pequenos grupos organizados chamados núcleos, impulsionados pelas forças atômicas. À medida que mais partículas vão se encaixando nesses núcleos de forma bem ordenada, o cristal cresce até formar a rocha sólida. Esse abraço firme entre as partes é a cristalização, que acontece em um ritmo certinho dependendo da temperatura.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Cristalização",
+            "url": "https://pt.wikipedia.org/wiki/Cristaliza%C3%A7%C3%A3o",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Séries de Bowen",
+            "url": "https://pt.wikipedia.org/wiki/S%C3%A9ries_de_Bowen",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611281237185"
+      }
+    ],
+    "filhas": [
+      "q202611281237186"
+    ],
+    "pai": "q202611281046404"
+  },
+  {
+    "id": "q202611281237180",
+    "data": "2026-11-28T12:37:18.117Z",
+    "texto": "Como as gotas de água conseguem ficar pesadas o bastante para despencar do céu?",
+    "origem": {
+      "tipo": "pensamento"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T12:37:18.117Z",
+        "busca": "gotículas de água coalescência chuva",
+        "resposta": "As gotículas de água na nuvem vão colidindo e se fundindo umas com as outras enquanto caem em velocidades diferentes. Conforme se juntam nesse processo de coalescência, vão acumulando massa e ficando pesadas o bastante para vencer o ar que sobe e despencar.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Chuva",
+            "url": "https://pt.wikipedia.org/wiki/Chuva",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Física das nuvens",
+            "url": "https://pt.wikipedia.org/wiki/F%C3%ADsica_das_nuvens",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611281237181",
+        "deCarona": true
+      }
+    ],
+    "filhas": []
+  },
+  {
+    "id": "q202611281237182",
+    "data": "2026-11-28T12:37:18.117Z",
+    "texto": "Qual é o tamanho máximo que uma gota de chuva consegue alcançar antes que o vento a quebre ao meio durante a queda?",
+    "origem": {
+      "tipo": "pesquisa",
+      "texto": "formação das gotículas de chuva"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": []
+  },
+  {
+    "id": "q202611281237184",
+    "data": "2026-11-28T12:37:18.117Z",
+    "texto": "Como funciona exatamente o processo de retificação para deixar a rosca de um parafuso de aço sem nenhuma imperfeição?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Como se constrói um parafuso micrométrico tão pequeno e preciso?"
+    },
     "status": "aguardando",
     "tentativas": [],
     "filhas": [],
-    "pai": "q202611281046404"
+    "pai": "q202611281141522"
+  },
+  {
+    "id": "q202611281237186",
+    "data": "2026-11-28T12:37:18.117Z",
+    "texto": "O que determina quais minerais vão cristalizar primeiro quando a rocha líquida começa a esfriar?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Como os minerais conseguem se abraçar tão forte na hora que a rocha esfria?"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": [],
+    "pai": "q202611281141524"
   }
 ]

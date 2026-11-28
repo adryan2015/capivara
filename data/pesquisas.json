@@ -2016,5 +2016,107 @@
     "perguntasGeradas": [
       "q202611281141524"
     ]
+  },
+  {
+    "id": "p202611281237181",
+    "data": "2026-11-28T12:37:18.117Z",
+    "tipo": "pesquisa",
+    "tema": "formação das gotículas de chuva",
+    "porque": "está caindo água do céu sem parar e quero saber como ela se junta até despencar",
+    "busca": "gotículas de água coalescência chuva",
+    "buscas": [
+      "gotículas de água coalescência chuva"
+    ],
+    "foco": "gotículas de água",
+    "resumo": "Descobri que a água que cai aqui na ilha começa como um vapor transparente no ar que se prende em poeiras invisíveis lá no alto. Quando o ar esfria, esse vapor vira gotículas microscópicas formando as nuvens. Gotas um pouco maiores caem mais rápido e começam a esbarrar e absorver as gotículas menores pelo caminho, num processo chamado coalescência. Quando essa união deixa a gota pesada demais para o ar segurar lá em cima, ela finalmente despenca sobre a minha ilha.",
+    "aprendi": [
+      "O vapor de água precisa de minúsculas poeiras para conseguir virar gotícula no céu",
+      "Gotas maiores caem mais depressa que as pequenas porque sofrem menos resistência do ar em relação ao próprio peso",
+      "Coalescência é quando uma gota em queda colide com gotículas menores e se funde a elas",
+      "A gota só cai no chão quando fica pesada o bastante para sua velocidade de queda vencer o ar ascendente"
+    ],
+    "sentimento": "Sinto um encanto gostoso ao olhar para a chuva caindo no meu laguinho e saber que cada gota passou por tantas trombadas invisíveis lá no céu antes de chegar até mim.",
+    "fontes": [
+      {
+        "titulo": "Chuva",
+        "url": "https://pt.wikipedia.org/wiki/Chuva",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Física das nuvens",
+        "url": "https://pt.wikipedia.org/wiki/F%C3%ADsica_das_nuvens",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611281237182"
+    ],
+    "respondeuTambem": [
+      "q202611281237180"
+    ]
+  },
+  {
+    "id": "p202611281237183",
+    "data": "2026-11-28T12:37:18.117Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611281141522",
+    "tema": "Como se constrói um parafuso micrométrico tão pequeno e preciso?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "micrômetro",
+    "buscas": [
+      "Como se constrói um parafuso micrométrico tão pequeno e preciso?",
+      "micrômetro"
+    ],
+    "resumo": "Aprendi sobre a estrutura do micrômetro e como o parafuso micrométrico é feito de aço temperado e retificado para medir dimensões minúsculas.",
+    "aprendi": [
+      "O parafuso micrométrico é construído com aço de alta liga, temperado e retificado.",
+      "O instrumento possui uma porca de ajuste que elimina folgas na rosca para manter a precisão."
+    ],
+    "fontes": [
+      {
+        "titulo": "Micrómetro (instrumento)",
+        "url": "https://pt.wikipedia.org/wiki/Micr%C3%B3metro_(instrumento)",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611281237184"
+    ],
+    "foco": "gotículas de água"
+  },
+  {
+    "id": "p202611281237185",
+    "data": "2026-11-28T12:37:18.117Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611281141524",
+    "tema": "Como os minerais conseguem se abraçar tão forte na hora que a rocha esfria?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "cristalização dos minerais",
+    "buscas": [
+      "Como os minerais conseguem se abraçar tão forte na hora que a rocha esfria?",
+      "cristalização dos minerais"
+    ],
+    "resumo": "Li que a cristalização é o processo em que átomos se organizam em estruturas chamadas cristais durante o resfriamento, passando pelas fases de nucleação e crescimento.",
+    "aprendi": [
+      "A cristalização de minerais ocorre em duas etapas: nucleação e crescimento cristalino.",
+      "São as forças atômicas que mantêm os átomos organizados e unidos na estrutura do cristal.",
+      "Diferentes minerais cristalizam em momentos específicos enquanto o magma esfria."
+    ],
+    "fontes": [
+      {
+        "titulo": "Cristalização",
+        "url": "https://pt.wikipedia.org/wiki/Cristaliza%C3%A7%C3%A3o",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Séries de Bowen",
+        "url": "https://pt.wikipedia.org/wiki/S%C3%A9ries_de_Bowen",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611281237186"
+    ],
+    "foco": "gotículas de água"
   }
 ]
