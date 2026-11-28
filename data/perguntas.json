@@ -1176,5 +1176,104 @@
     ],
     "filhas": [],
     "pai": "q202611280040381"
+  },
+  {
+    "id": "q202611280135560",
+    "data": "2026-11-28T01:35:56.952Z",
+    "texto": "As correntes de jato mudam de caminho sozinhas ou precisam de um empurrão do calor?",
+    "origem": {
+      "tipo": "pensamento"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T01:35:56.952Z",
+        "busca": "mudancas nas correntes de jato",
+        "resposta": "Eles precisam sim de um empurrão: o calor da radiação solar e o giro do planeta criam esses ventos onde massas de ar com temperaturas diferentes se encontram.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Corrente de jato",
+            "url": "https://pt.wikipedia.org/wiki/Corrente_de_jato",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280135561",
+        "deCarona": true
+      }
+    ],
+    "filhas": []
+  },
+  {
+    "id": "q202611280135562",
+    "data": "2026-11-28T01:35:56.952Z",
+    "texto": "Como um vulcão lá embaixo consegue deixar rastros de vento visíveis tão alto no céu?",
+    "origem": {
+      "tipo": "pesquisa",
+      "texto": "correntes de jato"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T01:35:56.952Z",
+        "busca": "Como um vulcão lá embaixo consegue deixar rastros de vento visíveis tão alto no céu? → cinzas vulcânicas na atmosfera",
+        "resposta": "Fiquei sabendo que aquelas marcas no céu são poeiras chamadas cinzas vulcânicas, feitas de vidro, pedras e cristais que explodem das profundezas da terra. Os gases empurram tudo lá para cima, e os ventos do alto espalham esses pedacinhos por milhares de quilômetros.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Cinza vulcânica",
+            "url": "https://pt.wikipedia.org/wiki/Cinza_vulc%C3%A2nica",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280135563"
+      }
+    ],
+    "filhas": [
+      "q202611280135564"
+    ]
+  },
+  {
+    "id": "q202611280135564",
+    "data": "2026-11-28T01:35:56.952Z",
+    "texto": "O que é exatamente a estratosfera onde essas cinzas conseguem chegar?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Como um vulcão lá embaixo consegue deixar rastros de vento visíveis tão alto no céu?"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T01:35:56.952Z",
+        "busca": "O que é exatamente a estratosfera onde essas cinzas conseguem chegar? → estratosfera",
+        "resposta": "Li que a estratosfera fica lá em cima, entre dez e quinze quilômetros acima da nossa cabeça, acima de outra camada chamada troposfera. É um lugar onde a fuligem de grandes incêndios pode subir e ficar presa por anos, aquecendo o ar e bloqueando a luz do sol. Fiquei muito curiosa para saber como o ar lá em cima consegue segurar essas coisas por tanto tempo sem cair com a chuva.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Inverno nuclear",
+            "url": "https://pt.wikipedia.org/wiki/Inverno_nuclear",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280135565"
+      }
+    ],
+    "filhas": [
+      "q202611280135566"
+    ],
+    "pai": "q202611280135562"
+  },
+  {
+    "id": "q202611280135566",
+    "data": "2026-11-28T01:35:56.952Z",
+    "texto": "Por que a chuva não consegue alcançar a estratosfera para lavar a fuligem que fica lá dentro?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que é exatamente a estratosfera onde essas cinzas conseguem chegar?"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": [],
+    "pai": "q202611280135564"
   }
 ]

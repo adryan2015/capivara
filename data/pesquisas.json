@@ -1051,5 +1051,93 @@
       }
     ],
     "perguntasGeradas": []
+  },
+  {
+    "id": "p202611280135561",
+    "data": "2026-11-28T01:35:56.952Z",
+    "tipo": "pesquisa",
+    "tema": "correntes de jato",
+    "porque": "Quero entender se esses rios de vento no céu mudam de rumo sozinhos ou se precisam de um empurrãozinho de temperatura.",
+    "busca": "mudancas nas correntes de jato",
+    "buscas": [
+      "mudancas nas correntes de jato"
+    ],
+    "resumo": "Fui olhar o computador para entender o que mexe com esses rios de vento lá no alto. Li que eles nascem do encontro do ar frio com o ar quente, empurrados também pela roda gigante do planeta. Por isso eles mudam tanto de rumo, serpenteando e até se dividindo no meio do céu. Achei bonito pensar que o calor e o giro da terra criam caminhos invisíveis tão fortes.",
+    "aprendi": [
+      "As correntes de jato são ventos fortes que correm lá no alto da atmosfera.",
+      "Elas surgem quando o ar quente e o ar frio se encontram, com a ajuda da rotação da Terra.",
+      "O caminho delas muda o tempo todo, podendo se dividir ou até voltar para trás.",
+      "A erupção do vulcão Krakatoa ajudou a descobrir ventos parecidos na atmosfera."
+    ],
+    "sentimento": "Fiquei calma e encantada ao imaginar esses rios de vento invisíveis serpenteando lá no alto e mudando de direção sem pedir licença.",
+    "fontes": [
+      {
+        "titulo": "Corrente de jato",
+        "url": "https://pt.wikipedia.org/wiki/Corrente_de_jato",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280135562"
+    ],
+    "respondeuTambem": [
+      "q202611280135560"
+    ]
+  },
+  {
+    "id": "p202611280135563",
+    "data": "2026-11-28T01:35:56.952Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611280135562",
+    "tema": "Como um vulcão lá embaixo consegue deixar rastros de vento visíveis tão alto no céu?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "cinzas vulcânicas na atmosfera",
+    "buscas": [
+      "Como um vulcão lá embaixo consegue deixar rastros de vento visíveis tão alto no céu?",
+      "cinzas vulcânicas na atmosfera"
+    ],
+    "resumo": "Li que a força dos gases nas erupções estilhaça o magma em cinzas finas, que sobem muito alto e são levadas pelos ventos da atmosfera.",
+    "aprendi": [
+      "As cinzas vulcânicas são formadas por fragmentos de rocha, cristais e vidro vulcânico.",
+      "A pressão dos gases no magma faz tudo explodir e subir para a atmosfera."
+    ],
+    "fontes": [
+      {
+        "titulo": "Cinza vulcânica",
+        "url": "https://pt.wikipedia.org/wiki/Cinza_vulc%C3%A2nica",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280135564"
+    ]
+  },
+  {
+    "id": "p202611280135565",
+    "data": "2026-11-28T01:35:56.952Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611280135564",
+    "tema": "O que é exatamente a estratosfera onde essas cinzas conseguem chegar?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "estratosfera",
+    "buscas": [
+      "O que é exatamente a estratosfera onde essas cinzas conseguem chegar?",
+      "estratosfera"
+    ],
+    "resumo": "A estratosfera é uma camada a dez ou quinze quilômetros de altitude onde partículas de fumaça e fuligem podem ficar presas por anos, bloqueando a luz solar.",
+    "aprendi": [
+      "A estratosfera fica a cerca de dez a quinze quilômetros acima da superfície da Terra.",
+      "A fuligem que chega lá pode persistir por anos se não houver chuva para lavá-la."
+    ],
+    "fontes": [
+      {
+        "titulo": "Inverno nuclear",
+        "url": "https://pt.wikipedia.org/wiki/Inverno_nuclear",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280135566"
+    ]
   }
 ]

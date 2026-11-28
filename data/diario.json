@@ -472,5 +472,39 @@
       "estacao": "primavera",
       "tempo": "sol"
     }
+  },
+  {
+    "data": "2026-11-28T01:35:56.952Z",
+    "acao": "pesquisar",
+    "tema": "correntes de jato",
+    "porque": "Quero entender se esses rios de vento no céu mudam de rumo sozinhos ou se precisam de um empurrãozinho de temperatura.",
+    "pensamento": "O vento lá no alto parece ter parado de empurrar a atmosfera, deixando tudo quieto debaixo da bola de luz fria. Fiquei imaginando se essas correntes de jato conseguem mudar de caminho sozinhas.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "de quebra, respondeu 1 dúvida antiga"
+  },
+  {
+    "data": "2026-11-28T01:35:56.952Z",
+    "acao": "responder",
+    "tema": "Como um vulcão lá embaixo consegue deixar rastros de vento visíveis tão alto no céu?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T01:35:56.952Z",
+    "acao": "responder",
+    "tema": "O que é exatamente a estratosfera onde essas cinzas conseguem chegar?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta"
   }
 ]
