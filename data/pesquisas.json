@@ -1920,5 +1920,101 @@
     "perguntasGeradas": [
       "q202611281046406"
     ]
+  },
+  {
+    "id": "p202611281141520",
+    "data": "2026-11-28T11:41:52.650Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611281046406",
+    "tema": "Como as flores conseguem atrair os animais para ajudar a espalhar os gametófitos delas?",
+    "porque": "quero entender se o perfume e as cores dessas hastes servem para chamar visitantes",
+    "busca": "polinizacao atracao animais flores",
+    "buscas": [
+      "polinizacao atracao animais flores"
+    ],
+    "resumo": "As plantas desenvolveram cores, aromas e recompensas como o néctar para atrair animais que transportam o pólen de uma flor para outra.",
+    "aprendi": [
+      "A transferência de pólen feita por animais é chamada de zoofilia ou entomofilia quando feita por insetos.",
+      "Animais como abelhas, besouros e borboletas ajudam na polinização enquanto buscam alimento nas flores."
+    ],
+    "fontes": [
+      {
+        "titulo": "Zoofilia (polinização)",
+        "url": "https://pt.wikipedia.org/wiki/Zoofilia_(poliniza%C3%A7%C3%A3o)",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Entomofilia",
+        "url": "https://pt.wikipedia.org/wiki/Entomofilia",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": []
+  },
+  {
+    "id": "p202611281141521",
+    "data": "2026-11-28T11:41:52.650Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611281046402",
+    "tema": "Como um micrômetro é pequeno o bastante para caber dentro da ponta da minha caneta azul?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "micrômetro",
+    "buscas": [
+      "Como um micrômetro é pequeno o bastante para caber dentro da ponta da minha caneta azul?",
+      "micrômetro"
+    ],
+    "resumo": "O texto explica que o micrômetro é um instrumento metrológico de alta precisão com parafuso micrométrico, e que 'micrômetro' também é a milionésima parte do metro.",
+    "aprendi": [
+      "Micrômetro é um instrumento com tambor e parafuso para medir coisas com muita exatidão.",
+      "Micrômetro também é o nome da unidade de medida que vale a milionésima parte do metro."
+    ],
+    "fontes": [
+      {
+        "titulo": "Micrometro (desambiguação)",
+        "url": "https://pt.wikipedia.org/wiki/Micrometro_(desambigua%C3%A7%C3%A3o)",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Micrómetro (instrumento)",
+        "url": "https://pt.wikipedia.org/wiki/Micr%C3%B3metro_(instrumento)",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611281141522"
+    ]
+  },
+  {
+    "id": "p202611281141523",
+    "data": "2026-11-28T11:41:52.650Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611281046404",
+    "tema": "Como milhares de cristais grudados conseguem ser tão duros quanto um cristal só?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "pedra rocha dureza",
+    "buscas": [
+      "Como milhares de cristais grudados conseguem ser tão duros quanto um cristal só?",
+      "pedra rocha dureza"
+    ],
+    "resumo": "O basalto e o granito são rochas formadas por minerais como quartzo e feldspato presos numa matriz firme que lhes dá grande dureza.",
+    "aprendi": [
+      "O basalto tem grãos finos porque o magma esfria rápido na superfície.",
+      "O granito é formado por minerais compactos como quartzo e feldspato."
+    ],
+    "fontes": [
+      {
+        "titulo": "Basalto",
+        "url": "https://pt.wikipedia.org/wiki/Basalto",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Granito",
+        "url": "https://pt.wikipedia.org/wiki/Granito",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611281141524"
+    ]
   }
 ]

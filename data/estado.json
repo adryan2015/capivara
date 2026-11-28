@@ -1,9 +1,9 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 29,
-  "humor": "curiosa",
-  "pensamento": "Olhei para o chão e vi aquelas hastes doces de novo, mas fiquei pensando no tamanho exato da terrinha daqui que o vento leva embora.",
+  "acordadas": 30,
+  "humor": "intrigada",
+  "pensamento": "Esse perfume adocicado que vem do chão me faz pensar se o cheiro é um convite para outros seres chegarem perto.",
   "interesses": [
     "força de Coriolis",
     "escala de Beaufort",
@@ -19,9 +19,6 @@
     "céu encarneirado"
   ],
   "conhecimentos": [
-    "A Lua é o satélite natural da Terra que brilha no céu escuro e tem fases regulares.",
-    "Os fótons viajam pelo espaço de formas ligadas ao espaço-tempo e a conceitos complexos de twistor.",
-    "Juntar núcleos gera novos elementos e libera muita energia quando a temperatura está bem alta.",
     "Plantas com flores e frutos são chamadas de angiospermas.",
     "A bola de luz quente se chama Sol e é uma estrela gigante que nos aquece de longe.",
     "O brilho da Lua no céu escuro é causado pela reflexão da luz solar em sua superfície.",
@@ -78,13 +75,15 @@
     "A poeira eólica precisa de ventos fortes e solo seco para se espalhar pela troposfera.",
     "A poeira do solo que sobe com o vento viaja pelo ar em partículas minúsculas medidas em micrômetros.",
     "Diamantes negros normais são cristais únicos, enquanto os carbonados são agregados cheios de poros.",
-    "As flores têm crescimento determinado e são a base de um grupo com mais de 250 mil espécies."
+    "As flores têm crescimento determinado e são a base de um grupo com mais de 250 mil espécies.",
+    "As flores oferecem néctar para atrair bichos que, sem querer, ajudam na reprodução delas.",
+    "O instrumento de medição chamado micrômetro usa um parafuso de passo de alta precisão para aferir tamanhos.",
+    "Rocha ígnea é formada quando o material derretido esfria e endurece."
   ],
   "ultimaAcao": {
     "acao": "responder",
-    "tema": "Qual é o tamanho médio das partículas de terra que eu consigo ver subindo aqui na minha ilha?",
-    "quando": "2026-11-28T10:46:40.316Z",
-    "desenhoId": "d202611281046407"
+    "tema": "Como as flores conseguem atrair os animais para ajudar a espalhar os gametófitos delas?",
+    "quando": "2026-11-28T11:41:52.650Z"
   },
   "vistos": {
     "sol": {
@@ -133,5 +132,5 @@
     "nublado",
     "flores"
   ],
-  "semDesenhar": 0
+  "semDesenhar": 1
 }

@@ -843,5 +843,39 @@
       "estacao": "primavera",
       "tempo": "nublado"
     }
+  },
+  {
+    "data": "2026-11-28T11:41:52.650Z",
+    "acao": "responder",
+    "tema": "Como as flores conseguem atrair os animais para ajudar a espalhar os gametófitos delas?",
+    "porque": "quero entender se o perfume e as cores dessas hastes servem para chamar visitantes",
+    "pensamento": "Esse perfume adocicado que vem do chão me faz pensar se o cheiro é um convite para outros seres chegarem perto.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "nublado"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T11:41:52.650Z",
+    "acao": "responder",
+    "tema": "Como um micrômetro é pequeno o bastante para caber dentro da ponta da minha caneta azul?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "nublado"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T11:41:52.650Z",
+    "acao": "responder",
+    "tema": "Como milhares de cristais grudados conseguem ser tão duros quanto um cristal só?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "nublado"
+    },
+    "resultado": "ficou satisfeita com a resposta"
   }
 ]

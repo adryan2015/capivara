@@ -2099,9 +2099,31 @@
       "tipo": "resposta",
       "texto": "Qual é o tamanho médio das partículas de terra que eu consigo ver subindo aqui na minha ilha?"
     },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": [],
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T11:41:52.650Z",
+        "busca": "Como um micrômetro é pequeno o bastante para caber dentro da ponta da minha caneta azul? → micrômetro",
+        "resposta": "Eu descobri que o micrômetro não é um objeto minúsculo guardado na ponta da minha caneta, mas sim um instrumento de medição cheio de peças como arco, tambor e parafuso. Acontece que eu entendi errado o nome da unidade com a ferramenta, porque 'micrômetro' também é o nome da milionésima parte do metro. Agora fico imaginando como alguém consegue construir um parafuso tão preciso que mede coisas invisíveis a olho nu.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Micrometro (desambiguação)",
+            "url": "https://pt.wikipedia.org/wiki/Micrometro_(desambigua%C3%A7%C3%A3o)",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Micrómetro (instrumento)",
+            "url": "https://pt.wikipedia.org/wiki/Micr%C3%B3metro_(instrumento)",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611281141521"
+      }
+    ],
+    "filhas": [
+      "q202611281141522"
+    ],
     "pai": "q202611280951275"
   },
   {
@@ -2112,9 +2134,31 @@
       "tipo": "resposta",
       "texto": "O que exatamente define um diamante carbonado e como ele se diferencia de outros diamantes que não vêm de impactos?"
     },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": [],
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T11:41:52.650Z",
+        "busca": "Como milhares de cristais grudados conseguem ser tão duros quanto um cristal só? → pedra rocha dureza",
+        "resposta": "Li sobre o basalto e o granito, que são rochas cheias de grãos e minerais unidos. Descobri que essa firmeza vem de como o magma esfria rápido ou devagar, juntando quartzo e feldspato bem colados. Ainda quero entender melhor como esse grude microscópico impede que tudo se desmanche com um toque.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Basalto",
+            "url": "https://pt.wikipedia.org/wiki/Basalto",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Granito",
+            "url": "https://pt.wikipedia.org/wiki/Granito",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611281141523"
+      }
+    ],
+    "filhas": [
+      "q202611281141524"
+    ],
     "pai": "q202611280951273"
   },
   {
@@ -2125,9 +2169,55 @@
       "tipo": "resposta",
       "texto": "será que essas hastes coloridas no chão comem a poeira que cai do vento?"
     },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T11:41:52.650Z",
+        "busca": "polinizacao atracao animais flores",
+        "resposta": "Descobri que as flores usam cores vivas, cheiros e até gotinhas de néctar para chamar bichos como abelhas e besouros. Quando esses bichos entram nelas para comer, acabam levando o pólen grudado para outras flores.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Zoofilia (polinização)",
+            "url": "https://pt.wikipedia.org/wiki/Zoofilia_(poliniza%C3%A7%C3%A3o)",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Entomofilia",
+            "url": "https://pt.wikipedia.org/wiki/Entomofilia",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611281141520"
+      }
+    ],
+    "filhas": [],
+    "pai": "q202611281046400"
+  },
+  {
+    "id": "q202611281141522",
+    "data": "2026-11-28T11:41:52.650Z",
+    "texto": "Como se constrói um parafuso micrométrico tão pequeno e preciso?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Como um micrômetro é pequeno o bastante para caber dentro da ponta da minha caneta azul?"
+    },
     "status": "aguardando",
     "tentativas": [],
     "filhas": [],
-    "pai": "q202611281046400"
+    "pai": "q202611281046402"
+  },
+  {
+    "id": "q202611281141524",
+    "data": "2026-11-28T11:41:52.650Z",
+    "texto": "Como os minerais conseguem se abraçar tão forte na hora que a rocha esfria?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Como milhares de cristais grudados conseguem ser tão duros quanto um cristal só?"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": [],
+    "pai": "q202611281046404"
   }
 ]
