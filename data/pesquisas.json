@@ -1352,5 +1352,107 @@
     "perguntasGeradas": [
       "q202611280418524"
     ]
+  },
+  {
+    "id": "p202611280609560",
+    "data": "2026-11-28T06:09:56.149Z",
+    "tipo": "pesquisa",
+    "tema": "o teto invisível da estratosfera que barra as nuvens",
+    "porque": "Quero entender que barreira é essa na estratosfera que não deixa o vapor subir mais e achata a nuvem como uma bigorna.",
+    "busca": "tropopausa estabilidade nuvens cumulonimbus",
+    "buscas": [
+      "tropopausa estabilidade nuvens cumulonimbus"
+    ],
+    "resumo": "Fui ao computador entender o que obriga as nuvens grandes a pararem de subir e virarem aquela forma de bigorna. Li que existe um limite chamado tropopausa, onde a estabilidade muda e o topo da nuvem congela e espalha. O ar ali em cima se comporta de um jeito que impede o vapor de continuar subindo livremente.",
+    "aprendi": [
+      "A tropopausa é a altura limite que marca a estabilidade onde se formam as nuvens com topo de bigorna.",
+      "No topo da nuvem, as gotas de água viram cristais de gelo e ganham um formato espalhado.",
+      "A inversão térmica faz com que o gradiente de temperatura mude e dificulte a convecção natural."
+    ],
+    "sentimento": "Fiquei encantada por descobrir que o teto invisível que desenha a bigorna nas nuvens tem nome e se chama tropopausa.",
+    "fontes": [
+      {
+        "titulo": "Cumulonimbus calvus",
+        "url": "https://pt.wikipedia.org/wiki/Cumulonimbus_calvus",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Inversão térmica",
+        "url": "https://pt.wikipedia.org/wiki/Invers%C3%A3o_t%C3%A9rmica",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280609561"
+    ],
+    "respondeuTambem": [
+      "q202611280418524"
+    ]
+  },
+  {
+    "id": "p202611280609562",
+    "data": "2026-11-28T06:09:56.149Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611280609561",
+    "tema": "Como os cristais de gelo conseguem se formar tão rápido no topo da nuvem?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "cristal de gelo",
+    "buscas": [
+      "Como os cristais de gelo conseguem se formar tão rápido no topo da nuvem?",
+      "cristal de gelo"
+    ],
+    "resumo": "O topo das nuvens tem ar muito frio onde o vapor de água se transforma direto em cristais de gelo com a ajuda de poeirinha.",
+    "aprendi": [
+      "Cristais de gelo podem ser colunas ou placas hexagonais.",
+      "Nuvens cirros são feitas de cristais de gelo bem alto no céu."
+    ],
+    "fontes": [
+      {
+        "titulo": "Cristal de gelo",
+        "url": "https://pt.wikipedia.org/wiki/Cristal_de_gelo",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Cirro (nuvem)",
+        "url": "https://pt.wikipedia.org/wiki/Cirro_(nuvem)",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280609563"
+    ]
+  },
+  {
+    "id": "p202611280609564",
+    "data": "2026-11-28T06:09:56.149Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611280609563",
+    "tema": "Como as moléculas de água escolhem virar placas ou colunas quando congelam?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "gelo hexagonal cristais água",
+    "buscas": [
+      "Como as moléculas de água escolhem virar placas ou colunas quando congelam?",
+      "gelo hexagonal cristais água"
+    ],
+    "resumo": "O texto explica que os cristais de gelo e flocos de neve crescem em formatos hexagonais como placas ou colunas dependendo da temperatura e umidade, começando a partir de um núcleo minúsculo.",
+    "aprendi": [
+      "A temperatura e a umidade determinam se o cristal de gelo vira placa ou coluna.",
+      "As moléculas de água formam estruturas hexagonais ao congelar ao redor de um núcleo de gelo."
+    ],
+    "fontes": [
+      {
+        "titulo": "Floco de neve",
+        "url": "https://pt.wikipedia.org/wiki/Floco_de_neve",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Cristal de gelo",
+        "url": "https://pt.wikipedia.org/wiki/Cristal_de_gelo",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280609565"
+    ]
   }
 ]

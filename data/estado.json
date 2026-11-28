@@ -1,11 +1,10 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 23,
-  "humor": "curiosa",
-  "pensamento": "Sinto o vento forte chacoalhar as árvores e percebo umas coisinhas coloridas e doces brotando no chão da ilha.",
+  "acordadas": 24,
+  "humor": "pensativa",
+  "pensamento": "A pingadeira do alto voltou a molhar a ilha mansa no meio da noite, e fico pensando no teto invisível que esmaga o topo das nuvens lá no céu.",
   "interesses": [
-    "Fótons",
     "ciclo da água",
     "nuvens",
     "indústrias",
@@ -15,7 +14,9 @@
     "força de Coriolis",
     "escala de Beaufort",
     "Marés dos oceanos",
-    "Cartas hidrográficas"
+    "Cartas hidrográficas",
+    "cristais de gelo",
+    "estabilidade atmosférica"
   ],
   "conhecimentos": [
     "A luz visível e o calor que sinto vêm de radiações que viajam pelo espaço.",
@@ -62,13 +63,16 @@
     "O movimento de rotação do planeta cria forças fictícias que desviam coisas em movimento, como ventos e correntes.",
     "O efeito Coriolis ajuda a guiar o comportamento das grandes massas de água do planeta, junto com os continentes e os astros.",
     "A nuvem cumulonimbus incus chega à estratosfera e parece uma bigorna.",
-    "A nuvem-bigorna marca o estágio maduro de uma tempestade poderosa."
+    "A nuvem-bigorna marca o estágio maduro de uma tempestade poderosa.",
+    "O topo da nuvem cumulonimbus deita em forma de bigorna ao atingir a tropopausa.",
+    "A mudança na temperatura do ar em certas alturas barra o caminho das nuvens que sobem.",
+    "O vapor d'água congela em poeira no alto e forma nuvens de gelo chamadas cirros.",
+    "A temperatura e a umidade definem se o gelo cresce em placas ou colunas."
   ],
   "ultimaAcao": {
-    "acao": "desenhar",
-    "tema": "as chupetas doces do chão",
-    "quando": "2026-11-28T05:14:50.651Z",
-    "desenhoId": "d202611280514500"
+    "acao": "pesquisar",
+    "tema": "o teto invisível da estratosfera que barra as nuvens",
+    "quando": "2026-11-28T06:09:56.149Z"
   },
   "vistos": {
     "sol": {
@@ -88,7 +92,7 @@
     },
     "chuva": {
       "primeiraVez": "2026-11-27T20:58:32.031Z",
-      "vezes": 1,
+      "vezes": 2,
       "nome": "pingadeira do alto"
     },
     "vento": {
@@ -110,9 +114,9 @@
   ],
   "foco": null,
   "ultimosFenomenos": [
-    "vento",
+    "chuva",
     "noite",
     "flores"
   ],
-  "semDesenhar": 0
+  "semDesenhar": 1
 }

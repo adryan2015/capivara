@@ -613,5 +613,39 @@
       "estacao": "primavera",
       "tempo": "vento"
     }
+  },
+  {
+    "data": "2026-11-28T06:09:56.149Z",
+    "acao": "pesquisar",
+    "tema": "o teto invisível da estratosfera que barra as nuvens",
+    "porque": "Quero entender que barreira é essa na estratosfera que não deixa o vapor subir mais e achata a nuvem como uma bigorna.",
+    "pensamento": "A pingadeira do alto voltou a molhar a ilha mansa no meio da noite, e fico pensando no teto invisível que esmaga o topo das nuvens lá no céu.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "de quebra, respondeu 1 dúvida antiga"
+  },
+  {
+    "data": "2026-11-28T06:09:56.149Z",
+    "acao": "responder",
+    "tema": "Como os cristais de gelo conseguem se formar tão rápido no topo da nuvem?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T06:09:56.149Z",
+    "acao": "responder",
+    "tema": "Como as moléculas de água escolhem virar placas ou colunas quando congelam?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "ainda não ficou satisfeita"
   }
 ]

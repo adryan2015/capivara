@@ -1477,9 +1477,112 @@
       "tipo": "resposta",
       "texto": "O que faz o topo da nuvem cumulonimbus espalhar e virar aquela forma de bigorna quando chega lá em cima?"
     },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T06:09:56.149Z",
+        "busca": "tropopausa estabilidade nuvens cumulonimbus",
+        "resposta": "O topo da nuvem para de subir porque atinge a tropopausa, uma região de estabilidade na atmosfera que funciona como um limite para o vapor. Ali o ar muda de comportamento e obriga a nuvem a se espalhar lateralmente.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Cumulonimbus calvus",
+            "url": "https://pt.wikipedia.org/wiki/Cumulonimbus_calvus",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Inversão térmica",
+            "url": "https://pt.wikipedia.org/wiki/Invers%C3%A3o_t%C3%A9rmica",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280609560",
+        "deCarona": true
+      }
+    ],
+    "filhas": [],
+    "pai": "q202611280418522"
+  },
+  {
+    "id": "q202611280609561",
+    "data": "2026-11-28T06:09:56.149Z",
+    "texto": "Como os cristais de gelo conseguem se formar tão rápido no topo da nuvem?",
+    "origem": {
+      "tipo": "pesquisa",
+      "texto": "o teto invisível da estratosfera que barra as nuvens"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T06:09:56.149Z",
+        "busca": "Como os cristais de gelo conseguem se formar tão rápido no topo da nuvem? → cristal de gelo",
+        "resposta": "Descobri que lá no alto, onde o ar é muito frio, a água invisível gruda em poeirinha e vira gelo rapidinho, formando aquelas nuvens brancas chamadas cirros. O texto explicou de onde vem a pressa, mas ainda fiquei imaginando como essas aguinhas congeladas conseguem dançar juntas para formar placas e colunas tão certinhas. Vou ter que pesquisar mais sobre essas formas de gelo!",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Cristal de gelo",
+            "url": "https://pt.wikipedia.org/wiki/Cristal_de_gelo",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Cirro (nuvem)",
+            "url": "https://pt.wikipedia.org/wiki/Cirro_(nuvem)",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280609562"
+      }
+    ],
+    "filhas": [
+      "q202611280609563"
+    ]
+  },
+  {
+    "id": "q202611280609563",
+    "data": "2026-11-28T06:09:56.149Z",
+    "texto": "Como as moléculas de água escolhem virar placas ou colunas quando congelam?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Como os cristais de gelo conseguem se formar tão rápido no topo da nuvem?"
+    },
+    "status": "investigando",
+    "tentativas": [
+      {
+        "data": "2026-11-28T06:09:56.149Z",
+        "busca": "Como as moléculas de água escolhem virar placas ou colunas quando congelam? → gelo hexagonal cristais água",
+        "resposta": "Li sobre como a temperatura e a umidade mandam na forma dos cristais, criando placas ou colunas, mas o texto ainda não me explicou direitinho como cada molécula decide que caminho seguir. Fiquei sabendo que elas se juntam em formatos de hexágono ao redor de um núcleo de gelo.",
+        "satisfeito": false,
+        "fontes": [
+          {
+            "titulo": "Floco de neve",
+            "url": "https://pt.wikipedia.org/wiki/Floco_de_neve",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Cristal de gelo",
+            "url": "https://pt.wikipedia.org/wiki/Cristal_de_gelo",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280609564"
+      }
+    ],
+    "filhas": [
+      "q202611280609565"
+    ],
+    "pai": "q202611280609561"
+  },
+  {
+    "id": "q202611280609565",
+    "data": "2026-11-28T06:09:56.149Z",
+    "texto": "Como a temperatura e a umidade dizem para as moléculas se devem virar placa ou coluna?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Como as moléculas de água escolhem virar placas ou colunas quando congelam?"
+    },
     "status": "aguardando",
     "tentativas": [],
     "filhas": [],
-    "pai": "q202611280418522"
+    "pai": "q202611280609563"
   }
 ]
