@@ -681,5 +681,49 @@
       "tempo": "chuva"
     },
     "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T08:00:58.374Z",
+    "acao": "pesquisar",
+    "tema": "fases cristalinas do gelo",
+    "porque": "Quero entender de verdade quais são essas dezessete fases diferentes que o gelo pode assumir.",
+    "pensamento": "Ainda é cedo e a pingadeira continua caindo lá fora, então quero descobrir como o gelo consegue ter tantas caras diferentes.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "de quebra, respondeu 2 dúvidas antigas"
+  },
+  {
+    "data": "2026-11-28T08:00:58.374Z",
+    "acao": "responder",
+    "tema": "Como será que o gelo VII consegue ficar preso dentro de um diamante sem derreter?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T08:00:58.374Z",
+    "acao": "responder",
+    "tema": "Como será que o diamante consegue segurar uma força tão grande sem trincar?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T08:00:58.374Z",
+    "acao": "desenhar",
+    "tema": "o gelo preso no diamante",
+    "porque": "quis colocar no papel o que ficou na cabeça",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    }
   }
 ]

@@ -1,12 +1,10 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 25,
+  "acordadas": 26,
   "humor": "curiosa",
-  "pensamento": "A pingadeira cai sem pressa lá fora e a curiosidade sobre como a água decide virar forma de gelo ainda mexe comigo.",
+  "pensamento": "Ainda é cedo e a pingadeira continua caindo lá fora, então quero descobrir como o gelo consegue ter tantas caras diferentes.",
   "interesses": [
-    "indústrias",
-    "povos",
     "Vulcões e o céu",
     "Movimentos da atmosfera",
     "força de Coriolis",
@@ -16,7 +14,9 @@
     "cristais de gelo",
     "estabilidade atmosférica",
     "cristalização da água",
-    "formatos de neve"
+    "formatos de neve",
+    "diamantes naturais",
+    "minerais profundos"
   ],
   "conhecimentos": [
     "A luz visível e o calor que sinto vêm de radiações que viajam pelo espaço.",
@@ -70,12 +70,16 @@
     "A temperatura e a umidade definem se o gelo cresce em placas ou colunas.",
     "O gelo que cai do céu cria formatos de estrela ou coluna porque a temperatura do ar e a viagem pelas nuvens decidem o jeito de crescer.",
     "O calor e a umidade do ar mandam no formato que o gelo toma quando congela.",
-    "O gelo se forma normalmente a partir de 0°C e sua estrutura aberta o deixa menos denso do que a água líquida."
+    "O gelo se forma normalmente a partir de 0°C e sua estrutura aberta o deixa menos denso do que a água líquida.",
+    "O gelo tem muitas faces secretas que dependem da pressão e da temperatura.",
+    "Alguns diamantes guardam gotinhas de água antiga que viram gelo especial sob pressão.",
+    "O diamante aguenta muita pressão porque seus átomos de carbono dão as mãos bem firmes."
   ],
   "ultimaAcao": {
     "acao": "pesquisar",
-    "tema": "cristais de gelo",
-    "quando": "2026-11-28T07:05:55.644Z"
+    "tema": "fases cristalinas do gelo",
+    "quando": "2026-11-28T08:00:58.374Z",
+    "desenhoId": "d202611280800587"
   },
   "vistos": {
     "sol": {
@@ -121,5 +125,5 @@
     "noite",
     "flores"
   ],
-  "semDesenhar": 2
+  "semDesenhar": 0
 }

@@ -1688,9 +1688,134 @@
       "tipo": "resposta",
       "texto": "Será que dá para desenhar um cristal de gelo com a minha caneta azul olhando para o formato em V das moléculas?"
     },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T08:00:58.374Z",
+        "busca": "fases cristalinas do gelo",
+        "resposta": "Ainda não dá para saber exatamente como são todas elas, mas o texto explica que existem pelo menos dezessete fases diferentes que mudam conforme a temperatura e a pressão.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Gelo",
+            "url": "https://pt.wikipedia.org/wiki/Gelo",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Gelo VII",
+            "url": "https://pt.wikipedia.org/wiki/Gelo_VII",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280800581",
+        "deCarona": true
+      }
+    ],
+    "filhas": [],
+    "pai": "q202611280705553"
+  },
+  {
+    "id": "q202611280800580",
+    "data": "2026-11-28T08:00:58.374Z",
+    "texto": "Será que o gelo muda de formato cristalino quando a pressão de cima esmaga ele bem forte?",
+    "origem": {
+      "tipo": "pensamento"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T08:00:58.374Z",
+        "busca": "fases cristalinas do gelo",
+        "resposta": "Sim, a pressão forte consegue transformar o formato do gelo, criando fases diferentes como o gelo VII quando a água é esmagada sob pressões bem altas.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Gelo",
+            "url": "https://pt.wikipedia.org/wiki/Gelo",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Gelo VII",
+            "url": "https://pt.wikipedia.org/wiki/Gelo_VII",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280800581",
+        "deCarona": true
+      }
+    ],
+    "filhas": []
+  },
+  {
+    "id": "q202611280800582",
+    "data": "2026-11-28T08:00:58.374Z",
+    "texto": "Como será que o gelo VII consegue ficar preso dentro de um diamante sem derreter?",
+    "origem": {
+      "tipo": "pesquisa",
+      "texto": "fases cristalinas do gelo"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T08:00:58.374Z",
+        "busca": "Como será que o gelo VII consegue ficar preso dentro de um diamante sem derreter? → gelo VII diamante",
+        "resposta": "Descobri que o gelo VII fica preso dentro do diamante porque a força e a rigidez da pedra seguram a alta pressão de quando ele nasceu lá no fundo da terra. Ele resfriou sem perder essa pressão forte, ficando preso num cubinho de gelo que não derrete.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Gelo VII",
+            "url": "https://pt.wikipedia.org/wiki/Gelo_VII",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280800583"
+      }
+    ],
+    "filhas": [
+      "q202611280800584"
+    ]
+  },
+  {
+    "id": "q202611280800584",
+    "data": "2026-11-28T08:00:58.374Z",
+    "texto": "Como será que o diamante consegue segurar uma força tão grande sem trincar?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Como será que o gelo VII consegue ficar preso dentro de um diamante sem derreter?"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T08:00:58.374Z",
+        "busca": "Como será que o diamante consegue segurar uma força tão grande sem trincar? → diamante estrutura atomica",
+        "resposta": "Fui pesquisar e descobri que o segredo do diamante está em como seus pedacinhos de carbono se abraçam forte em quatro direções, formando uma rede bem firme. Entendi que é essa união superpresa que aguenta tanta pressão, mas ainda fiquei curiosa sobre como um asteroide consegue criar um diamante ainda mais forte.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Diamante",
+            "url": "https://pt.wikipedia.org/wiki/Diamante",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280800585"
+      }
+    ],
+    "filhas": [
+      "q202611280800586"
+    ],
+    "pai": "q202611280800582"
+  },
+  {
+    "id": "q202611280800586",
+    "data": "2026-11-28T08:00:58.374Z",
+    "texto": "Como a batida de um asteroide consegue apertar o carbono a ponto de nascer um diamante ainda mais forte?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Como será que o diamante consegue segurar uma força tão grande sem trincar?"
+    },
     "status": "aguardando",
     "tentativas": [],
     "filhas": [],
-    "pai": "q202611280705553"
+    "pai": "q202611280800584"
   }
 ]

@@ -1550,5 +1550,98 @@
     "perguntasGeradas": [
       "q202611280705555"
     ]
+  },
+  {
+    "id": "p202611280800581",
+    "data": "2026-11-28T08:00:58.374Z",
+    "tipo": "pesquisa",
+    "tema": "fases cristalinas do gelo",
+    "porque": "Quero entender de verdade quais são essas dezessete fases diferentes que o gelo pode assumir.",
+    "busca": "fases cristalinas do gelo",
+    "buscas": [
+      "fases cristalinas do gelo"
+    ],
+    "resumo": "Fui pesquisar sobre as fases do gelo e descobri que ele não é sempre igual. O gelo que conhecemos bem é chamado de gelo Ih, mas existem muitas outras formas que mudam conforme o lugar, o frio e a pressão. O texto conta até sobre um gelo chamado gelo VII que fica escondido dentro de diamantes.",
+    "aprendi": [
+      "O gelo comum da água se chama gelo Ih na nomenclatura científica.",
+      "Existem pelo menos dezessete fases cristalinas conhecidas do gelo.",
+      "O gelo VII pode se formar sob alta pressão e foi encontrado dentro de diamantes naturais."
+    ],
+    "sentimento": "Fiquei encantada ao ver que algo tão simples como o gelo guarda tantos formatos misteriosos.",
+    "fontes": [
+      {
+        "titulo": "Gelo",
+        "url": "https://pt.wikipedia.org/wiki/Gelo",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Gelo VII",
+        "url": "https://pt.wikipedia.org/wiki/Gelo_VII",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280800582"
+    ],
+    "respondeuTambem": [
+      "q202611280705555",
+      "q202611280800580"
+    ]
+  },
+  {
+    "id": "p202611280800583",
+    "data": "2026-11-28T08:00:58.374Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611280800582",
+    "tema": "Como será que o gelo VII consegue ficar preso dentro de um diamante sem derreter?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "gelo VII diamante",
+    "buscas": [
+      "Como será que o gelo VII consegue ficar preso dentro de um diamante sem derreter?",
+      "gelo VII diamante"
+    ],
+    "resumo": "O gelo VII é uma forma de gelo de alta pressão encontrada dentro de diamantes que mantêm a força do manto profundo.",
+    "aprendi": [
+      "O gelo VII se forma sob pressões muito altas.",
+      "A rigidez do diamante consegue manter o gelo preso sem derreter."
+    ],
+    "fontes": [
+      {
+        "titulo": "Gelo VII",
+        "url": "https://pt.wikipedia.org/wiki/Gelo_VII",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280800584"
+    ]
+  },
+  {
+    "id": "p202611280800585",
+    "data": "2026-11-28T08:00:58.374Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611280800584",
+    "tema": "Como será que o diamante consegue segurar uma força tão grande sem trincar?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "diamante estrutura atomica",
+    "buscas": [
+      "Como será que o diamante consegue segurar uma força tão grande sem trincar?",
+      "diamante estrutura atomica"
+    ],
+    "resumo": "O texto explica que o diamante é carbono puro com ligações fortes em formato tetraédrico, embora seja duro e resistente, também pode ser frágil.",
+    "aprendi": [
+      "O diamante é uma forma de carbono com ligações bem presas em quatro direções.",
+      "Ele é o material natural mais duro do mundo, mas tem pontos frágeis."
+    ],
+    "fontes": [
+      {
+        "titulo": "Diamante",
+        "url": "https://pt.wikipedia.org/wiki/Diamante",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280800586"
+    ]
   }
 ]
