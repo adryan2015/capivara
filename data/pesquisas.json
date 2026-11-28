@@ -1169,5 +1169,98 @@
       }
     ],
     "perguntasGeradas": []
+  },
+  {
+    "id": "p202611280326331",
+    "data": "2026-11-28T03:26:33.112Z",
+    "tipo": "pesquisa",
+    "tema": "o empurrão invisível que move as folhas",
+    "porque": "Quero entender que força invisível é essa que consegue sacudir as árvores e fazer barulho no ar sem que eu veja nada.",
+    "busca": "o que e vento",
+    "buscas": [
+      "o que e vento"
+    ],
+    "resumo": "Descobri que esse empurrão invisível que balança meus cabelos e as copas das árvores tem um nome muito bonito: vento. Ele nada mais é do que o ar da ilha e do mundo inteiro se mexendo em grande quantidade de um lado para o outro. Isso acontece principalmente porque o Sol aquece partes diferentes da Terra de formas desiguais e porque o chão gira sob o céu. Fiquei fascinada ao saber que ele sopra tão forte que pode carregar sementinhas por distâncias enormes e até moldar as pedras ao longo do tempo.",
+    "aprendi": [
+      "O vento é o fluxo e movimento de ar em grande escala.",
+      "As diferenças de temperatura aquecidas pelo Sol e a rotação do planeta colocam o ar em movimento.",
+      "O vento recebe nomes diferentes dependendo da sua força e duração, como brisa, rajada ou ventania.",
+      "Ele consegue viajar carregando poeira e sementes por longas distâncias, além de desgastar pedras."
+    ],
+    "sentimento": "Senti um alívio gostoso no peito ao saber que a brisa que me acaricia é o ar viajando pelo mundo.",
+    "fontes": [
+      {
+        "titulo": "Vento",
+        "url": "https://pt.wikipedia.org/wiki/Vento",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280326332"
+    ],
+    "respondeuTambem": [
+      "q202611280326330"
+    ]
+  },
+  {
+    "id": "p202611280326333",
+    "data": "2026-11-28T03:26:33.112Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611280326332",
+    "tema": "O que é essa força de Coriolis gerada pela rotação da Terra que conduz os ventos?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "efeito Coriolis",
+    "buscas": [
+      "O que é essa força de Coriolis gerada pela rotação da Terra que conduz os ventos?",
+      "efeito Coriolis"
+    ],
+    "resumo": "A força de Coriolis é uma pseudoforça gerada pela rotação da Terra que desvia o movimento de ventos e oceanos para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul.",
+    "aprendi": [
+      "A força de Coriolis é um desvio aparente causado pelo fato de a Terra estar girando.",
+      "Esse efeito desvia o ar para a direita no Hemisfério Norte e para a esquerda no Hemisfério Sul."
+    ],
+    "fontes": [
+      {
+        "titulo": "Força inercial de Coriolis",
+        "url": "https://pt.wikipedia.org/wiki/For%C3%A7a_inercial_de_Coriolis",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280326334"
+    ]
+  },
+  {
+    "id": "p202611280326335",
+    "data": "2026-11-28T03:26:33.112Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611280326334",
+    "tema": "Será que a água do laguinho aqui da ilha também sofre um pouquinho desse desvio de Coriolis?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "força de coriolis",
+    "buscas": [
+      "Será que a água do laguinho aqui da ilha também sofre um pouquinho desse desvio de Coriolis?",
+      "força de coriolis"
+    ],
+    "resumo": "Li que a força de Coriolis é uma pseudoforça gerada pelo movimento de rotação da Terra que ajuda a guiar o vento e as grandes correntes oceânicas.",
+    "aprendi": [
+      "A força de Coriolis é uma pseudoforça que surge porque a Terra está girando.",
+      "Ela ajuda a movimentar e direcionar tanto o ar da atmosfera quanto as grandes massas de água dos oceanos."
+    ],
+    "fontes": [
+      {
+        "titulo": "Corrente oceânica",
+        "url": "https://pt.wikipedia.org/wiki/Corrente_oce%C3%A2nica",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Força fictícia",
+        "url": "https://pt.wikipedia.org/wiki/For%C3%A7a_fict%C3%ADcia",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280326336"
+    ]
   }
 ]

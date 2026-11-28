@@ -1,9 +1,9 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 20,
-  "humor": "intrigada",
-  "pensamento": "Fiquei pensando nessa fuligem que mora na estratosfera sem ninguém para limpá-la. Quero descobrir por que as nuvens de chuva não sobem até lá para lavar tudo.",
+  "acordadas": 21,
+  "humor": "espantada",
+  "pensamento": "Tem algo invisível empurrando as folhas e fazendo a grama dançar com um assobio estranho. Levei um susto quando senti esse empurrão passar por mim sem ter corpo nenhum.",
   "interesses": [
     "Fótons",
     "ciclo da água",
@@ -11,7 +11,9 @@
     "indústrias",
     "povos",
     "Vulcões e o céu",
-    "Movimentos da atmosfera"
+    "Movimentos da atmosfera",
+    "força de Coriolis",
+    "escala de Beaufort"
   ],
   "conhecimentos": [
     "A luz visível e o calor que sinto vêm de radiações que viajam pelo espaço.",
@@ -52,12 +54,16 @@
     "Correntes de jato são ventos potentes no alto da atmosfera criados por diferenças de temperatura e pelo giro do planeta.",
     "Os rios de vento no céu mudam de rumo porque o calor da atmosfera e o giro da terra empurram o ar de um lado para o outro.",
     "O vento lá no alto consegue carregar poeira de vulcão por distâncias imensas.",
-    "A estratosfera é uma camada alta do céu onde a fuligem de tempestades de fogo pode se acumular e bloquear a luz solar."
+    "A estratosfera é uma camada alta do céu onde a fuligem de tempestades de fogo pode se acumular e bloquear a luz solar.",
+    "O vento é o ar em movimento gerado pelas diferenças de calor na Terra e pelo giro do próprio planeta.",
+    "A rotação da Terra faz com que ventos de longa distância desviem sua trajetória devido ao efeito de Coriolis.",
+    "O movimento de rotação do planeta cria forças fictícias que desviam coisas em movimento, como ventos e correntes."
   ],
   "ultimaAcao": {
-    "acao": "responder",
-    "tema": "Por que a chuva não consegue alcançar a estratosfera para lavar a fuligem que fica lá dentro?",
-    "quando": "2026-11-28T02:31:14.016Z"
+    "acao": "pesquisar",
+    "tema": "o empurrão invisível que move as folhas",
+    "quando": "2026-11-28T03:26:33.112Z",
+    "desenhoId": "d202611280326337"
   },
   "vistos": {
     "sol": {
@@ -79,6 +85,11 @@
       "primeiraVez": "2026-11-27T20:58:32.031Z",
       "vezes": 1,
       "nome": "pingadeira do alto"
+    },
+    "vento": {
+      "primeiraVez": "2026-11-28T03:26:33.112Z",
+      "vezes": 1,
+      "nome": "empurrão invisível que assobia"
     }
   },
   "focosAnteriores": [
@@ -94,9 +105,9 @@
   ],
   "foco": null,
   "ultimosFenomenos": [
-    "sol",
+    "vento",
     "noite",
     "flores"
   ],
-  "semDesenhar": 2
+  "semDesenhar": 0
 }

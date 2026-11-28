@@ -1295,5 +1295,111 @@
     ],
     "filhas": [],
     "pai": "q202611280135564"
+  },
+  {
+    "id": "q202611280326330",
+    "data": "2026-11-28T03:26:33.112Z",
+    "texto": "O que faz o ar invisível começar a se mover e empurrar as coisas?",
+    "origem": {
+      "tipo": "observacao",
+      "fenomeno": "vento",
+      "primeiraVez": true
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T03:26:33.112Z",
+        "busca": "o que e vento",
+        "resposta": "O ar se mexe porque a luz do Sol esquenta a Terra de jeitos diferentes em cada lugar, criando variações de temperatura que fazem os gases fluírem. Além disso, o próprio movimento de rotação do planeta dá um empurrão que direciona essas massas de ar.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Vento",
+            "url": "https://pt.wikipedia.org/wiki/Vento",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280326331",
+        "deCarona": true
+      }
+    ],
+    "filhas": []
+  },
+  {
+    "id": "q202611280326332",
+    "data": "2026-11-28T03:26:33.112Z",
+    "texto": "O que é essa força de Coriolis gerada pela rotação da Terra que conduz os ventos?",
+    "origem": {
+      "tipo": "pesquisa",
+      "texto": "o empurrão invisível que move as folhas"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T03:26:33.112Z",
+        "busca": "O que é essa força de Coriolis gerada pela rotação da Terra que conduz os ventos? → efeito Coriolis",
+        "resposta": "Descobri que a força de Coriolis não é de verdade uma força pura, mas sim um desvio que acontece porque a Terra está girando embaixo dos ventos. Como o planeta roda, o ar que viaja longe acaba entortando para a direita em cima e para a esquerda embaixo. Fiquei muito contente por entender finalmente como essa rotação empurra o vento para os lados.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Força inercial de Coriolis",
+            "url": "https://pt.wikipedia.org/wiki/For%C3%A7a_inercial_de_Coriolis",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280326333"
+      }
+    ],
+    "filhas": [
+      "q202611280326334"
+    ]
+  },
+  {
+    "id": "q202611280326334",
+    "data": "2026-11-28T03:26:33.112Z",
+    "texto": "Será que a água do laguinho aqui da ilha também sofre um pouquinho desse desvio de Coriolis?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que é essa força de Coriolis gerada pela rotação da Terra que conduz os ventos?"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T03:26:33.112Z",
+        "busca": "Será que a água do laguinho aqui da ilha também sofre um pouquinho desse desvio de Coriolis? → força de coriolis",
+        "resposta": "Fui pesquisar sobre o desvio de Coriolis e descobri que ele é provocado pela rotação da Terra, funcionando como uma força fictícia que desvia fluidos como o ar e a água. O texto diz que isso afeta correntes oceânicas e a atmosfera inteira, mas ainda fiquei imaginando se um laguinho pequeno como o meu sofre isso de verdade ou se é só para oceanos imensos. De qualquer forma, agora sei que o tal desvio nasce do próprio giro do nosso planeta.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Corrente oceânica",
+            "url": "https://pt.wikipedia.org/wiki/Corrente_oce%C3%A2nica",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Força fictícia",
+            "url": "https://pt.wikipedia.org/wiki/For%C3%A7a_fict%C3%ADcia",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280326335"
+      }
+    ],
+    "filhas": [
+      "q202611280326336"
+    ],
+    "pai": "q202611280326332"
+  },
+  {
+    "id": "q202611280326336",
+    "data": "2026-11-28T03:26:33.112Z",
+    "texto": "Será que o laguinho da ilha é pequeno demais para o desvio de Coriolis conseguir entortar a água dele?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Será que a água do laguinho aqui da ilha também sofre um pouquinho desse desvio de Coriolis?"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": [],
+    "pai": "q202611280326334"
   }
 ]
