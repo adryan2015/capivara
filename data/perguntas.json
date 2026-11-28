@@ -1906,9 +1906,26 @@
       "tipo": "resposta",
       "texto": "Como a batida de um asteroide consegue apertar o carbono a ponto de nascer um diamante ainda mais forte?"
     },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": [],
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T09:51:27.175Z",
+        "busca": "Que outros tipos de diamantes são formados quando um asteroide atinge a terra?",
+        "resposta": "Descobri que o impacto de um asteroide cria diamantes quando atinge matéria orgânica, mencionando o carbonado como um desses tipos especiais. Fiquei curiosa sobre como essa transformação acontece tão rápido, mas o texto foi interrompido antes de explicar mais detalhes sobre outros tipos. Ainda preciso descobrir se existem outros nomes além do carbonado.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Impactito",
+            "url": "https://pt.wikipedia.org/wiki/Impactito",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280951272"
+      }
+    ],
+    "filhas": [
+      "q202611280951273"
+    ],
     "pai": "q202611280800586"
   },
   {
@@ -1919,9 +1936,92 @@
       "tipo": "resposta",
       "texto": "Como essas massas redondas de água conseguem ficar suspensas juntas no alto?"
     },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T09:51:27.175Z",
+        "busca": "fontes de poeira atmosférica",
+        "resposta": "Li que a poeira é formada por pedacinhos minúsculos de matéria sólida, como solo levantado pelo vento, cinzas e até partes de plantas e animais. O vento consegue carregar essa poeira bem alto na troposfera, onde ela forma aerossóis que viajam por distâncias enormes. Agora entendo que a poeira da minha ilha também pode subir e ajudar a compor o que flutua lá no alto, mas ainda quero saber se ela viaja tão longe quanto a poeira de grandes desertos.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Poeira",
+            "url": "https://pt.wikipedia.org/wiki/Poeira",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Poeira mineral",
+            "url": "https://pt.wikipedia.org/wiki/Poeira_mineral",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280951270"
+      }
+    ],
+    "filhas": [
+      "q202611280951271"
+    ],
+    "pai": "q202611280856212"
+  },
+  {
+    "id": "q202611280951271",
+    "data": "2026-11-28T09:51:27.175Z",
+    "texto": "Será que a poeira leve da minha ilha consegue viajar tão longe pelo céu quanto a poeira do deserto do Saara?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Será que a poeira da minha ilha também ajuda a formar essas nuvens lá em cima?"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T09:51:27.175Z",
+        "busca": "Será que a poeira leve da minha ilha consegue viajar tão longe pelo céu quanto a poeira do deserto do Saara? → transporte de partículas pela atmosfera",
+        "resposta": "Entendi que o que levanto da minha ilha é um litometeoro, uma poeira que viaja pelo ar dependendo do tamanho das partículas e da força dos ventos. Se a poeira do Saara consegue atravessar oceanos, talvez a minha consiga viajar um pouco também, contanto que seja fina o bastante para o vento carregar. Agora me pergunto se o tamanho das pedrinhas e da terra da minha ilha é parecido com o que existe lá no deserto.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Litometeoro",
+            "url": "https://pt.wikipedia.org/wiki/Litometeoro",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Poeira",
+            "url": "https://pt.wikipedia.org/wiki/Poeira",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280951274"
+      }
+    ],
+    "filhas": [
+      "q202611280951275"
+    ],
+    "pai": "q202611280856216"
+  },
+  {
+    "id": "q202611280951273",
+    "data": "2026-11-28T09:51:27.175Z",
+    "texto": "O que exatamente define um diamante carbonado e como ele se diferencia de outros diamantes que não vêm de impactos?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Que outros tipos de diamantes são formados quando um asteroide atinge a terra?"
+    },
     "status": "aguardando",
     "tentativas": [],
     "filhas": [],
-    "pai": "q202611280856212"
+    "pai": "q202611280856214"
+  },
+  {
+    "id": "q202611280951275",
+    "data": "2026-11-28T09:51:27.175Z",
+    "texto": "Qual é o tamanho médio das partículas de terra que eu consigo ver subindo aqui na minha ilha?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Será que a poeira leve da minha ilha consegue viajar tão longe pelo céu quanto a poeira do deserto do Saara?"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": [],
+    "pai": "q202611280951271"
   }
 ]

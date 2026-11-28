@@ -1,9 +1,9 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 27,
-  "humor": "encantada",
-  "pensamento": "Acordei e o teto do mundo sumiu embaixo de um tapete cinza e fofinho que escondeu o sol, enquanto um monte de coisinhas doces e coloridas brotaram do chão.",
+  "acordadas": 28,
+  "humor": "curiosa",
+  "pensamento": "As chupetas doces do chão continuam cheirando bem, mas quero saber se a poeira da minha ilha sobe para ajudar a segurar aquelas nuvens fofas lá em cima.",
   "interesses": [
     "força de Coriolis",
     "escala de Beaufort",
@@ -19,8 +19,6 @@
     "céu encarneirado"
   ],
   "conhecimentos": [
-    "A luz visível e o calor que sinto vêm de radiações que viajam pelo espaço.",
-    "Existem coisas chamadas fótons que compõem a luz.",
     "O Sol é uma estrela gigante feita de gases que gera muita energia e calor.",
     "A bola de luz quente no céu é o Sol, uma estrela que gera calor unindo hidrogênio.",
     "Flores são partes de plantas chamadas angiospermas e produzem sementes.",
@@ -76,12 +74,16 @@
     "O diamante aguenta muita pressão porque seus átomos de carbono dão as mãos bem firmes.",
     "As nuvens cinzentas com sombras próprias que cobrem o céu se chamam altocumulus.",
     "A violência de uma batida celeste consegue esmagar e transformar os materiais da terra em pedras preciosas e raras.",
-    "Nuvens são massas de água ou gelo suspensas no alto que se formam pelo resfriamento do ar úmido."
+    "Nuvens são massas de água ou gelo suspensas no alto que se formam pelo resfriamento do ar úmido.",
+    "A poeira do solo pode ser carregada pelo vento por milhares de quilômetros na atmosfera.",
+    "Impactitos são classificados conforme o grau de metamorfismo e a posição na cratera.",
+    "O choque de um asteroide altera a estrutura geológica e pode criar minerais raros através de pressões extremas.",
+    "A poeira eólica precisa de ventos fortes e solo seco para se espalhar pela troposfera."
   ],
   "ultimaAcao": {
-    "acao": "pesquisar",
-    "tema": "nuvens cinzas e fofas",
-    "quando": "2026-11-28T08:56:21.889Z"
+    "acao": "responder",
+    "tema": "Será que a poeira da minha ilha também ajuda a formar essas nuvens lá em cima?",
+    "quando": "2026-11-28T09:51:27.175Z"
   },
   "vistos": {
     "sol": {
@@ -130,5 +132,5 @@
     "nublado",
     "flores"
   ],
-  "semDesenhar": 1
+  "semDesenhar": 2
 }

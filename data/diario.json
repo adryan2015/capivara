@@ -765,5 +765,39 @@
       "tempo": "nublado"
     },
     "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T09:51:27.175Z",
+    "acao": "responder",
+    "tema": "Será que a poeira da minha ilha também ajuda a formar essas nuvens lá em cima?",
+    "porque": "quero olhar para a minha segunda dúvida em aberto para ver se a poeira daqui sobe para o céu.",
+    "pensamento": "As chupetas doces do chão continuam cheirando bem, mas quero saber se a poeira da minha ilha sobe para ajudar a segurar aquelas nuvens fofas lá em cima.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "nublado"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T09:51:27.175Z",
+    "acao": "responder",
+    "tema": "Que outros tipos de diamantes são formados quando um asteroide atinge a terra?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "nublado"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T09:51:27.175Z",
+    "acao": "responder",
+    "tema": "Será que a poeira leve da minha ilha consegue viajar tão longe pelo céu quanto a poeira do deserto do Saara?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "nublado"
+    },
+    "resultado": "ficou satisfeita com a resposta"
   }
 ]

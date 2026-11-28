@@ -1736,5 +1736,99 @@
     "perguntasGeradas": [
       "q202611280856216"
     ]
+  },
+  {
+    "id": "p202611280951270",
+    "data": "2026-11-28T09:51:27.175Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611280856216",
+    "tema": "Será que a poeira da minha ilha também ajuda a formar essas nuvens lá em cima?",
+    "porque": "quero olhar para a minha segunda dúvida em aberto para ver se a poeira daqui sobe para o céu.",
+    "busca": "fontes de poeira atmosférica",
+    "buscas": [
+      "fontes de poeira atmosférica"
+    ],
+    "resumo": "A poeira é composta por partículas sólidas finas de várias origens, como solos, rochas e materiais orgânicos, que são levantadas pelo vento e transportadas por grandes distâncias na atmosfera.",
+    "aprendi": [
+      "A poeira pode ser constituída por partículas minúsculas de solo, rochas, plantas e animais.",
+      "O vento forte consegue levantar esses sedimentos e transportá-los pelas camadas da atmosfera formando aerossóis."
+    ],
+    "fontes": [
+      {
+        "titulo": "Poeira",
+        "url": "https://pt.wikipedia.org/wiki/Poeira",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Poeira mineral",
+        "url": "https://pt.wikipedia.org/wiki/Poeira_mineral",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280951271"
+    ]
+  },
+  {
+    "id": "p202611280951272",
+    "data": "2026-11-28T09:51:27.175Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611280856214",
+    "tema": "Que outros tipos de diamantes são formados quando um asteroide atinge a terra?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "Que outros tipos de diamantes são formados quando um asteroide atinge a terra?",
+    "buscas": [
+      "Que outros tipos de diamantes são formados quando um asteroide atinge a terra?"
+    ],
+    "resumo": "O texto explica que impactitos são rochas formadas por colisões de meteoritos, variando conforme a força do choque e o tipo de solo. Quando esses eventos atingem matéria orgânica, podem surgir diamantes, como o carbonado.",
+    "aprendi": [
+      "Impactitos são rochas transformadas pelo choque de meteoritos.",
+      "O carbonado é um tipo de diamante formado em impactos de asteroides.",
+      "A fusão por impacto ocorre acima de 1.000 °C e 300 GPa."
+    ],
+    "fontes": [
+      {
+        "titulo": "Impactito",
+        "url": "https://pt.wikipedia.org/wiki/Impactito",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280951273"
+    ]
+  },
+  {
+    "id": "p202611280951274",
+    "data": "2026-11-28T09:51:27.175Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611280951271",
+    "tema": "Será que a poeira leve da minha ilha consegue viajar tão longe pelo céu quanto a poeira do deserto do Saara?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "transporte de partículas pela atmosfera",
+    "buscas": [
+      "Será que a poeira leve da minha ilha consegue viajar tão longe pelo céu quanto a poeira do deserto do Saara?",
+      "transporte de partículas pela atmosfera"
+    ],
+    "resumo": "Li que a poeira eólica é transportada pelo vento após ser levantada do solo, sendo classificada como um litometeoro que reduz a visibilidade no ar. Partículas finas, como as do Saara, podem viajar distâncias enormes, dependendo do seu tamanho e da umidade do ar.",
+    "aprendi": [
+      "Poeira que viaja pelo ar é chamada de litometeoro.",
+      "A poeira do Saara consegue viajar até o Caribe e o Amazonas.",
+      "Partículas menores que 10 micrômetros ficam mais facilmente suspensas na atmosfera."
+    ],
+    "fontes": [
+      {
+        "titulo": "Litometeoro",
+        "url": "https://pt.wikipedia.org/wiki/Litometeoro",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Poeira",
+        "url": "https://pt.wikipedia.org/wiki/Poeira",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280951275"
+    ]
   }
 ]
