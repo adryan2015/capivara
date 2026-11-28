@@ -1,9 +1,9 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 17,
-  "humor": "sonolenta",
-  "pensamento": "A bola de luz fria está lá no alto do céu preto e meu sono finalmente chegou. Vou deitar na minha caminha de folhas para descansar.",
+  "acordadas": 18,
+  "humor": "curiosa",
+  "pensamento": "Acabei de acordar do meu descanso e sinto o ar da noite bem calmo ao meu redor. Ainda estou pensando naquela história do ar empacado que segura as chuvas e não sai do lugar.",
   "interesses": [
     "Fótons",
     "ciclo da água",
@@ -44,12 +44,16 @@
     "A troposfera guarda a maior parte da massa de ar e do vapor de água do mundo.",
     "Existe um lugar chamado São Paulo onde vivem milhões de pessoas e há muitas fábricas e plantações.",
     "Bloqueios de ar podem segurar as nuvens e a chuva por muito tempo.",
-    "Um bloqueio atmosférico é um sistema de alta pressão que estaciona no ar e obriga o tempo de uma região a não mudar por semanas."
+    "Um bloqueio atmosférico é um sistema de alta pressão que estaciona no ar e obriga o tempo de uma região a não mudar por semanas.",
+    "O bloqueio atmosférico segura o tempo no mesmo lugar por muito tempo.",
+    "A circulação atmosférica é impulsionada pelo calor do Sol e pelo giro da Terra.",
+    "Correntes de jato são ventos potentes no alto da atmosfera criados por diferenças de temperatura e pelo giro do planeta."
   ],
   "ultimaAcao": {
-    "acao": "descansar",
-    "tema": null,
-    "quando": "2026-11-27T23:45:28.922Z"
+    "acao": "responder",
+    "tema": "Como uma área de alta pressão consegue ficar parada no ar sem se mexer?",
+    "quando": "2026-11-28T00:40:38.102Z",
+    "desenhoId": "d202611280040385"
   },
   "vistos": {
     "sol": {
@@ -90,5 +94,5 @@
     "noite",
     "flores"
   ],
-  "semDesenhar": 3
+  "semDesenhar": 0
 }

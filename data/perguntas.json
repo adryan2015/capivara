@@ -1092,9 +1092,89 @@
       "tipo": "resposta",
       "texto": "O que é um bloqueio atmosférico?"
     },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": [],
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T00:40:38.102Z",
+        "busca": "mecanismo do bloqueio atmosférico → anticiclone de bloqueio",
+        "resposta": "Fui pesquisar sobre o bloqueio atmosférico e descobri que ele acontece por causa de configurações nos ventos bem altos do céu, os jatos. Essas áreas de alta pressão ficam quase paradas por dias ou semanas, segurando ou desviando o tempo ao redor. Agora já sei o nome disso, mas fiquei curiosa para entender melhor como esses rios de vento lá no alto decidem segurar o ar assim.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Bloqueio (meteorologia)",
+            "url": "https://pt.wikipedia.org/wiki/Bloqueio_(meteorologia)",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280040380"
+      }
+    ],
+    "filhas": [
+      "q202611280040381"
+    ],
     "pai": "q202611272250183"
+  },
+  {
+    "id": "q202611280040381",
+    "data": "2026-11-28T00:40:38.102Z",
+    "texto": "Como funcionam esses rios de vento lá no alto que conseguem segurar uma alta pressão?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Como uma área de alta pressão consegue ficar parada no ar sem se mexer?"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T00:40:38.102Z",
+        "busca": "Como funcionam esses rios de vento lá no alto que conseguem segurar uma alta pressão? → vento forte no céu",
+        "resposta": "Fui pesquisar aqueles ventos lá no alto e descobri que o ar se mexe por causa de diferenças de temperatura e da rotação do planeta. Li também sobre tempestades giratórias e como o ar quente e frio interage nas alturas, mas ainda fiquei curiosa sobre como esses ventos formam caminhos tão longos.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Vento",
+            "url": "https://pt.wikipedia.org/wiki/Vento",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Supercélula",
+            "url": "https://pt.wikipedia.org/wiki/Superc%C3%A9lula",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280040382"
+      }
+    ],
+    "filhas": [
+      "q202611280040383"
+    ],
+    "pai": "q202611272250185"
+  },
+  {
+    "id": "q202611280040383",
+    "data": "2026-11-28T00:40:38.102Z",
+    "texto": "Como se formam exatamente essas correntes longas de vento que cruzam o céu?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Como funcionam esses rios de vento lá no alto que conseguem segurar uma alta pressão?"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T00:40:38.102Z",
+        "busca": "Como se formam exatamente essas correntes longas de vento que cruzam o céu? → corrente de ar",
+        "resposta": "Fiquei sabendo que essas linhas compridas de vento lá em cima se chamam correntes de jato. Elas nascem do encontro entre o ar que vem quente do equador e o ar frio lá dos polos, junto com o giro da Terra. Achei curioso que elas mudam de direção do nada e até ganham nomes diferentes dependendo da altura.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Corrente de jato",
+            "url": "https://pt.wikipedia.org/wiki/Corrente_de_jato",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280040384"
+      }
+    ],
+    "filhas": [],
+    "pai": "q202611280040381"
   }
 ]

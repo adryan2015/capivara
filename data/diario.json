@@ -428,5 +428,49 @@
       "estacao": "primavera",
       "tempo": "sol"
     }
+  },
+  {
+    "data": "2026-11-28T00:40:38.102Z",
+    "acao": "responder",
+    "tema": "Como uma área de alta pressão consegue ficar parada no ar sem se mexer?",
+    "porque": "Quero descobrir como uma massa de ar consegue ficar teimosa e imóvel no céu em vez de se espalhar.",
+    "pensamento": "Acabei de acordar do meu descanso e sinto o ar da noite bem calmo ao meu redor. Ainda estou pensando naquela história do ar empacado que segura as chuvas e não sai do lugar.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T00:40:38.102Z",
+    "acao": "responder",
+    "tema": "Como funcionam esses rios de vento lá no alto que conseguem segurar uma alta pressão?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T00:40:38.102Z",
+    "acao": "responder",
+    "tema": "Como se formam exatamente essas correntes longas de vento que cruzam o céu?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T00:40:38.102Z",
+    "acao": "desenhar",
+    "tema": "o rio de vento no alto",
+    "porque": "quis colocar no papel o que ficou na cabeça",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "sol"
+    }
   }
 ]

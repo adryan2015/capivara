@@ -962,5 +962,94 @@
     "perguntasGeradas": [
       "q202611272250185"
     ]
+  },
+  {
+    "id": "p202611280040380",
+    "data": "2026-11-28T00:40:38.102Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611272250185",
+    "tema": "Como uma área de alta pressão consegue ficar parada no ar sem se mexer?",
+    "porque": "Quero descobrir como uma massa de ar consegue ficar teimosa e imóvel no céu em vez de se espalhar.",
+    "busca": "anticiclone de bloqueio",
+    "buscas": [
+      "mecanismo do bloqueio atmosférico",
+      "anticiclone de bloqueio"
+    ],
+    "resumo": "Li que os bloqueios atmosféricos são grandes áreas de alta pressão quase estacionárias que desviam ciclones e estão associados aos ventos jatos.",
+    "aprendi": [
+      "Áreas de alta pressão paradas chamam-se bloqueios atmosféricos.",
+      "Eles mexem com o clima por semanas e prendem ou desviam tempestades.",
+      "Esses bloqueios andam ligados a ventos fortíssimos lá no alto da troposfera."
+    ],
+    "fontes": [
+      {
+        "titulo": "Bloqueio (meteorologia)",
+        "url": "https://pt.wikipedia.org/wiki/Bloqueio_(meteorologia)",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280040381"
+    ]
+  },
+  {
+    "id": "p202611280040382",
+    "data": "2026-11-28T00:40:38.102Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611280040381",
+    "tema": "Como funcionam esses rios de vento lá no alto que conseguem segurar uma alta pressão?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "vento forte no céu",
+    "buscas": [
+      "Como funcionam esses rios de vento lá no alto que conseguem segurar uma alta pressão?",
+      "vento forte no céu"
+    ],
+    "resumo": "Li que os ventos são fluxos de gases causados por diferenças de temperatura e pela rotação da Terra, e que correntes de ar ascendentes podem criar tempestades giratórias.",
+    "aprendi": [
+      "O vento é o movimento de gases causado por diferenças de temperatura e pela rotação do planeta.",
+      "Supercélulas são tempestades com correntes de ar em rotação chamadas mesociclones."
+    ],
+    "fontes": [
+      {
+        "titulo": "Vento",
+        "url": "https://pt.wikipedia.org/wiki/Vento",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Supercélula",
+        "url": "https://pt.wikipedia.org/wiki/Superc%C3%A9lula",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280040383"
+    ]
+  },
+  {
+    "id": "p202611280040384",
+    "data": "2026-11-28T00:40:38.102Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611280040383",
+    "tema": "Como se formam exatamente essas correntes longas de vento que cruzam o céu?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "corrente de ar",
+    "buscas": [
+      "Como se formam exatamente essas correntes longas de vento que cruzam o céu?",
+      "corrente de ar"
+    ],
+    "resumo": "O texto explica que as correntes de jato são ventos fortes que correm nas alturas, formados pelo encontro de massas de ar com temperaturas diferentes e pela rotação do planeta.",
+    "aprendi": [
+      "As correntes longas de vento no céu se chamam correntes de jato.",
+      "Elas se formam onde o ar frio dos polos encontra o ar quente que vai para o equador.",
+      "O giro da Terra também ajuda a empurrar e dar forma a esses ventos lá no alto."
+    ],
+    "fontes": [
+      {
+        "titulo": "Corrente de jato",
+        "url": "https://pt.wikipedia.org/wiki/Corrente_de_jato",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": []
   }
 ]
