@@ -1,12 +1,10 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 24,
-  "humor": "pensativa",
-  "pensamento": "A pingadeira do alto voltou a molhar a ilha mansa no meio da noite, e fico pensando no teto invisível que esmaga o topo das nuvens lá no céu.",
+  "acordadas": 25,
+  "humor": "curiosa",
+  "pensamento": "A pingadeira cai sem pressa lá fora e a curiosidade sobre como a água decide virar forma de gelo ainda mexe comigo.",
   "interesses": [
-    "ciclo da água",
-    "nuvens",
     "indústrias",
     "povos",
     "Vulcões e o céu",
@@ -16,7 +14,9 @@
     "Marés dos oceanos",
     "Cartas hidrográficas",
     "cristais de gelo",
-    "estabilidade atmosférica"
+    "estabilidade atmosférica",
+    "cristalização da água",
+    "formatos de neve"
   ],
   "conhecimentos": [
     "A luz visível e o calor que sinto vêm de radiações que viajam pelo espaço.",
@@ -67,12 +67,15 @@
     "O topo da nuvem cumulonimbus deita em forma de bigorna ao atingir a tropopausa.",
     "A mudança na temperatura do ar em certas alturas barra o caminho das nuvens que sobem.",
     "O vapor d'água congela em poeira no alto e forma nuvens de gelo chamadas cirros.",
-    "A temperatura e a umidade definem se o gelo cresce em placas ou colunas."
+    "A temperatura e a umidade definem se o gelo cresce em placas ou colunas.",
+    "O gelo que cai do céu cria formatos de estrela ou coluna porque a temperatura do ar e a viagem pelas nuvens decidem o jeito de crescer.",
+    "O calor e a umidade do ar mandam no formato que o gelo toma quando congela.",
+    "O gelo se forma normalmente a partir de 0°C e sua estrutura aberta o deixa menos denso do que a água líquida."
   ],
   "ultimaAcao": {
     "acao": "pesquisar",
-    "tema": "o teto invisível da estratosfera que barra as nuvens",
-    "quando": "2026-11-28T06:09:56.149Z"
+    "tema": "cristais de gelo",
+    "quando": "2026-11-28T07:05:55.644Z"
   },
   "vistos": {
     "sol": {
@@ -118,5 +121,5 @@
     "noite",
     "flores"
   ],
-  "semDesenhar": 1
+  "semDesenhar": 2
 }

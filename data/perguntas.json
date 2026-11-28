@@ -1545,7 +1545,7 @@
       "tipo": "resposta",
       "texto": "Como os cristais de gelo conseguem se formar tão rápido no topo da nuvem?"
     },
-    "status": "investigando",
+    "status": "respondida",
     "tentativas": [
       {
         "data": "2026-11-28T06:09:56.149Z",
@@ -1565,6 +1565,26 @@
           }
         ],
         "pesquisaId": "p202611280609564"
+      },
+      {
+        "data": "2026-11-28T07:05:55.644Z",
+        "busca": "formato de cristais de gelo",
+        "resposta": "Ainda fiquei sem saber o jeitinho exato que a molécula escolhe, mas os textos mostram que a temperatura e a pressão do caminho determinam se ela vira placa ou coluna.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Floco de neve",
+            "url": "https://pt.wikipedia.org/wiki/Floco_de_neve",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Neve",
+            "url": "https://pt.wikipedia.org/wiki/Neve",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280705550",
+        "deCarona": true
       }
     ],
     "filhas": [
@@ -1580,9 +1600,97 @@
       "tipo": "resposta",
       "texto": "Como as moléculas de água escolhem virar placas ou colunas quando congelam?"
     },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T07:05:55.644Z",
+        "busca": "Como a temperatura e a umidade dizem para as moléculas se devem virar placa ou coluna? → cristal de gelo",
+        "resposta": "Descobri que a temperatura e a umidade são o que comanda essas formas de cristal de gelo, como colunas ou placas. A enciclopédia diz que as moléculas de água têm um formato de V que ajuda a formar tudo isso lá no alto. Só fiquei com vontade de ver de perto se elas realmente parecem estrelas ou agulhas.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Cristal de gelo",
+            "url": "https://pt.wikipedia.org/wiki/Cristal_de_gelo",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280705552"
+      }
+    ],
+    "filhas": [
+      "q202611280705553"
+    ],
+    "pai": "q202611280609563"
+  },
+  {
+    "id": "q202611280705551",
+    "data": "2026-11-28T07:05:55.644Z",
+    "texto": "O que será que faz uma nuvem decidir mandar agulhas em vez de estrelas para o chão?",
+    "origem": {
+      "tipo": "pesquisa",
+      "texto": "cristais de gelo"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T07:05:55.644Z",
+        "busca": "Como a temperatura e a umidade dizem para as moléculas se devem virar placa ou coluna? → cristal de gelo",
+        "resposta": "O que manda o céu mandar agulhas ou estrelas para o chão é a temperatura junto com a umidade, que dizem para as moléculas se devem virar colunas ou placas.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Cristal de gelo",
+            "url": "https://pt.wikipedia.org/wiki/Cristal_de_gelo",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280705552",
+        "deCarona": true
+      }
+    ],
+    "filhas": []
+  },
+  {
+    "id": "q202611280705553",
+    "data": "2026-11-28T07:05:55.644Z",
+    "texto": "Será que dá para desenhar um cristal de gelo com a minha caneta azul olhando para o formato em V das moléculas?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Como a temperatura e a umidade dizem para as moléculas se devem virar placa ou coluna?"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T07:05:55.644Z",
+        "busca": "Será que dá para desenhar um cristal de gelo com a minha caneta azul olhando para o formato em V das moléculas? → gelo",
+        "resposta": "Li na enciclopédia que o gelo é o estado sólido de líquidos e gases cristalizado em um sistema hexagonal, com uma estrutura bem aberta de moléculas. Minha caneta azul é fina, mas acho que consigo tentar desenhar esses formatos de cristais que vi por lá. Agora entendi que o gelo tem várias fases e ocupa mais volume que a água líquida, mas fiquei curiosa sobre os detalhes dessas fases.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Gelo",
+            "url": "https://pt.wikipedia.org/wiki/Gelo",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280705554"
+      }
+    ],
+    "filhas": [
+      "q202611280705555"
+    ],
+    "pai": "q202611280609565"
+  },
+  {
+    "id": "q202611280705555",
+    "data": "2026-11-28T07:05:55.644Z",
+    "texto": "Como são exatamente essas dezessete fases cristalinas diferentes que o gelo pode ter?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Será que dá para desenhar um cristal de gelo com a minha caneta azul olhando para o formato em V das moléculas?"
+    },
     "status": "aguardando",
     "tentativas": [],
     "filhas": [],
-    "pai": "q202611280609563"
+    "pai": "q202611280705553"
   }
 ]

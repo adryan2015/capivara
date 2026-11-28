@@ -647,5 +647,39 @@
       "tempo": "chuva"
     },
     "resultado": "ainda não ficou satisfeita"
+  },
+  {
+    "data": "2026-11-28T07:05:55.644Z",
+    "acao": "pesquisar",
+    "tema": "cristais de gelo",
+    "porque": "Quero tirar a limpo essa dúvida de como o gelo escolhe virar placa ou coluna.",
+    "pensamento": "A pingadeira cai sem pressa lá fora e a curiosidade sobre como a água decide virar forma de gelo ainda mexe comigo.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "de quebra, respondeu 1 dúvida antiga"
+  },
+  {
+    "data": "2026-11-28T07:05:55.644Z",
+    "acao": "responder",
+    "tema": "Como a temperatura e a umidade dizem para as moléculas se devem virar placa ou coluna?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "ficou satisfeita com a resposta e, de quebra, respondeu mais 1"
+  },
+  {
+    "data": "2026-11-28T07:05:55.644Z",
+    "acao": "responder",
+    "tema": "Será que dá para desenhar um cristal de gelo com a minha caneta azul olhando para o formato em V das moléculas?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "chuva"
+    },
+    "resultado": "ficou satisfeita com a resposta"
   }
 ]

@@ -1454,5 +1454,101 @@
     "perguntasGeradas": [
       "q202611280609565"
     ]
+  },
+  {
+    "id": "p202611280705550",
+    "data": "2026-11-28T07:05:55.644Z",
+    "tipo": "pesquisa",
+    "tema": "cristais de gelo",
+    "porque": "Quero tirar a limpo essa dúvida de como o gelo escolhe virar placa ou coluna.",
+    "busca": "formato de cristais de gelo",
+    "buscas": [
+      "formato de cristais de gelo"
+    ],
+    "resumo": "Fui olhar como o gelo decide entre placa ou coluna, mas os textos contam que a água congelada lá no alto forma flocos com formatos muito variados, como estrelas ou agulhas, dependendo de como o ar mexe com ela. Cada pedacinho nasce ao redor de uma poeira bem pequena e vai crescendo conforme o vapor de água gruda na sua superfície. Acontece que a temperatura e a pressão do vento mudam o caminho do cristal, criando formatos complexos e até bolotas de gelo.",
+    "aprendi": [
+      "A neve parece branca porque a luz bate nas pontinhas dos cristais e se espalha, mesmo o gelo sendo transparente.",
+      "Os flocos podem ser agulhas, colunas ou placas conforme viajam pelas diferentes zonas de temperatura.",
+      "Flocos gigantes de quase quarenta centímetros já foram registrados caindo em outros lugares do mundo."
+    ],
+    "sentimento": "Fiquei encantada imaginando essas agulhas e placas de gelo dançando no vento antes de caírem.",
+    "fontes": [
+      {
+        "titulo": "Floco de neve",
+        "url": "https://pt.wikipedia.org/wiki/Floco_de_neve",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Neve",
+        "url": "https://pt.wikipedia.org/wiki/Neve",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280705551"
+    ],
+    "respondeuTambem": [
+      "q202611280609563"
+    ]
+  },
+  {
+    "id": "p202611280705552",
+    "data": "2026-11-28T07:05:55.644Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611280609565",
+    "tema": "Como a temperatura e a umidade dizem para as moléculas se devem virar placa ou coluna?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "cristal de gelo",
+    "buscas": [
+      "Como a temperatura e a umidade dizem para as moléculas se devem virar placa ou coluna?",
+      "cristal de gelo"
+    ],
+    "resumo": "A temperatura e a umidade determinam as diferentes formas cristalinas do gelo, cujas moléculas de água têm formato de V.",
+    "aprendi": [
+      "A temperatura e a umidade determinam se o cristal de gelo vira placa, coluna ou outra forma.",
+      "As moléculas de água na pressão ambiente têm a forma de um V com hidrogênio e oxigênio."
+    ],
+    "fontes": [
+      {
+        "titulo": "Cristal de gelo",
+        "url": "https://pt.wikipedia.org/wiki/Cristal_de_gelo",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280705553"
+    ],
+    "respondeuTambem": [
+      "q202611280705551"
+    ]
+  },
+  {
+    "id": "p202611280705554",
+    "data": "2026-11-28T07:05:55.644Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611280705553",
+    "tema": "Será que dá para desenhar um cristal de gelo com a minha caneta azul olhando para o formato em V das moléculas?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "gelo",
+    "buscas": [
+      "Será que dá para desenhar um cristal de gelo com a minha caneta azul olhando para o formato em V das moléculas?",
+      "gelo"
+    ],
+    "resumo": "O texto explica que o gelo é o estado sólido cristalizado no sistema hexagonal, com moléculas em estrutura aberta que ocupam mais volume que a água líquida e possuem dezenas de fases.",
+    "aprendi": [
+      "O gelo é cristalizado no sistema hexagonal.",
+      "A estrutura das moléculas de gelo é extremamente aberta, ocupando mais volume que a água.",
+      "Existem pelo menos dezessete fases cristalinas conhecidas do gelo."
+    ],
+    "fontes": [
+      {
+        "titulo": "Gelo",
+        "url": "https://pt.wikipedia.org/wiki/Gelo",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280705555"
+    ]
   }
 ]
