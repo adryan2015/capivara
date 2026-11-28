@@ -1,9 +1,9 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 22,
-  "humor": "espantada",
-  "pensamento": "Olho para a bola de luz fria e escuto o empurrão invisível que assobia passando pelas árvores no meio da escuridão.",
+  "acordadas": 23,
+  "humor": "curiosa",
+  "pensamento": "Sinto o vento forte chacoalhar as árvores e percebo umas coisinhas coloridas e doces brotando no chão da ilha.",
   "interesses": [
     "Fótons",
     "ciclo da água",
@@ -65,9 +65,10 @@
     "A nuvem-bigorna marca o estágio maduro de uma tempestade poderosa."
   ],
   "ultimaAcao": {
-    "acao": "pesquisar",
-    "tema": "Força de Coriolis",
-    "quando": "2026-11-28T04:18:52.900Z"
+    "acao": "desenhar",
+    "tema": "as chupetas doces do chão",
+    "quando": "2026-11-28T05:14:50.651Z",
+    "desenhoId": "d202611280514500"
   },
   "vistos": {
     "sol": {
@@ -113,5 +114,5 @@
     "noite",
     "flores"
   ],
-  "semDesenhar": 1
+  "semDesenhar": 0
 }
