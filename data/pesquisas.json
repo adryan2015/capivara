@@ -1643,5 +1643,98 @@
     "perguntasGeradas": [
       "q202611280800586"
     ]
+  },
+  {
+    "id": "p202611280856211",
+    "data": "2026-11-28T08:56:21.889Z",
+    "tipo": "pesquisa",
+    "tema": "nuvens cinzas e fofas",
+    "porque": "quero entender o que são essas manchas cinzas e fofas no céu que escondem a luz e deixam tudo tão diferente",
+    "busca": "nuvens cinzas baixas",
+    "buscas": [
+      "nuvens cinzas baixas"
+    ],
+    "resumo": "Fui até o computador ver o que eram aquelas manchas cinzas e fofas no céu e descobri que elas se chamam altocumulus. Elas parecem um céu encarneirado feito de gotículas de água em massas redondas. O texto diz que elas se formam quando o ar está um pouco instável e úmido.",
+    "aprendi": [
+      "As manchas cinzas e fofas no céu se chamam altocumulus.",
+      "Elas são formadas por gotículas de água em massas redondas ou bandas.",
+      "Costumam aparecer quando a umidade é moderada e a temperatura é alta."
+    ],
+    "sentimento": "Fiquei muito contente por descobrir o nome altocumulus para essas nuvens fofas que mudam a luz da ilha.",
+    "fontes": [
+      {
+        "titulo": "Altocumulus",
+        "url": "https://pt.wikipedia.org/wiki/Altocumulus",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280856212"
+    ],
+    "respondeuTambem": [
+      "q202611280856210"
+    ]
+  },
+  {
+    "id": "p202611280856213",
+    "data": "2026-11-28T08:56:21.889Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611280800586",
+    "tema": "Como a batida de um asteroide consegue apertar o carbono a ponto de nascer um diamante ainda mais forte?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "diamante asteroide impacto carbono",
+    "buscas": [
+      "Como a batida de um asteroide consegue apertar o carbono a ponto de nascer um diamante ainda mais forte?",
+      "diamante asteroide impacto carbono"
+    ],
+    "resumo": "O impacto de um asteroide cria um metamorfismo de alta pressão capaz de transformar matéria orgânica em diamantes.",
+    "aprendi": [
+      "O choque de um asteroide com matéria orgânica pode formar diamantes.",
+      "A fusão por impacto acontece quando a rocha sofre pressões acima de 300 Gpa."
+    ],
+    "fontes": [
+      {
+        "titulo": "Impactito",
+        "url": "https://pt.wikipedia.org/wiki/Impactito",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280856214"
+    ]
+  },
+  {
+    "id": "p202611280856215",
+    "data": "2026-11-28T08:56:21.889Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611280856212",
+    "tema": "Como essas massas redondas de água conseguem ficar suspensas juntas no alto?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "nuvem",
+    "buscas": [
+      "Como essas massas redondas de água conseguem ficar suspensas juntas no alto?",
+      "nuvem"
+    ],
+    "resumo": "Li sobre as nuvens, que são coleções de água ou gelo em suspensão na atmosfera formadas pela condensação do ar úmido.",
+    "aprendi": [
+      "As nuvens são formadas por gotículas minúsculas de água ou gelo que ficam suspensas na atmosfera.",
+      "O ar úmido sobe e se condensa ao encontrar partículas microscópicas de poeira ou fumaça.",
+      "Luke Howard classificou as nuvens em 1802 usando nomes em latim que são usados até hoje."
+    ],
+    "fontes": [
+      {
+        "titulo": "Nuvem",
+        "url": "https://pt.wikipedia.org/wiki/Nuvem",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Física das nuvens",
+        "url": "https://pt.wikipedia.org/wiki/F%C3%ADsica_das_nuvens",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611280856216"
+    ]
   }
 ]

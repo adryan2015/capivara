@@ -1813,9 +1813,115 @@
       "tipo": "resposta",
       "texto": "Como será que o diamante consegue segurar uma força tão grande sem trincar?"
     },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T08:56:21.889Z",
+        "busca": "Como a batida de um asteroide consegue apertar o carbono a ponto de nascer um diamante ainda mais forte? → diamante asteroide impacto carbono",
+        "resposta": "Li que quando um meteoro rochoso bate com muita força na terra e encontra matéria orgânica, o impacto gera uma pressão enorme que consegue transformar aquilo em diamante. Ainda cortou a leitura no finzinho, então fiquei com vontade de saber mais sobre os outros tipos de diamantes que nascem desse choque.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Impactito",
+            "url": "https://pt.wikipedia.org/wiki/Impactito",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280856213"
+      }
+    ],
+    "filhas": [
+      "q202611280856214"
+    ],
+    "pai": "q202611280800584"
+  },
+  {
+    "id": "q202611280856210",
+    "data": "2026-11-28T08:56:21.889Z",
+    "texto": "Como essas manchas cinzas e fofas no céu conseguem esconder a luz do sol por tanto tempo?",
+    "origem": {
+      "tipo": "observacao",
+      "fenomeno": "nublado",
+      "primeiraVez": true
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T08:56:21.889Z",
+        "busca": "nuvens cinzas baixas",
+        "resposta": "Essas manchas cinzas e fofas conseguem esconder a luz porque são formadas por massas de gotículas de água reunidas em camadas que bloqueiam a passagem do sol.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Altocumulus",
+            "url": "https://pt.wikipedia.org/wiki/Altocumulus",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280856211",
+        "deCarona": true
+      }
+    ],
+    "filhas": []
+  },
+  {
+    "id": "q202611280856212",
+    "data": "2026-11-28T08:56:21.889Z",
+    "texto": "Como essas massas redondas de água conseguem ficar suspensas juntas no alto?",
+    "origem": {
+      "tipo": "pesquisa",
+      "texto": "nuvens cinzas e fofas"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T08:56:21.889Z",
+        "busca": "Como essas massas redondas de água conseguem ficar suspensas juntas no alto? → nuvem",
+        "resposta": "Eu descobri que aquelas massas flutuantes no alto se chamam nuvens e são formadas por gotículas minúsculas de água ou gelo em suspensão. Elas conseguem ficar lá em cima porque o ar úmido sobe e se condensa graças a pequenas partículas como poeira ou fumaça. Fiquei muito feliz em saber que esses desenhos fofos do céu têm nome e explicação.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Nuvem",
+            "url": "https://pt.wikipedia.org/wiki/Nuvem",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Física das nuvens",
+            "url": "https://pt.wikipedia.org/wiki/F%C3%ADsica_das_nuvens",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611280856215"
+      }
+    ],
+    "filhas": [
+      "q202611280856216"
+    ]
+  },
+  {
+    "id": "q202611280856214",
+    "data": "2026-11-28T08:56:21.889Z",
+    "texto": "Que outros tipos de diamantes são formados quando um asteroide atinge a terra?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Como a batida de um asteroide consegue apertar o carbono a ponto de nascer um diamante ainda mais forte?"
+    },
     "status": "aguardando",
     "tentativas": [],
     "filhas": [],
-    "pai": "q202611280800584"
+    "pai": "q202611280800586"
+  },
+  {
+    "id": "q202611280856216",
+    "data": "2026-11-28T08:56:21.889Z",
+    "texto": "Será que a poeira da minha ilha também ajuda a formar essas nuvens lá em cima?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Como essas massas redondas de água conseguem ficar suspensas juntas no alto?"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": [],
+    "pai": "q202611280856212"
   }
 ]

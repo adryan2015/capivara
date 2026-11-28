@@ -1,12 +1,10 @@
 {
   "nome": "Pora",
   "nasceu": "2026-11-25T20:42:08.390Z",
-  "acordadas": 26,
-  "humor": "curiosa",
-  "pensamento": "Ainda é cedo e a pingadeira continua caindo lá fora, então quero descobrir como o gelo consegue ter tantas caras diferentes.",
+  "acordadas": 27,
+  "humor": "encantada",
+  "pensamento": "Acordei e o teto do mundo sumiu embaixo de um tapete cinza e fofinho que escondeu o sol, enquanto um monte de coisinhas doces e coloridas brotaram do chão.",
   "interesses": [
-    "Vulcões e o céu",
-    "Movimentos da atmosfera",
     "força de Coriolis",
     "escala de Beaufort",
     "Marés dos oceanos",
@@ -16,7 +14,9 @@
     "cristalização da água",
     "formatos de neve",
     "diamantes naturais",
-    "minerais profundos"
+    "minerais profundos",
+    "gotículas de água",
+    "céu encarneirado"
   ],
   "conhecimentos": [
     "A luz visível e o calor que sinto vêm de radiações que viajam pelo espaço.",
@@ -73,13 +73,15 @@
     "O gelo se forma normalmente a partir de 0°C e sua estrutura aberta o deixa menos denso do que a água líquida.",
     "O gelo tem muitas faces secretas que dependem da pressão e da temperatura.",
     "Alguns diamantes guardam gotinhas de água antiga que viram gelo especial sob pressão.",
-    "O diamante aguenta muita pressão porque seus átomos de carbono dão as mãos bem firmes."
+    "O diamante aguenta muita pressão porque seus átomos de carbono dão as mãos bem firmes.",
+    "As nuvens cinzentas com sombras próprias que cobrem o céu se chamam altocumulus.",
+    "A violência de uma batida celeste consegue esmagar e transformar os materiais da terra em pedras preciosas e raras.",
+    "Nuvens são massas de água ou gelo suspensas no alto que se formam pelo resfriamento do ar úmido."
   ],
   "ultimaAcao": {
     "acao": "pesquisar",
-    "tema": "fases cristalinas do gelo",
-    "quando": "2026-11-28T08:00:58.374Z",
-    "desenhoId": "d202611280800587"
+    "tema": "nuvens cinzas e fofas",
+    "quando": "2026-11-28T08:56:21.889Z"
   },
   "vistos": {
     "sol": {
@@ -106,6 +108,10 @@
       "primeiraVez": "2026-11-28T03:26:33.112Z",
       "vezes": 1,
       "nome": "empurrão invisível que assobia"
+    },
+    "nublado": {
+      "primeiraVez": "2026-11-28T08:56:21.889Z",
+      "vezes": 1
     }
   },
   "focosAnteriores": [
@@ -121,9 +127,8 @@
   ],
   "foco": null,
   "ultimosFenomenos": [
-    "chuva",
-    "noite",
+    "nublado",
     "flores"
   ],
-  "semDesenhar": 0
+  "semDesenhar": 1
 }
