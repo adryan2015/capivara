@@ -1830,5 +1830,95 @@
     "perguntasGeradas": [
       "q202611280951275"
     ]
+  },
+  {
+    "id": "p202611281046401",
+    "data": "2026-11-28T10:46:40.316Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611280951275",
+    "tema": "Qual é o tamanho médio das partículas de terra que eu consigo ver subindo aqui na minha ilha?",
+    "porque": "quero responder qual é o tamanho médio das partículas de terra que consigo ver subindo aqui na minha ilha",
+    "busca": "tamanho medio particulas poeira solo",
+    "buscas": [
+      "tamanho medio particulas poeira solo"
+    ],
+    "resumo": "O texto explica o que é a poeira eólica, como o solo levantado pelo vento se espalha e como o tamanho das partículas é medido em micrômetros.",
+    "aprendi": [
+      "A poeira levantada pelo vento é chamada de poeira eólica.",
+      "O tamanho das partículas de poeira e solo costuma ser medido em micrômetros."
+    ],
+    "fontes": [
+      {
+        "titulo": "Poeira",
+        "url": "https://pt.wikipedia.org/wiki/Poeira",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611281046402"
+    ]
+  },
+  {
+    "id": "p202611281046403",
+    "data": "2026-11-28T10:46:40.316Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611280951273",
+    "tema": "O que exatamente define um diamante carbonado e como ele se diferencia de outros diamantes que não vêm de impactos?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "carbonado",
+    "buscas": [
+      "O que exatamente define um diamante carbonado e como ele se diferencia de outros diamantes que não vêm de impactos?",
+      "pedra preta brilhante de impacto",
+      "carbonado"
+    ],
+    "resumo": "O carbonado é um diamante policristalino e poroso, de cor escura, que não tem as mesmas inclusões do manto terrestre dos diamantes comuns e cuja origem exata ainda é cercada de mistérios sobre impactos.",
+    "aprendi": [
+      "O carbonado é um diamante policristalino formado por milhares de pequenos cristais.",
+      "Ele tem cor preta ou cinza e é muito poroso, sem plano de clivagem.",
+      "Existem teorias de que ele pode ter vindo do espaço ou de impactos de asteroides."
+    ],
+    "fontes": [
+      {
+        "titulo": "Carbonado (diamante)",
+        "url": "https://pt.wikipedia.org/wiki/Carbonado_(diamante)",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611281046404"
+    ]
+  },
+  {
+    "id": "p202611281046405",
+    "data": "2026-11-28T10:46:40.316Z",
+    "tipo": "resposta",
+    "perguntaId": "q202611281046400",
+    "tema": "será que essas hastes coloridas no chão comem a poeira que cai do vento?",
+    "porque": "aproveitei que ainda estava no computador",
+    "busca": "flor",
+    "buscas": [
+      "será que essas hastes coloridas no chão comem a poeira que cai do vento?",
+      "flor"
+    ],
+    "resumo": "As flores são estruturas reprodutivas especializadas das angiospermas, formadas por folhas modificadas chamadas antófilos que produzem gametas e dão origem a frutos e sementes.",
+    "aprendi": [
+      "As hastes coloridas são flores, órgãos de reprodução das angiospermas.",
+      "Elas produzem sementes protegidas por frutos."
+    ],
+    "fontes": [
+      {
+        "titulo": "Flor",
+        "url": "https://pt.wikipedia.org/wiki/Flor",
+        "site": "Wikipédia (pt)"
+      },
+      {
+        "titulo": "Angiosperma",
+        "url": "https://pt.wikipedia.org/wiki/Angiosperma",
+        "site": "Wikipédia (pt)"
+      }
+    ],
+    "perguntasGeradas": [
+      "q202611281046406"
+    ]
   }
 ]

@@ -799,5 +799,49 @@
       "tempo": "nublado"
     },
     "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T10:46:40.316Z",
+    "acao": "responder",
+    "tema": "Qual é o tamanho médio das partículas de terra que eu consigo ver subindo aqui na minha ilha?",
+    "porque": "quero responder qual é o tamanho médio das partículas de terra que consigo ver subindo aqui na minha ilha",
+    "pensamento": "Olhei para o chão e vi aquelas hastes doces de novo, mas fiquei pensando no tamanho exato da terrinha daqui que o vento leva embora.",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "nublado"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T10:46:40.316Z",
+    "acao": "responder",
+    "tema": "O que exatamente define um diamante carbonado e como ele se diferencia de outros diamantes que não vêm de impactos?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "nublado"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T10:46:40.316Z",
+    "acao": "responder",
+    "tema": "será que essas hastes coloridas no chão comem a poeira que cai do vento?",
+    "porque": "aproveitou que ainda estava no computador",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "nublado"
+    },
+    "resultado": "ficou satisfeita com a resposta"
+  },
+  {
+    "data": "2026-11-28T10:46:40.316Z",
+    "acao": "desenhar",
+    "tema": "o pirulito do chão",
+    "porque": "quis colocar no papel o que ficou na cabeça",
+    "clima": {
+      "estacao": "primavera",
+      "tempo": "nublado"
+    }
   }
 ]

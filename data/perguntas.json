@@ -2006,9 +2006,26 @@
       "tipo": "resposta",
       "texto": "Que outros tipos de diamantes são formados quando um asteroide atinge a terra?"
     },
-    "status": "aguardando",
-    "tentativas": [],
-    "filhas": [],
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T10:46:40.316Z",
+        "busca": "O que exatamente define um diamante carbonado e como ele se diferencia de outros diamantes que não vêm de impactos? → pedra preta brilhante de impacto → carbonado",
+        "resposta": "Descobri que o carbonado é um diamante preto cheio de furinhos e feito de vários pedacinhos grudados, e não de um cristal só como os outros. Ele é tão duro quanto os normais, mas é bem diferente porque não nasce no fundo da terra e pode ter vindo até do espaço por causa de um asteroide.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Carbonado (diamante)",
+            "url": "https://pt.wikipedia.org/wiki/Carbonado_(diamante)",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611281046403"
+      }
+    ],
+    "filhas": [
+      "q202611281046404"
+    ],
     "pai": "q202611280856214"
   },
   {
@@ -2019,9 +2036,98 @@
       "tipo": "resposta",
       "texto": "Será que a poeira leve da minha ilha consegue viajar tão longe pelo céu quanto a poeira do deserto do Saara?"
     },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T10:46:40.316Z",
+        "busca": "tamanho medio particulas poeira solo",
+        "resposta": "Eu descobri que esse pozinho que voa por aqui é chamado de poeira eólica e que o tamanho dessas partículas finas costuma ser medido em micrômetros bem pequenininhos. Os textos explicam que o vento consegue levantar esses pedacinhos do solo quando sopra forte sobre a terra. Achei curioso pensar que algo tão miudinho consegue viajar tanto pelo ar.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Poeira",
+            "url": "https://pt.wikipedia.org/wiki/Poeira",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611281046401"
+      }
+    ],
+    "filhas": [
+      "q202611281046402"
+    ],
+    "pai": "q202611280951271"
+  },
+  {
+    "id": "q202611281046400",
+    "data": "2026-11-28T10:46:40.316Z",
+    "texto": "será que essas hastes coloridas no chão comem a poeira que cai do vento?",
+    "origem": {
+      "tipo": "pensamento"
+    },
+    "status": "respondida",
+    "tentativas": [
+      {
+        "data": "2026-11-28T10:46:40.316Z",
+        "busca": "será que essas hastes coloridas no chão comem a poeira que cai do vento? → flor",
+        "resposta": "Descobri que aquelas hastes coloridas se chamam flores e fazem parte de um grupo enorme de plantas chamado angiospermas. Elas não comem poeira nenhuma, mas servem para produzir sementes e frutos, guardando os gametófitos com a ajuda de folhas modificadas. Fiquei encantada em saber que elas têm tantas espécies diferentes e que enfeitam tanto o mundo.",
+        "satisfeito": true,
+        "fontes": [
+          {
+            "titulo": "Flor",
+            "url": "https://pt.wikipedia.org/wiki/Flor",
+            "site": "Wikipédia (pt)"
+          },
+          {
+            "titulo": "Angiosperma",
+            "url": "https://pt.wikipedia.org/wiki/Angiosperma",
+            "site": "Wikipédia (pt)"
+          }
+        ],
+        "pesquisaId": "p202611281046405"
+      }
+    ],
+    "filhas": [
+      "q202611281046406"
+    ]
+  },
+  {
+    "id": "q202611281046402",
+    "data": "2026-11-28T10:46:40.316Z",
+    "texto": "Como um micrômetro é pequeno o bastante para caber dentro da ponta da minha caneta azul?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "Qual é o tamanho médio das partículas de terra que eu consigo ver subindo aqui na minha ilha?"
+    },
     "status": "aguardando",
     "tentativas": [],
     "filhas": [],
-    "pai": "q202611280951271"
+    "pai": "q202611280951275"
+  },
+  {
+    "id": "q202611281046404",
+    "data": "2026-11-28T10:46:40.316Z",
+    "texto": "Como milhares de cristais grudados conseguem ser tão duros quanto um cristal só?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "O que exatamente define um diamante carbonado e como ele se diferencia de outros diamantes que não vêm de impactos?"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": [],
+    "pai": "q202611280951273"
+  },
+  {
+    "id": "q202611281046406",
+    "data": "2026-11-28T10:46:40.316Z",
+    "texto": "Como as flores conseguem atrair os animais para ajudar a espalhar os gametófitos delas?",
+    "origem": {
+      "tipo": "resposta",
+      "texto": "será que essas hastes coloridas no chão comem a poeira que cai do vento?"
+    },
+    "status": "aguardando",
+    "tentativas": [],
+    "filhas": [],
+    "pai": "q202611281046400"
   }
 ]
